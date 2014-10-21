@@ -8,6 +8,9 @@ angular.module('niceUsenetApp')
     }, {
       'title': 'Settings',
       'link': '/settings'
+    }, {
+      'title': 'HD-Movies',
+      'link': '/hdmovies'
     }];
     
     $scope.logout = function() {

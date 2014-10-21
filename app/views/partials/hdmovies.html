@@ -1,26 +1,23 @@
 <div ng-include="'partials/navbar'"></div>
 
-<div class="jumbotron">
-  <h1>'Allo, 'Allo <span ng-show="currentUser">{{ currentUser.name }}</span>!</h1>
-  <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
-  </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#">Splendid!</a></p>
-</div>
+
 
 <div class="row" ng-repeat="movie in hdmovies">
  
   <div class="col-md-3">
-  <img src="{{movie.image}}" width="100">
+  <img src="{{movie.image}}" width="100%">
   </div>
 
   <div class="col-md-8" >
     <div class="row">
+     <div class="col-md-12">
      <h4>{{movie.title}}</h4>
+     </div>
    </div>
     <div class="row">
+     <div class="col-md-3">
       <a class="btn btn-primary">Download</a>
+      </div>
     </div>
   </div>
 

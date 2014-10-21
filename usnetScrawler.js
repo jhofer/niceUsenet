@@ -127,12 +127,15 @@ module.exports.requestForumThreads =  function requestForumThreads(forumId, call
     $('.threadinfo').each(function(i, element){
         var image = $(element).find('a.threadstatus img.preview').attr('src');
         var title = $(element).find('.inner h3 a.title').html();
+        if(title && 
+            title.indexOf('Postingregeln') === -1){
         threads.push({
             image: image,
             title: title,
             imdb: '',
             raiting: ''
         });
+        }
     });
 
     console.log("callback will be called");
