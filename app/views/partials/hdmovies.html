@@ -9,11 +9,22 @@
   <p><a class="btn btn-lg btn-success" ng-href="#">Splendid!</a></p>
 </div>
 
-<div class="row marketing">
-  <div ng-repeat="movie in hdmovies">
-      <h4>{{movie.title}}</h4>
-      <p>more infos</p>
+<div class="row" ng-repeat="movie in hdmovies">
+ 
+  <div class="col-md-3">
+  <img src="{{movie.image}}" width="100">
   </div>
+
+  <div class="col-md-8" >
+    <div class="row">
+     <h4>{{movie.title}}</h4>
+   </div>
+    <div class="row">
+      <a class="btn btn-primary">Download</a>
+    </div>
+  </div>
+
+
 </div>
 
 <div class="footer">
