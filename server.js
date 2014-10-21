@@ -1,10 +1,10 @@
 'use strict';
 
 var express = require('express'),
-    path = require('path'),
-    fs = require('fs'),
-    usenet = require('./usnetScrawler'),
-    mongoose = require('mongoose');
+path = require('path'),
+fs = require('fs'),
+usenet = require('./usnetScrawler.js'),
+mongoose = require('mongoose');
 
 
 /**
@@ -25,7 +25,7 @@ var modelsPath = path.join(__dirname, 'lib/models');
 fs.readdirSync(modelsPath).forEach(function (file) {
   if (/(.*)\.(js$|coffee$)/.test(file)) {
     require(modelsPath + '/' + file);
-  }
+}
 });
 
 // Populate empty DB with sample data
@@ -34,9 +34,11 @@ require('./lib/config/dummydata');
 // Passport Configuration
 var passport = require('./lib/config/passport');
 
-usenet.getUsenetContent(function(threads){
-    console.log(threads);
-    var app = express();
+
+
+
+
+var app = express();
 
     // Express settings
     require('./lib/config/express')(app);
@@ -47,9 +49,11 @@ usenet.getUsenetContent(function(threads){
     // Start server
     app.listen(config.port, function () {
       console.log('Express server listening on port %d in %s mode', config.port, app.get('env'));
-    });
+  });
 
     // Expose app
     exports = module.exports = app;
-});
+
+
+
 

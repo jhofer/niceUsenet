@@ -25,6 +25,11 @@ angular.module('niceUsenetApp', [
         controller: 'SettingsCtrl',
         authenticate: true
       })
+       .when('/hdmovies', {
+        templateUrl: 'partials/hdmovies',
+        controller: 'HdmoviesCtrl',
+        authenticate: true
+      })
       .otherwise({
         redirectTo: '/'
       });
