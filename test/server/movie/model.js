@@ -9,7 +9,7 @@ var movie;
 describe('Movie Model', function() {
   before(function(done) {
     movie = new Movie({
-      name: 'Fake Movie'     
+      name: 'Fake Movie'
     });
 
     // Clear movies before testing
@@ -44,6 +44,19 @@ describe('Movie Model', function() {
       should.exist(err);
       done();
     });
+  });
+
+  it('should save a json object', function(done){
+    var json = {}
+    json.name="awesome movie"
+    var movie = new Movie(json);
+    movie.save(function  (err) {
+        should.not.exist(err)
+        done();
+    });
+
+
+
   });
 
 

@@ -11,8 +11,7 @@
     "passport-local": "~0.1.6",
     "ejs": "~0.8.4",
     "request": "2.45.0",
-    "cheerio": "0.17.0",
-    "underscore-node":"0.1.2 "
+    "cheerio": "0.17.0"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
