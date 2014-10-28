@@ -24,7 +24,7 @@ describe('forumParser', function () {
           });
 
 
-       
+
       });
 
 
@@ -49,18 +49,18 @@ describe('forumParser', function () {
 
     it('should have a property image filled', function () {
       movies[0].should.have.property('image', 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i103199b6cq76.jpg');
-    }); 
+    });
 
     it('should have a property image threadUrl', function () {
       movies[0].should.have.property('threadUrl', 'showthread.php?242057-Fields-of-the-Dead-2014-German-DL-1080p-BluRay-x264-iFPD');
-    });    
+    });
 
 
 
   });
 
   describe('parseMovie', function () {
-    var movie; 
+    var movie;
     before(function () {
       movie = forumParser.parseMovies(movieHtml);
     });
@@ -78,7 +78,7 @@ describe('forumParser', function () {
 
   describe('parseImdb', function () {
 
-    var imdb; 
+    var imdb;
     before(function () {
       imdb = forumParser.parseMovies(imdbHtml);
     });
@@ -88,5 +88,5 @@ describe('forumParser', function () {
     });
   });
 
-  
+
 });
