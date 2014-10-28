@@ -84,7 +84,7 @@ describe('forumParser', function () {
     });
 
     it('should have property raiting filled', function  () {
-      // body...
+     movie.should.have.property('imdbLink', 'http://www.usenetrevolution.info/vb/redirector.php?url=http%3A%2F%2Fwww.imdb.com%2Ftitle%2Ftt3186838');
     });
   });
 
