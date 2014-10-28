@@ -62,12 +62,12 @@ describe('forumParser', function () {
   describe('parseMovie', function () {
     var movie;
     before(function () {
-      movie = forumParser.parseMovies(movieHtml);
+      movie = forumParser.parseMovie(movieHtml);
     });
 
 
     it('should have property thxLink filled', function () {
-       movie.should.have.property('thxLink', 'http://www.usenetrevolution.info/vb/post_thanks.php?do=post_thanks_add&p=300720&securitytoken=1414392593-2361034f84efb668c873006a79c3ff45768ad5fd');
+       movie.should.have.property('thxLink', 'post_thanks.php?do=post_thanks_add&p=300720&securitytoken=1414392593-2361034f84efb668c873006a79c3ff45768ad5fd');
     });
 
     it('should have property imdbLink filled', function () {
@@ -80,11 +80,11 @@ describe('forumParser', function () {
 
     var imdb;
     before(function () {
-      imdb = forumParser.parseMovies(imdbHtml);
+      imdb = forumParser.parseImdb(imdbHtml);
     });
 
     it('should have property raiting filled', function  () {
-     movie.should.have.property('imdbLink', 'http://www.usenetrevolution.info/vb/redirector.php?url=http%3A%2F%2Fwww.imdb.com%2Ftitle%2Ftt3186838');
+      imdb.should.have.property('rating', 2.8);
     });
   });
 
