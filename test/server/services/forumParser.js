@@ -86,6 +86,13 @@ describe('forumParser', function () {
     it('should have property raiting filled', function  () {
       imdb.should.have.property('rating', 2.8);
     });
+
+    it('should have property genres filled', function  () {
+      imdb.should.have.property('genres');
+      imdb.genres.should.be.an.instanceOf(Array);
+      imdb.genres.should.have.length(1);
+      imdb.genres[0].should.contain('Horror');
+    });
   });
 
 
