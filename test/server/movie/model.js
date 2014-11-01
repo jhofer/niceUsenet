@@ -9,7 +9,7 @@ var movie;
 describe('Movie Model', function() {
   before(function(done) {
     movie = new Movie({
-      name: 'Fake Movie'
+      title: 'Fake Movie'
     });
 
     // Clear movies before testing
@@ -38,8 +38,8 @@ describe('Movie Model', function() {
     });
   });
 
-  it('should fail when saving without an name', function(done) {
-    movie.name = '';
+  it('should fail when saving without an title', function(done) {
+    movie.title = '';
     movie.save(function(err) {
       should.exist(err);
       done();
@@ -47,8 +47,8 @@ describe('Movie Model', function() {
   });
 
   it('should save a json object', function(done){
-    var json = {}
-    json.name="awesome movie"
+    var json = {};
+    json.title="awesome movie"
     var movie = new Movie(json);
     movie.save(function  (err) {
         should.not.exist(err)

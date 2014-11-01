@@ -1,0 +1,1005 @@
+<div class="above_body"> <!-- closing tag is in template navbar -->
+<div id="header" class="floatcontainer doc_header">
+
+<br><br>
+        <div><a name="top" href="http://www.usenetrevolution.info/vb/cmps_index.php?tabid=73" class="logo-image"><img src="http://www.usenetrevolution.info/vb/bilder/logo3.gif" alt="..::Usenetrevolution::..-Informationsforum - Powered by vBulletin" /></a></div>
+
+        <div id="toplinks" class="toplinks">
+
+                        <ul class="nouser">
+
+                                <li><a href="register.php" rel="nofollow">Registrieren</a></li>
+
+                                <li><a rel="help" href="faq.php">Hilfe</a></li>
+                                <li>
+                        <script type="text/javascript" src="clientscript/vbulletin_md5.js?v=420"></script>
+                        <form id="navbar_loginform" action="login.php?do=login" method="post" onsubmit="md5hash(vb_login_password, vb_login_md5password, vb_login_md5password_utf, 0)">
+                                <fieldset id="logindetails" class="logindetails">
+                                        <div>
+                                                <div>
+                                        <input type="text" class="textbox default-value" name="vb_login_username" id="navbar_username" size="10" accesskey="u" tabindex="101" value="Benutzername" />
+                                        <input type="password" class="textbox" tabindex="102" name="vb_login_password" id="navbar_password" size="10" />
+                                        <input type="text" class="textbox default-value" tabindex="102" name="vb_login_password_hint" id="navbar_password_hint" size="10" value="Kennwort" style="display:none;" />
+                                        <input type="submit" class="loginbutton" tabindex="104" value="Anmelden" title="Geben Sie zur Anmeldung Ihren Benutzernamen und Ihr Kennwort in die daf?r vorgesehenen Textfelder ein oder klicken Sie auf die 'Registrieren'-Sch
+altfl?che, um ein neues Benutzerkonto anzulegen." accesskey="s" />
+                                                </div>
+                                        </div>
+                                </fieldset>
+                                <div id="remember" class="remember">
+                                        <label for="cb_cookieuser_navbar"><input type="checkbox" name="cookieuser" value="1" id="cb_cookieuser_navbar" class="cb_cookieuser_navbar" accesskey="c" tabindex="103" /> <acronym style="border-bottom: 1px dotted #000000; cu
+rsor: help;" title="Sie bleiben angemeldet, bis Sie sich selbst abmelden.">Angemeldet bleiben?</acronym></label>
+                                </div>
+
+                                <input type="hidden" name="s" value="" />
+                                <input type="hidden" name="securitytoken" value="guest" />
+                                <input type="hidden" name="do" value="login" />
+                                <input type="hidden" name="vb_login_md5password" />
+                                <input type="hidden" name="vb_login_md5password_utf" />
+                        </form>
+                        <script type="text/javascript">
+                        YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+                        YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+                        vB_XHTML_Ready.subscribe(function()
+                        {
+                        //
+                                YAHOO.util.Event.on('navbar_username', "focus", navbar_username_focus);
+                                YAHOO.util.Event.on('navbar_username', "blur", navbar_username_blur);
+                                YAHOO.util.Event.on('navbar_password_hint', "focus", navbar_password_hint);
+                                YAHOO.util.Event.on('navbar_password', "blur", navbar_password);
+                        });
+
+                        function navbar_username_focus(e)
+                        {
+                        //
+                                var textbox = YAHOO.util.Event.getTarget(e);
+                                if (textbox.value == 'Benutzername')
+                                {
+                                //
+                                        textbox.value='';
+                                        textbox.style.color='rgb(204, 204, 204)';
+                                }
+                        }
+
+                        function navbar_username_blur(e)
+                        {
+                        //
+                                var textbox = YAHOO.util.Event.getTarget(e);
+                                if (textbox.value == '')
+                                {
+                                //
+                                        textbox.value='Benutzername';
+                                        textbox.style.color='rgb(153, 153, 153)';
+                                }
+                        }
+
+                        function navbar_password_hint(e)
+                        {
+                        //
+                                var textbox = YAHOO.util.Event.getTarget(e);
+
+                                YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "none");
+                                YAHOO.util.Dom.setStyle('navbar_password', "display", "inline");
+                                YAHOO.util.Dom.get('navbar_password').focus();
+                        }
+
+                        function navbar_password(e)
+                        {
+                        //
+                                var textbox = YAHOO.util.Event.getTarget(e);
+
+                                if (textbox.value == '')
+                                {
+                                        YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+                                        YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+                                }
+                        }
+                        </script>
+                                </li>
+
+                        </ul>
+
+        </div>
+        <div class="ad_global_header">
+
+
+        </div>
+        <hr />
+</div>
+
+
+
+<div id="navbar" class="navbar">
+        <ul id="navtabs" class="navtabs floatcontainer">
+
+
+        <li id="tab_ota1_421">
+                <a class="navtab" href="cmps_index.php?tabid=73">Portal</a>
+
+        </li>
+
+        <li class="selected" id="vbtab_forum">
+                <a class="navtab" href="forum.php?tabid=29">Forum</a>
+
+                        <ul class="floatcontainer">
+
+
+
+                                                        <li id="vbflink_bbmenu"><a href="forum.php">Startseite</a></li>
+
+
+
+
+
+                                                        <li id="vbflink_faq"><a href="faq.php">Hilfe</a></li>
+
+
+
+
+
+                                                        <li id="vbflink_calendar"><a href="calendar.php">Kalender</a></li>
+
+
+
+
+                                                <li class="popupmenu" id="vbmenu_actions">
+                                                        <a href="javascript://" class="popupctrl">Aktionen</a>
+                                                        <ul class="popupbody popuphover">
+
+                                                                        <li id="vbalink_mfr"><a href="forumdisplay.php?do=markread&markreadhash=guest">Alle Foren als gelesen markieren</a></li>
+
+
+                                                        </ul>
+                                                </li>
+
+
+
+                                                <li class="popupmenu" id="vbmenu_qlinks">
+                                                        <a href="javascript://" class="popupctrl">N?tzliche Links</a>
+                                                        <ul class="popupbody popuphover">
+
+                                                                        <li id="vbqlink_leaders"><a href="showgroups.php">Forum-Mitarbeiter anzeigen </a></li>
+
+                                                                        <li id="link_mdmw_384"><a href="misc.php?do=bbcode">bbcode Liste</a></li>
+
+                                                                        <li id="top_link_ql"><a href="misc.php?do=topposters">Top Posters</a></li>
+
+
+                                                        </ul>
+                                                </li>
+
+
+
+
+                                                        <li id="vsafrules_link"><a href="misc.php?do=vsarules"><span style="color:#66ff00;"><font color=limegreen><b>Forenregeln</b></font></span></a></li>
+
+
+
+
+                        </ul>
+
+        </li>
+
+        <li id="vbtab_whatsnew">
+                <a class="navtab" href="activity.php">Was ist neu?</a>
+
+        </li>
+
+        <li id="tab_odk4_880">
+                <a class="navtab" href="misc.php?do=page&template=kino&tabid=68">Cineplex KinoStarts</a>
+
+        </li>
+
+        <li id="tab_otay_361">
+                <a class="navtab" href="misc.php?do=page&template=images&tabid=70">PicUpload</a>
+
+        </li>
+
+        <li id="vbtab_vbsoccer">
+                <a class="navtab" href="vbsoccer.php?tabid=111">Fu?ball-Tippspiele</a>
+
+        </li>
+
+        <li id="tab_otgy_395">
+                <a class="navtab" href="misc.php?do=page&template=photoshop&tabid=144">Photoshop</a>
+
+        </li>
+
+        <li id="tab_mduy_389">
+                <a class="navtab" href="arcade.php?tabid=148">Revo Games</a>
+
+        </li>
+
+        <li id="tab_njcz_377">
+                <a class="navtab" href="misc.php?do=page&template=umrechner&tabid=180">Bit Umrechner</a>
+
+        </li>
+
+        <li id="tab_mzy4_698">
+                <a class="navtab" href="archive/index.php?tabid=208">Archiv</a>
+
+        </li>
+
+
+        </ul>
+
+                <div id="globalsearch" class="globalsearch">
+                        <form action="search.php?do=process" method="post" id="navbar_search" class="navbar_search">
+
+                                <input type="hidden" name="securitytoken" value="guest" />
+                                <input type="hidden" name="do" value="process" />
+                                <span class="textboxcontainer"><span><input type="text" value="" name="query" class="textbox" tabindex="99"/></span></span>
+                                <span class="buttoncontainer"><span><input type="image" class="searchbutton" src="images/buttons/search.png" name="submit" onclick="document.getElementById('navbar_search').submit;" tabindex="100"/></span></span>
+                        </form>
+                        <ul class="navbar_advanced_search">
+                                <li><a href="search.php" accesskey="4">Erweiterte Suche</a></li>
+
+                        </ul>
+                </div>
+
+</div>
+</div><!-- closing div for above_body -->
+
+<div class="body_wrapper">
+<div id="breadcrumb" class="breadcrumb">
+        <ul class="floatcontainer">
+                <li class="navbithome"><a href="index.php" accesskey="1"><img src="images/vb-transparent/misc/navbit-home.png" alt="Startseite" /></a></li>
+
+
+        <li class="navbit lastnavbit"><span>vBulletin-Systemmitteilung</span></li>
+
+        </ul>
+        <hr />
+</div>
+
+
+<div id="ad_global_below_navbar"><div align="center"><a href="https://secretusenet.com"><img src="http://www.usenetrevolution.info/vb/bilder/Banner1.gif" alt="Klick mich f?r TOP Konditionen"  border="0"></a><br><br>
+</div></div>
+
+
+
+
+<div class="standard_error">
+        <h2 class="blockhead">vBulletin-Systemmitteilung</h2>
+
+                <form class="block vbform"  method="post" action="login.php?do=login" onsubmit="md5hash(vb_login_password, vb_login_md5password, vb_login_md5password_utf, 0)">
+                        <input type="hidden" name="do" value="login" />
+                        <input type="hidden" name="vb_login_md5password" value="" />
+                        <input type="hidden" name="vb_login_md5password_utf" value="" />
+                        <input type="hidden" name="s" value="" />
+                        <input type="hidden" name="securitytoken" value="guest" />
+
+
+
+
+                                        <input type="hidden" name="url" value="/vb/showthread.php?241605-Underworld-Extended-Cut-2003-German-DL-1080p-BluRay-x264-iNTERNAL-VideoStar" />
+
+                                <div class="blockbody formcontrols">
+
+                                        <h3 class="blocksubhead">Sie sind nicht angemeldet oder Sie haben keine Rechte diese Seite zu betreten. Dies k?nnte einer der Gr?nde sein:</h3>
+                                        <div class="blockrow restore">
+                                                <ol>
+                                                        <li>Sie sind nicht angemeldet. Bitte f?llen Sie die Felder unten auf der Seite aus und versuchen Sie es erneut.</li>
+                                                        <li>Sie haben keine ausreichenden Rechte, um auf diese Seite zuzugreifen. Dies kann der Fall sein, wenn Sie Beitr?ge eines anderen Benutzers ?ndern m?chten oder administrative bzw. andere nicht erlaubte Funkti
+onen aufrufen.</li>
+                                                        <li>Sie versuchen einen Beitrag zu verfassen und haben keine Schreibrechte oder warten noch auf die Aktivierung Ihrer Registrierung.</li>
+                                                </ol>
+                                        </div>
+
+                                        <p class="blockrow">Sie m?ssen <a href="register.php?" rel="nofollow">registriert</a> sein, um diese Seite aufrufen zu k?nnen.</p>
+
+                                        <h3 class="blocksubhead">Anmelden</h3>
+                                        <div class="blockrow">
+                                                <label for="vb_login_username">Benutzername:</label>
+                                                <input type="text" class="primary textbox" id="vb_login_username" name="vb_login_username" accesskey="u" tabindex="1" />
+                                        </div>
+                                        <div class="blockrow">
+                                                <label for="vb_login_password">Kennwort:</label>
+                                                <input type="password" class="primary textbox" id="vb_login_password" name="vb_login_password" tabindex="1" />
+                                        </div>
+                                        <div class="blockrow singlecheck">
+                                                <label for="cb_cookieuser"><input type="checkbox" name="cookieuser" id="cb_cookieuser" value="1" tabindex="1" /> <acronym style="border-bottom: 1px dotted #000000; cursor: help;" title="Sie bleiben angemeldet, bis Sie
+ sich selbst abmelden.">Angemeldet bleiben?</acronym></label>
+                                        </div>
+
+                                </div>
+                                <div class="blockfoot actionbuttons">
+                                        <div class="group">
+                                                <input type="submit" class="button" value="Anmelden" accesskey="s" tabindex="1" />
+                                                <input type="reset" class="button" value="Felder zur?cksetzen" accesskey="r" tabindex="1" />
+                                        </div>
+                                </div>
+
+        </form>
+
+</div>
+
+<div class="clear"></div>
+<div class="navpopupmenu popupmenu nohovermenu" id="navpopup">
+
+                <a href="javascript://" class="popupctrl"><span class="ctrlcontainer">Gehe zu:</span></a>
+
+        <ul class="navpopupbody popupbody popuphover">
+
+                <li class="optionlabel">Bereiche</li>
+                <li><a href="usercp.php">Benutzerkontrollzentrum</a></li>
+                <li><a href="private.php">Private Nachrichten</a></li>
+                <li><a href="subscription.php">Abonnements</a></li>
+                <li><a href="online.php">Wer ist online</a></li>
+                <li><a href="search.php">Foren durchsuchen</a></li>
+                <li><a href="forum.php">Forum-Startseite</a></li>
+
+                        <li class="optionlabel">Foren</li>
+
+
+
+                                <li><a href="forumdisplay.php?27-USENET-STUFF">..::USENET STUFF::..</a>
+                                        <ol class="d1">
+
+
+
+                                <li><a href="forumdisplay.php?28-Kino-Movies">Kino Movies</a>
+                                        <ol class="d2">
+
+
+
+                                <li><a href="forumdisplay.php?29-Kino-Xvid-x264-svcd">Kino Xvid/x264/svcd</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?30-Kino-DVD">Kino DVD</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?31-Kino-HD-3D">Kino HD/3D</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?32-Kino-Fremdsprachig">Kino Fremdsprachig</a></li>
+
+
+
+                                        </ol>
+                                </li>
+
+
+
+                                <li><a href="forumdisplay.php?33-Movies">Movies</a>
+                                        <ol class="d2">
+
+
+
+                                <li><a href="forumdisplay.php?34-Xvid-Divx-mpg">Xvid/Divx/mpg</a>
+                                        <ol class="d3">
+
+
+
+                                <li><a href="forumdisplay.php?151-x264">x264</a></li>
+
+
+
+                                        </ol>
+                                </li>
+
+
+
+                                <li><a href="forumdisplay.php?35-DVD">DVD</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?36-RatDVD">RatDVD</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?37-BluRay">BluRay</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?38-HD-1080p-Remux">HD 1080p Remux</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?39-HD-1080p">HD 1080p</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?40-HD-720p">HD 720p</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?41-3D-Movies">3D Movies</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?54-Dokus">Dokus</a>
+                                        <ol class="d3">
+
+
+
+                                <li><a href="forumdisplay.php?55-Sammelthreads-Komplette-Staffeln-Dokus">Sammelthreads &amp; Komplette Staffeln Dokus</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?56-HD-Dokus">HD Dokus</a></li>
+
+
+
+                                        </ol>
+                                </li>
+
+
+
+                                <li><a href="forumdisplay.php?57-Sport-Entertainment">Sport/Entertainment</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?58-Fremdsprachiges">Fremdsprachiges</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?149-Trickfilme-Anime">Trickfilme/Anime</a></li>
+
+
+
+                                        </ol>
+                                </li>
+
+
+
+                                <li><a href="forumdisplay.php?43-TV-Serien">TV Serien</a>
+                                        <ol class="d2">
+
+
+
+                                <li><a href="forumdisplay.php?44-Serien-Aktuell-Alle-Formate">Serien Aktuell - Alle Formate</a>
+                                        <ol class="d3">
+
+
+
+                                <li><a href="forumdisplay.php?45-Serien-Aktuell-Xvid-h264">Serien Aktuell Xvid/h264</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?46-Serien-Aktuell-HD">Serien Aktuell HD</a></li>
+
+
+
+                                        </ol>
+                                </li>
+
+
+
+                                <li><a href="forumdisplay.php?47-Serien-Original-Alle-Formate">Serien Original - Alle Formate</a>
+                                        <ol class="d3">
+
+
+
+                                <li><a href="forumdisplay.php?48-Serien-Original-Xvid-h264">Serien Original Xvid/h264</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?49-Serien-Original-HD">Serien Original HD</a></li>
+
+
+
+                                        </ol>
+                                </li>
+
+
+
+                                <li><a href="forumdisplay.php?50-Serien-Xvid-h264">Serien Xvid/h264</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?51-Serien-HD">Serien HD</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?52-Serien-DVD">Serien DVD</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?189-TV-Sonstiges">TV Sonstiges</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?190-Serien-Anime-Trick">Serien Anime/Trick</a></li>
+
+
+
+                                        </ol>
+                                </li>
+
+
+
+                                <li><a href="forumdisplay.php?59-Aktuelle-Games">Aktuelle Games</a>
+                                        <ol class="d2">
+
+
+
+                                <li><a href="forumdisplay.php?60-Neue-PC-Games">Neue PC Games</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?61-Neue-Konsolen-Games">Neue Konsolen Games</a></li>
+
+
+
+                                        </ol>
+                                </li>
+
+
+
+                                <li><a href="forumdisplay.php?62-Games">Games</a>
+                                        <ol class="d2">
+
+
+
+                                <li><a href="forumdisplay.php?63-Games-PC">Games PC</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?64-Games-LINUX-MAC">Games LINUX/MAC</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?65-Games-PS1-2-3">Games PS1/2/3</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?66-Games-PSP">Games PSP</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?67-Games-XBOX%28360%29">Games XBOX(360)</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?68-Games-Nintendo">Games Nintendo</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?69-Games-Sonstiges">Games Sonstiges</a></li>
+
+
+
+                                        </ol>
+                                </li>
+
+
+
+                                <li><a href="forumdisplay.php?70-Programme-Software">Programme/Software</a>
+                                        <ol class="d2">
+
+
+
+                                <li><a href="forumdisplay.php?71-Anwendungen">Anwendungen</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?72-Betriebssysteme">Betriebssysteme</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?73-Security">Security</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?74-Multimedia">Multimedia</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?75-Sonstiges">Sonstiges</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?130-MAC-LINUX">MAC/LINUX</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?140-Video-Tutorials">Video Tutorials</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?175-Portables">Portables</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?131-Handy-PDA">Handy &amp; PDA</a>
+                                        <ol class="d3">
+
+
+
+                                <li><a href="forumdisplay.php?176-Mobile-Games-Appz-Packs">Mobile Games &amp; Appz - Packs</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?188-Ringtones">Ringtones</a></li>
+
+
+
+                                        </ol>
+                                </li>
+
+
+
+                                <li><a href="forumdisplay.php?174-Navi-GPS">Navi &amp; GPS</a></li>
+
+
+
+                                        </ol>
+                                </li>
+
+
+
+                                <li><a href="forumdisplay.php?76-Musik">Musik</a>
+                                        <ol class="d2">
+
+
+
+                                <li><a href="forumdisplay.php?77-Top-Charts-100">Top Charts/100</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?78-Rock-Pop">Rock/Pop</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?79-Metal-Punk-HC">Metal/Punk/HC</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?80-Hip-Hop-Rap-R-B">Hip Hop/Rap/R&amp;B</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?81-Electronic-Techno">Electronic/Techno</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?82-Lossless">Lossless</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?83-Volkst%C3%BCmlich">Volkst?mlich</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?84-Jazz-Soul-Blues-Chillout">Jazz/Soul/Blues/Chillout</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?85-Discography-Sammler">Discography/Sammler</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?86-Soundtracks">Soundtracks</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?87-Sampler-Mixe">Sampler/Mixe</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?88-Einzelne-Songs-Singles">Einzelne Songs/Singles</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?89-Musik-Videos-Sonstiges">Musik Videos/Sonstiges</a>
+                                        <ol class="d3">
+
+
+
+                                <li><a href="forumdisplay.php?90-Musik-Clips">Musik Clips</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?91-Musik-Videos-DVD">Musik Videos DVD</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?92-Musik-Videos-HD-1080">Musik Videos HD 1080</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?93-Musik-Videos-HD-720">Musik Videos HD 720</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?94-Musik-Videos-BluRay-untouched">Musik Videos BluRay-untouched</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?169-Musik-Videos-Sonstige">Musik Videos - Sonstige</a></li>
+
+
+
+                                        </ol>
+                                </li>
+
+
+
+                                <li><a href="forumdisplay.php?95-H%C3%B6rspiele-B%C3%BCcher">H?rspiele - B?cher</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?96-Musik-Sonstiges">Musik Sonstiges</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?168-Klassik">Klassik</a></li>
+
+
+
+                                        </ol>
+                                </li>
+
+
+
+                                <li><a href="forumdisplay.php?97-Ebook">Ebook</a>
+                                        <ol class="d2">
+
+
+
+                                <li><a href="forumdisplay.php?98-Ebook-deutschsprachig">Ebook deutschsprachig</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?99-Ebook-fremdsprachig">Ebook fremdsprachig</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?100-Magazine-und-Zeitungen">Magazine und Zeitungen</a></li>
+
+
+
+                                        </ol>
+                                </li>
+
+
+
+                                <li><a href="forumdisplay.php?123-Kids-Corner">Kids Corner</a>
+                                        <ol class="d2">
+
+
+
+                                <li><a href="forumdisplay.php?124-Kids-Filme">Kids Filme</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?125-Kids-Serien">Kids Serien</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?126-Software-und-Games-f%C3%BCr-Kids">Software und Games f?r Kids</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?127-Musik-f%C3%BCr-Kids">Musik f?r Kids</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?128-H%C3%B6rb%C3%BCcher-H%C3%B6rspiele-f%C3%BCr-Kids">H?rb?cher/H?rspiele f?r Kids</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?129-Ebooks-f%C3%BCr-Kids">Ebooks f?r Kids</a></li>
+
+
+
+                                        </ol>
+                                </li>
+
+
+
+                                <li><a href="forumdisplay.php?106-XXX-Bereich">XXX - Bereich</a>
+                                        <ol class="d2">
+
+
+
+                                <li><a href="forumdisplay.php?107-XXX-Xvid-Avi-WMV-mpg-x264">XXX Xvid/Avi/WMV/mpg/x264</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?108-XXX-DVD">XXX DVD</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?109-XXX-HD-BD-3D">XXX HD/BD/3D</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?110-XXX-Clips">XXX Clips</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?183-XXX-Clip-SiteRips-Sammelthreads">XXX Clip-SiteRips/Sammelthreads</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?111-XXX-Ebook">XXX Ebook</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?112-XXX-Pic-Sets">XXX Pic - Sets</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?114-XXX-Sonstiges-Hentai">XXX Sonstiges/Hentai</a></li>
+
+
+
+                                        </ol>
+                                </li>
+
+
+
+                                        </ol>
+                                </li>
+
+
+
+                                <li><a href="forumdisplay.php?141-SPONSOR">..::SPONSOR::..</a>
+                                        <ol class="d1">
+
+
+
+                                <li><a href="forumdisplay.php?172-SecretUsenet-Support">SecretUsenet - Support</a></li>
+
+
+
+                                <li><a href="forumdisplay.php?160-SecretUsenet-com">SecretUsenet.com</a></li>
+
+
+
+                                        </ol>
+                                </li>
+
+
+
+        </ul>
+</div>
+<div class="clear"></div>
+
+
+<div style="clear: left">
+
+  <div id="ad_global_above_footer"><div align="center"><a href="https://secretusenet.com"><img src="http://www.usenetrevolution.info/vb/bilder/Banner1.gif"  alt="Klick mich f?r TOP Konditionen" border="0"></a><br><br>
+</div></div>
+</div>
+
+<div id="footer" class="floatcontainer footer">
+
+        <form action="forum.php" method="get" id="footer_select" class="footer_select">
+
+
+                        <select name="styleid" onchange="switch_id(this, 'style')">
+                                <optgroup label="Style ausw?hlen"><option class="hidden"></option></optgroup>
+
+
+                                        <optgroup label="&nbsp;Standard Styles">
+
+                                        <option value="22" class="" selected="selected">-- Revo Dark VB4</option><option value="25" class="" >---- RevoSkull v2</option><option value="24" class="" >---- Revo Dark Grey</option><option value="12" class="" >-- S9 Nova<
+/option><option value="1" class="" >-- vb White</option><option value="20" class="" >-- Simple Colors</option>
+
+                                        </optgroup>
+
+
+
+
+                                        <optgroup label="&nbsp;Mobile Styles">
+
+                                        <option value="10" class="" >-- Default Mobile Style</option>
+
+                                        </optgroup>
+
+
+                        </select>
+
+
+
+                        <select name="langid" onchange="switch_id(this, 'lang')">
+                                <optgroup label="Sprache ausw?hlen">
+                                        <option value="2" class="" selected="selected">-- Deutsch (Sie)</option><option value="1" class="" >-- English (US)</option>
+                                </optgroup>
+                        </select>
+
+        </form>
+
+        <ul id="footer_links" class="footer_links">
+
+                <li><a href="http://www.usenetrevolution.info/vb">..::Usenetrevolution::..-Informationsforum</a></li>
+
+
+                <li><a href="archive/index.php">Archiv</a></li>
+
+
+                <li><a href="http://www.usenetrevolution.info">Nutzungsbedingungen</a></li>
+                <li><a href="showthread.php?241605-Underworld-Extended-Cut-2003-German-DL-1080p-BluRay-x264-iNTERNAL-VideoStar#top" onclick="document.location.hash='top'; return false;">Nach oben</a></li>
+        </ul>
+
+
+
+
+        <script type="text/javascript">
+        <!--
+                // Main vBulletin Javascript Initialization
+                vBulletin_init();
+        //-->
+        </script>
+        <script type="text/javascript" src="includes/vfchh/js/qr_hide.js"></script>
+<script type="text/javascript" src="includes/vfchh/js/thanks_hide.js"></script>
+<script type="text/javascript">
+
+               var ptb = YAHOO.util.Dom.getElementsByClassName("post_thanks_button", "a", "posts");
+               for (var i = 0; i < ptb.length; i++)
+               {
+                  var hidepostid = ptb[i].id.substring(ptb[i].id.indexOf('post_thanks_button_')+19);
+                  if (hidepostid > 0)
+                  {
+                      YAHOO.util.Event.addListener(ptb[i].id, "click", vFC_HT_JS, hidepostid);
+                  }
+               }
+
+
+</script>
+</div>
+</div> <!-- closing div for body_wrapper -->
+
+<div align="center">
+
+<a rel="nofollow" target="_blank" title="RSS" href="external.php?type=rss"><span style="border-style: solid; border-color: rgb(255* 204* 153) rgb(102* 51* 0) rgb(51* 51* 0) rgb(255* 153* 102); border-width: 1px; margin: 0pt; padding: 0pt 3px; background: rgb(255* 1
+02* 0) none repeat scroll 0%; font-family: verdana*sans-serif; font-style: normal; font-variant: normal; font-weight: bold; font-size: 11px; line-height: normal; font-size-adjust: none; font-stretch: normal; color: rgb(255* 255* 255); -moz-background-clip: -moz-ini
+tial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-decoration: none;">RSS</span></a>
+
+<a rel="nofollow" target="_blank" title="RSS 2.0" href="external.php?type=rss2"><span style="border-style: solid; border-color: rgb(255* 204* 153) rgb(102* 51* 0) rgb(51* 51* 0) rgb(255* 153* 102); border-width: 1px; margin: 0pt; padding: 0pt 3px; background: rgb(2
+55* 102* 0) none repeat scroll 0%; font-family: verdana*sans-serif; font-style: normal; font-variant: normal; font-weight: bold; font-size: 11px; line-height: normal; font-size-adjust: none; font-stretch: normal; color: rgb(255* 255* 255); -moz-background-clip: -mo
+z-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-decoration: none;">RSS 2.0</span></a>
+
+<a rel="nofollow" target="_blank" title="XML" href="external.php?type=xml"><span style="border-style: solid; border-color: rgb(255* 204* 153) rgb(102* 51* 0) rgb(51* 51* 0) rgb(255* 153* 102); border-width: 1px; margin: 0pt; padding: 0pt 3px; background: rgb(255* 1
+02* 0) none repeat scroll 0%; font-family: verdana*sans-serif; font-style: normal; font-variant: normal; font-weight: bold; font-size: 11px; line-height: normal; font-size-adjust: none; font-stretch: normal; color: rgb(255* 255* 255); -moz-background-clip: -moz-ini
+tial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-decoration: none;">XML</span></a>
+
+<a rel="nofollow" target="_blank" title="MAP" href="archive/index.php/"><span style="border-style: solid; border-color: rgb(255* 204* 153) rgb(102* 51* 0) rgb(51* 51* 0) rgb(255* 153* 102); border-width: 1px; margin: 0pt; padding: 0pt 3px; background: rgb(255* 102*
+ 0) none repeat scroll 0%; font-family: verdana*sans-serif; font-style: normal; font-variant: normal; font-weight: bold; font-size: 11px; line-height: normal; font-size-adjust: none; font-stretch: normal; color: rgb(255* 255* 255); -moz-background-clip: -moz-initia
+l; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-decoration: none;">MAP</span></a>
+
+<a rel="nofollow" target="_blank" title="HTML" href="external.php?type=html"><span style="border-style: solid; border-color: rgb(255* 204* 153) rgb(102* 51* 0) rgb(51* 51* 0) rgb(255* 153* 102); border-width: 1px; margin: 0pt; padding: 0pt 3px; background: rgb(255*
+ 102* 0) none repeat scroll 0%; font-family: verdana*sans-serif; font-style: normal; font-variant: normal; font-weight: bold; font-size: 11px; line-height: normal; font-size-adjust: none; font-stretch: normal; color: rgb(255* 255* 255); -moz-background-clip: -moz-i
+nitial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-decoration: none;">HTML</span></a>
+
+</div>
+
+<div class="below_body">
+<div id="footer_time" class="shade footer_time">Alle Zeitangaben in WEZ +2. Es ist jetzt <span class="time">23:40</span> Uhr.</div>
+
+<div id="footer_copyright" class="shade footer_copyright">
+        <!-- Do not remove this copyright notice -->
+        Powered by <a href="https://www.vbulletin.com" id="vbulletinlink">vBulletin&reg;</a><br />Copyright &copy; 2014 vBulletin Solutions, Inc. All rights reserved.<div style="text-align: center">Hide Hack By
+           <a href="http://vfcoders.com" target="_blank" rel="nofollow">vFCoders</a>.</div> <div>Image resizer by <a href="http://www.sevenskins.com/" title="vBulletin Skins - vBulletin Services" target="_blank">SevenSkins</a></div>
+        <!-- Do not remove this copyright notice -->
+</div>
+
+<div id="footer_morecopyright" class="shade footer_morecopyright">
+        <!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+
+        <!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+        <div align="center"><a href="http://usenetrevolution.info.trustcheck.net" target="_blank"><img src="https://s3-eu-west-1.amazonaws.com/siegeltrustcheck/external.gif" alt="usenetrevolution.info Trustcheck Seal"></a><br><br>Dieses Forum ist f?r <a href="http:
+//www.mozilla.org/de/firefox/fx/"><img src="http://www.usenetrevolution.info/vb/bilder/firefox.png" border="0" width="25" hight=25" title="Mozilla Firefox"></a> optimiert.</div>
+
+</div>
+
+
+</div>
+
+<style type='text/css'>
+#bttop{border:1px solid #4adcff;background:#24bde2;text-align:center;padding:5px;position:fixed;bottom:35px;right:10px;cursor:pointer;display:none;color:#fff;font-size:11px;font-weight:900;}
+#bttop:hover{border:1px solid #ffa789;background:#ff6734;}
+</style>
+<div id='bttop'>BACK TO TOP</div>
+<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js' type='text/javascript'></script>
+<script type='text/javascript'>$(function(){$(window).scroll(function(){if($(this).scrollTop()!=0){$('#bttop').fadeIn();}else{$('#bttop').fadeOut();}});$('#bttop').click(function(){$('body,html').animate({scrollTop:0},800);});});</script>
+
+
+
+</body>
+</html>
