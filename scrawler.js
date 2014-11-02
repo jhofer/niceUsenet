@@ -3,9 +3,12 @@
 var
   path = require('path'),
   fs = require('fs'),
-  mongoose = require('mongoose'),
-  scrawler = require('./lib/services/usenetScrawler.js'),
-  parser = require('./lib/services/forumParser.js'),
+  mongoose = require('mongoose');
+console.log("load scrawler");
+
+ var scrawler = require('./lib/services/usenetScrawler.js');
+   console.log("load scrawler done");
+ var parser = require('./lib/services/forumParser.js'),
   _ = require('lodash'),
  request = require('sync-request'),
  Sequence =  require('sequence').Sequence;
