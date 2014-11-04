@@ -3,7 +3,7 @@
 
 
 <div class="row" ng-repeat="movie in hdmovies">
- 
+
   <div class="col-md-3">
   <img src="{{movie.image}}" width="100%">
   </div>
@@ -14,6 +14,12 @@
      <h4>{{movie.title}}</h4>
      </div>
    </div>
+    <div class="row">
+
+      <div class="col-md-5"><a href= "{{movie.imdbLink}}">{{movie.imdbLink}}</a></div>
+      <div class="col-md-5"> {{movie.genres}}</div>
+      <div class="col-md-2"> {{movie.raiting}}</div>
+    </div>
     <div class="row">
      <div class="col-md-3">
       <a class="btn btn-primary">Download</a>
