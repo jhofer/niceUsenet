@@ -37,44 +37,59 @@ var Movie = mongoose.model('Movie');
 Movie.find({}).remove();
 
 
-function loadThreads(movies) {
-  console.log('scrawl eacg thread html');
-  _.each(movies, function (movie) {
-    console.log('movie iteration');
-    movie.forumId = forumId;
 
-    var movieSequence = Sequence.create();
-    movieSequence.then(function (next) {
-      console.log('get thread html');
-      scrawler.getHTML(movie.threadUrl, function (html) {
-        console.log('get thread html done');
-        movie = _.merge(movie, parser.parseMovie(html));
-        next(movie);
-      });
-    }).then(function (next, movie) {
-      if (movie.imdbLink) {
-        console.log('go for the imdb');
-        scrawler.getHTML(movie.imdbLink, function (html) {
-          console.log(' imdb done');
-          movie = _.merge(movie, parser.parseImdb(html));
-          next(movie);
-        });
+var createMovies = function (movie,callbackDone){
 
-      } else {
-        next(movie);
-      }
 
-    }).then(function (next, movie) {
-      console.log(movie);
-      Movie.update({threadUrl: movie.threadUrl}, movie, {upsert: true}, function (err) {
-        if (err) {
-          console.log('failed to save movie');
-          console.log(err);
-        }
+  async.series([function (next) {
+    console.log('get thread html');
+    scrawler.getHTML(movie.threadUrl, function (html) {
+      console.log('get thread html done');
+      movie = _.merge(movie, parser.parseMovie(html));
+      next();
+    });
+  },function (next) {
+    if (movie.imdbLink) {
+      console.log('go for the imdb');
+      scrawler.getHTML(movie.imdbLink, function (html) {
+        console.log(' imdb done');
+        movie = _.merge(movie, parser.parseImdb(html));
         next();
 
       });
+
+    } else {
+      next();
+    }
+
+  },function (next) {
+    console.log('save movie');
+    Movie.update({threadUrl: movie.threadUrl}, movie, {upsert: true}, function (err) {
+      if (err) {
+        console.log('failed to save movie');
+        console.log(err);
+      }
+      next();
+
     });
+  }, function(next){
+
+    console.log("next movie");
+    next();
+    callbackDone();
+  }]);
+
+
+};
+
+
+
+function loadThreads(movies, forumId) {
+
+  console.log('scrawl eacg thread html');
+  console.log(movies);
+  async.eachSeries(movies,createMovies, function (err) {
+    console.log('All done');
   });
 }
 
@@ -82,20 +97,20 @@ function loadThreads(movies) {
 var forums = [31];
 function loadForums() {
   console.log('going to load movies');
-  _.each(forums, function (forumId) {
+  forums.forEach( function (forumId) {
+    var movies;
     async.series([
       function (next) {
         console.log('scrawl forum');
         scrawler.getHTML('http://www.usenetrevolution.info/vb/forumdisplay.php?f=' + forumId, function (html) {
           console.log('got forum html');
           // fs.writeFile('forumHtml.html', html);
-          var movies = parser.parseMovies(html);
-          console.log(movies);
-          next(movies);
+          movies = parser.parseMovies(html,forumId);
+          next();
         });
-
-      }, function (callback, movies) {
-        loadThreads(movies);
+      }, function (callback) {
+        console.log("now get all movie threads");
+        loadThreads(movies, forumId);
         callback();
       }]);
   });

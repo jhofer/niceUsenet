@@ -25,9 +25,9 @@ angular.module('niceUsenetApp', [
         controller: 'SettingsCtrl',
         authenticate: true
       })
-       .when('/hdmovies', {
-        templateUrl: 'partials/hdmovies',
-        controller: 'HdmoviesCtrl',
+       .when('/movies', {
+        templateUrl: 'partials/movies',
+        controller: 'MoviesCtrl',
         authenticate: false
       })
       .otherwise({
