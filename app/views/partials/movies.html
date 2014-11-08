@@ -1,8 +1,16 @@
 <div ng-include="'partials/navbar'"></div>
+<div class="row">
+  <div class="col-md-3">
+    Filter:
+  </div>
+  <div class="col-md-9">
+    <input  ng-model="search.$" />
+  </div>
+
+</div>
 
 
-
-<div class="row" ng-repeat="movie in movies | orderBy: 'created_at' : reverse">
+<div class="row" ng-repeat="movie in movies | filter:search |orderBy: 'created_at' : reverse">
 
   <div class="col-md-3">
   <img src="{{movie.image}}" width="100%">
@@ -21,7 +29,7 @@
     </div>
     <div class="row">
      <div class="col-md-3">
-      <a class="btn btn-primary" ng-click="download(movie._id)">Download</a>
+      <button class="btn btn-primary" ng-click="download(movie)" ng-disabled="movie.downloaded">Download</button>
       </div>
     </div>
   </div>

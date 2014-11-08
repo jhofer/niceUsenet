@@ -1,0 +1,149 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/bin/npm', 'install', 'jit-grunt', '--save-dev' ]
+2 info using npm@2.1.6
+3 info using node@v0.10.33
+4 verbose node symlink /usr/bin/node
+5 warn package.json niceusenet@0.0.0 No description
+6 warn package.json niceusenet@0.0.0 No repository field.
+7 warn package.json niceusenet@0.0.0 No README data
+8 silly cache add args [ 'jit-grunt', null ]
+9 verbose cache add spec jit-grunt
+10 silly cache add parsed spec { raw: 'jit-grunt',
+10 silly cache add   scope: null,
+10 silly cache add   name: 'jit-grunt',
+10 silly cache add   rawSpec: '',
+10 silly cache add   spec: '*',
+10 silly cache add   type: 'range' }
+11 verbose addNamed jit-grunt@*
+12 silly addNamed semver.valid null
+13 silly addNamed semver.validRange *
+14 silly addNameRange { name: 'jit-grunt', range: '*', hasData: false }
+15 verbose mapToRegistry name jit-grunt
+16 verbose mapToRegistry uri https://registry.npmjs.org/jit-grunt
+17 verbose addNameRange registry:https://registry.npmjs.org/jit-grunt not in flight; fetching
+18 verbose request on initialization, where is /jit-grunt
+19 verbose request after pass 1, where is /jit-grunt
+20 verbose request url raw /jit-grunt
+21 verbose request resolving registry [ 'https://registry.npmjs.org/', './jit-grunt' ]
+22 verbose request after pass 2, where is https://registry.npmjs.org/jit-grunt
+23 verbose request no auth needed
+24 info attempt registry request try #1 at 21:48:08
+25 verbose request id 30ca701af43766c8
+26 http request GET https://registry.npmjs.org/jit-grunt
+27 http 200 https://registry.npmjs.org/jit-grunt
+28 silly registry.get cb [ 200,
+28 silly registry.get   { date: 'Sat, 08 Nov 2014 20:46:08 GMT',
+28 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+28 silly registry.get     etag: '"3NQG8OIZHBUVW8HIJDBZT7BEK"',
+28 silly registry.get     'content-type': 'application/json',
+28 silly registry.get     'cache-control': 'max-age=60',
+28 silly registry.get     'content-length': '29769',
+28 silly registry.get     'accept-ranges': 'bytes',
+28 silly registry.get     via: '1.1 varnish',
+28 silly registry.get     age: '0',
+28 silly registry.get     'x-served-by': 'cache-lcy1131-LCY',
+28 silly registry.get     'x-cache': 'HIT',
+28 silly registry.get     'x-cache-hits': '1',
+28 silly registry.get     'x-timer': 'S1415479568.107766,VS0,VE626',
+28 silly registry.get     vary: 'Accept',
+28 silly registry.get     'keep-alive': 'timeout=10, max=50',
+28 silly registry.get     connection: 'Keep-Alive' } ]
+29 silly addNameRange number 2 { name: 'jit-grunt', range: '*', hasData: true }
+30 silly addNameRange versions [ 'jit-grunt',
+30 silly addNameRange   [ '0.0.1',
+30 silly addNameRange     '0.1.0',
+30 silly addNameRange     '0.1.1',
+30 silly addNameRange     '0.1.2',
+30 silly addNameRange     '0.2.0',
+30 silly addNameRange     '0.2.1',
+30 silly addNameRange     '0.2.2',
+30 silly addNameRange     '0.2.3',
+30 silly addNameRange     '0.3.0',
+30 silly addNameRange     '0.3.1',
+30 silly addNameRange     '0.3.2',
+30 silly addNameRange     '0.4.0',
+30 silly addNameRange     '0.4.1',
+30 silly addNameRange     '0.4.2',
+30 silly addNameRange     '0.5.0',
+30 silly addNameRange     '0.6.0',
+30 silly addNameRange     '0.7.0',
+30 silly addNameRange     '0.7.1',
+30 silly addNameRange     '0.8.0',
+30 silly addNameRange     '0.9.0' ] ]
+31 verbose addNamed jit-grunt@0.9.0
+32 silly addNamed semver.valid 0.9.0
+33 silly addNamed semver.validRange 0.9.0
+34 verbose addRemoteTarball https://registry.npmjs.org/jit-grunt/-/jit-grunt-0.9.0.tgz not in flight; adding
+35 verbose addRemoteTarball [ 'https://registry.npmjs.org/jit-grunt/-/jit-grunt-0.9.0.tgz',
+35 verbose addRemoteTarball   '254910595ab84a33298f21395186bf6adf147804' ]
+36 info retry fetch attempt 1 at 21:48:09
+37 info attempt registry request try #1 at 21:48:09
+38 http fetch GET https://registry.npmjs.org/jit-grunt/-/jit-grunt-0.9.0.tgz
+39 http fetch 200 https://registry.npmjs.org/jit-grunt/-/jit-grunt-0.9.0.tgz
+40 silly fetchAndShaCheck shasum 254910595ab84a33298f21395186bf6adf147804
+41 verbose addTmpTarball /tmp/npm-2253-bfa04210/registry.npmjs.org/jit-grunt/-/jit-grunt-0.9.0.tgz not in flight; adding
+42 verbose addTmpTarball already have metadata; skipping unpack for jit-grunt@0.9.0
+43 silly cache afterAdd jit-grunt@0.9.0
+44 verbose afterAdd /home/vagrant/.npm/jit-grunt/0.9.0/package/package.json not in flight; writing
+45 verbose afterAdd /home/vagrant/.npm/jit-grunt/0.9.0/package/package.json written
+46 silly install resolved [ { name: 'jit-grunt',
+46 silly install resolved     version: '0.9.0',
+46 silly install resolved     description: 'JIT plugin loader for Grunt.',
+46 silly install resolved     keywords: [ 'grunt', 'gruntplugin', 'jit', 'loader' ],
+46 silly install resolved     homepage: 'https://github.com/shootaroo/jit-grunt',
+46 silly install resolved     bugs: { url: 'https://github.com/shootaroo/jit-grunt/issues' },
+46 silly install resolved     license: 'MIT',
+46 silly install resolved     author: { name: 'shootaroo', email: 'shotaro.tsubouchi@gmail.com' },
+46 silly install resolved     files: [ 'lib', 'jit-grunt.js' ],
+46 silly install resolved     directories: { test: 'test/' },
+46 silly install resolved     main: 'jit-grunt',
+46 silly install resolved     repository: { type: 'git', url: 'git://github.com/shootaroo/jit-grunt.git' },
+46 silly install resolved     scripts: { test: 'grunt', precommit: 'npm test', prepush: 'npm test' },
+46 silly install resolved     devDependencies:
+46 silly install resolved      { grunt: '~0.4.0',
+46 silly install resolved        'grunt-contrib-jshint': '~0.10.0',
+46 silly install resolved        'grunt-jscs': '~0.7.0',
+46 silly install resolved        'grunt-mocha-test': '~0.12.0',
+46 silly install resolved        husky: '~0.6.0',
+46 silly install resolved        'intelli-espower-loader': '~0.4.0',
+46 silly install resolved        'power-assert': '~0.9.0',
+46 silly install resolved        sinon: '~1.10.0',
+46 silly install resolved        'time-grunt': '~1.0.0' },
+46 silly install resolved     peerDependencies: { grunt: '~0.4.0' },
+46 silly install resolved     engines: { node: '>=0.8.0' },
+46 silly install resolved     gitHead: 'aa379eca009000cb65d67d42a3822c5c7a886922',
+46 silly install resolved     _id: 'jit-grunt@0.9.0',
+46 silly install resolved     _shasum: '254910595ab84a33298f21395186bf6adf147804',
+46 silly install resolved     _from: 'jit-grunt@*',
+46 silly install resolved     _npmVersion: '1.4.21',
+46 silly install resolved     _npmUser: { name: 'shootaroo', email: 'shotaro.tsubouchi@gmail.com' },
+46 silly install resolved     maintainers: [ [Object] ],
+46 silly install resolved     dist:
+46 silly install resolved      { shasum: '254910595ab84a33298f21395186bf6adf147804',
+46 silly install resolved        tarball: 'http://registry.npmjs.org/jit-grunt/-/jit-grunt-0.9.0.tgz' },
+46 silly install resolved     _resolved: 'https://registry.npmjs.org/jit-grunt/-/jit-grunt-0.9.0.tgz' } ]
+47 info install jit-grunt@0.9.0 into /project
+48 info installOne jit-grunt@0.9.0
+49 verbose installOne of jit-grunt to /project not in flight; installing
+50 warn locking Error: EACCES, open '/home/vagrant/.npm/_locks/jit-grunt-f76241af7c33fc0f.lock'
+50 warn locking  /home/vagrant/.npm/_locks/jit-grunt-f76241af7c33fc0f.lock failed { [Error: EACCES, open '/home/vagrant/.npm/_locks/jit-grunt-f76241af7c33fc0f.lock']
+50 warn locking   errno: 3,
+50 warn locking   code: 'EACCES',
+50 warn locking   path: '/home/vagrant/.npm/_locks/jit-grunt-f76241af7c33fc0f.lock' }
+51 verbose stack Error: Attempt to unlock /project/node_modules/jit-grunt, which hasn't been locked
+51 verbose stack     at unlock (/usr/lib/node_modules/npm/lib/utils/locker.js:66:11)
+51 verbose stack     at cb (/usr/lib/node_modules/npm/lib/install.js:929:5)
+51 verbose stack     at /usr/lib/node_modules/npm/lib/install.js:933:20
+51 verbose stack     at /usr/lib/node_modules/npm/lib/utils/locker.js:40:9
+51 verbose stack     at cb (/usr/lib/node_modules/npm/node_modules/lockfile/lockfile.js:149:38)
+51 verbose stack     at /usr/lib/node_modules/npm/node_modules/lockfile/lockfile.js:177:38
+51 verbose stack     at Object.oncomplete (fs.js:107:15)
+52 verbose cwd /project
+53 error Linux 2.6.32-38-generic
+54 error argv "node" "/usr/bin/npm" "install" "jit-grunt" "--save-dev"
+55 error node v0.10.33
+56 error npm  v2.1.6
+57 error Attempt to unlock /project/node_modules/jit-grunt, which hasn't been locked
+58 error If you need help, you may report this error at:
+58 error     <http://github.com/npm/npm/issues>
+59 verbose exit [ 1, true ]

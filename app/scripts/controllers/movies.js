@@ -1,14 +1,17 @@
 'use strict';
 
 angular.module('niceUsenetApp')
-  .controller('MoviesCtrl', function ($scope, $http, Movie) {
+  .controller('MoviesCtrl', function ($scope, $http, Movie, sabnzbd) {
+
 
 
     $scope.movies = Movie.query();
+    console.log(sabnzbd());
+    $scope.download = function (movie) {
+      Movie.download({'id':movie._id}, function() {
+        movie.downloaded = true;
 
-    $scope.download = function (id) {
-      console.log(id);
-      Movie.download({'id':id});
+      });
     };
 
   });

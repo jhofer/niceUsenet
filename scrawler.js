@@ -115,11 +115,11 @@ function loadForums() {
       }]);
   });
 }
-
+scrawler.init();
 scrawler.on('ready', function () {
   loadForums();
 
-  var minutes = 5, the_interval = minutes * 60 * 1000;
+  var minutes = 20, the_interval = minutes * 60 * 1000;
   setInterval(function () {
     loadForums();
   }, the_interval);
