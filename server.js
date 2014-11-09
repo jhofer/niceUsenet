@@ -3,8 +3,9 @@
 var express = require('express'),
 path = require('path'),
 fs = require('fs'),
+scrawler = require('./lib/services/usenetScrawler'),
 mongoose = require('mongoose');
-
+scrawler.init();
 
 /**
  * Main application file
@@ -46,12 +47,17 @@ require('./lib/config/express')(app);
 require('./lib/routes')(app);
 
 // Start server
-app.listen(config.port, function () {
-  console.log('Express server listening on port %d in %s mode', config.port, app.get('env'));
+scrawler.on('ready', function(){
+  app.listen(config.port, function () {
+    console.log('Express server listening on port %d in %s mode', config.port, app.get('env'));
+  });
+
+
 });
 
+
 // Expose app
-exports = module.exports = app;
+var exports = module.exports = app;
 
 
 
