@@ -33,9 +33,10 @@ fs.readdirSync(modelsPath).forEach(function (file) {
 
 var Movie = mongoose.model('Movie');
 
-
-Movie.find({}).remove();
-
+//clean movies in development
+if(process.env.NODE_ENV === 'development'){}
+  Movie.find({}).remove();
+}
 
 
 var createMovies = function (movie,callbackDone){
@@ -63,15 +64,44 @@ var createMovies = function (movie,callbackDone){
     }
 
   },function (next) {
-    console.log('save movie');
-    Movie.update({threadUrl: movie.threadUrl}, movie, {upsert: true}, function (err) {
+
+   var now = new Date();
+
+    Movie.find({threadUrl: movie.threadUrl}, function (err, savedmovie) {
       if (err) {
-        console.log('failed to save movie');
+        console.log('failed to find movie');
+        console.log(JSON.stringify(movie));
         console.log(err);
       }
-      next();
+      if(savedmovie){
+        //update
+        movie.updated_at = now;
+        Movie.update({threadUrl: movie.threadUrl},movie, function (err) {
+          if (err) {
+            console.log('failed to update movie');
+            console.log(JSON.stringify(movie));
+            console.log(err);
+          }
+          next();
+      }else{
+        //save
+        movieObject = new Movie(movie);
+        movieObject.updated_at = now;
+        movie.created_at = now;
+        movieObject.save(function(err) {
+        if (err) {
+            console.log('failed to save movie');
+            console.log(JSON.stringify(movie));
+            console.log(err);
+        }
+        next();
+      });
+      }
 
-    });
+    }
+
+
+  
   }, function(next){
 
     console.log("next movie");
