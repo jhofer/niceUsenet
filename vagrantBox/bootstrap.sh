@@ -22,6 +22,7 @@ sudo apt-get  --yes --force-yes install build-essential #such as those that requ
 echo =====================================
 echo install python 2.6
 echo =====================================
+sudo apt-get install python-software-properties
 sudo add-apt-repository ppa:fkrull/deadsnakes
 sudo apt-get  update
 sudo apt-get  --yes --force-yes install python2.6
@@ -61,16 +62,4 @@ sudo gem update --system
 sudo gem install compass
 
 
-echo =====================================
-echo link node_modules to vm
-echo =====================================
-sudo mkdir ~/node_modules
-sudo ln -s ~/node_modules /project/node_modules
 
-
-
-echo =====================================
-echo install project dependencies
-echo =====================================
-cd /project && sudo npm install
-cd /project && bower

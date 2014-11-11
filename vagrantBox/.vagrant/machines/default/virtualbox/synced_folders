@@ -1,1 +1,1 @@
-{"virtualbox":{"/project":{"guestpath":"/project","hostpath":"C:/niceUsenet","disabled":false},"/vagrant":{"guestpath":"/vagrant","hostpath":"C:/niceUsenet/vagrantBox","disabled":false}}}
+{"virtualbox":{"/project":{"guestpath":"/project","hostpath":"E:/dev/niceUsenet","disabled":false},"/vagrant":{"guestpath":"/vagrant","hostpath":"E:/dev/niceUsenet/vagrantBox","disabled":false},"/nzb":{"guestpath":"/nzb","hostpath":"C:/nzb","disabled":false}}}

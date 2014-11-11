@@ -1,0 +1,13 @@
+echo =====================================
+echo link node_modules to vm
+echo =====================================
+sudo mkdir ~/node_modules
+sudo ln -s ~/node_modules /project/node_modules
+
+
+
+echo =====================================
+echo install project dependencies
+echo =====================================
+cd /project && sudo npm install
+cd /project && sudo bower

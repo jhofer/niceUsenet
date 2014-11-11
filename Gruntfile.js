@@ -56,21 +56,21 @@ module.exports = function (grunt) {
           livereload: true
         }
       },
-      mochaTest: {
-        files: ['test/server/{,*/}*.js'],
-        tasks: ['mochaTest']
-      },
-      jsTest: {
-        files: ['test/client/spec/{,*/}*.js'],
-        tasks: ['newer:jshint:test', 'karma']
-      },
-      compass: {
-        files: ['<%= yeoman.app %>/styles/{,*/}*.{scss,sass}'],
-        tasks: ['compass:server', 'autoprefixer']
-      },
-      gruntfile: {
-        files: ['Gruntfile.js']
-      },
+      //mochaTest: {
+      //  files: ['test/server/{,*/}*.js'],
+      //  tasks: ['mochaTest']
+      //},
+      //jsTest: {
+      //  files: ['test/client/spec/{,*/}*.js'],
+      //  tasks: ['newer:jshint:test', 'karma']
+      //},
+      //compass: {
+      //  files: ['<%= yeoman.app %>/styles/{,*/}*.{scss,sass}'],
+      //  tasks: ['compass:server', 'autoprefixer']
+      //},
+      //gruntfile: {
+      //  files: ['Gruntfile.js']
+      //},
       livereload: {
         files: [
           '<%= yeoman.app %>/views/{,*//*}*.{html,jade}',
