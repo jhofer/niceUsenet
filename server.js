@@ -47,14 +47,10 @@ require('./lib/config/express')(app);
 require('./lib/routes')(app);
 
 // Start server
-scrawler.on('ready', function(){
-  app.listen(config.port, function () {
-    console.log('Express server listening on port %d in %s mode', config.port, app.get('env'));
-  });
 
-
+app.listen(config.port, function () {
+  console.log('Express server listening on port %d in %s mode', config.port, app.get('env'));
 });
-
 
 // Expose app
 var exports = module.exports = app;

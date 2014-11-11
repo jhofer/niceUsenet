@@ -34,12 +34,12 @@ fs.readdirSync(modelsPath).forEach(function (file) {
 var Movie = mongoose.model('Movie');
 
 //clean movies in development
-if(process.env.NODE_ENV === 'development'){}
+if (process.env.NODE_ENV === 'development') {
   Movie.find({}).remove();
 }
 
 
-var createMovies = function (movie,callbackDone){
+var createMovies = function (movie, callbackDone) {
 
 
   async.series([function (next) {
@@ -49,7 +49,7 @@ var createMovies = function (movie,callbackDone){
       movie = _.merge(movie, parser.parseMovie(html));
       next();
     });
-  },function (next) {
+  }, function (next) {
     if (movie.imdbLink) {
       console.log('go for the imdb');
       scrawler.getHTML(movie.imdbLink, function (html) {
@@ -63,62 +63,62 @@ var createMovies = function (movie,callbackDone){
       next();
     }
 
-  },function (next) {
+  }, function (next) {
 
-   var now = new Date();
-
-    Movie.find({threadUrl: movie.threadUrl}, function (err, savedmovie) {
+    var now = new Date();
+    console.log('save movie '+ movie.threadUrl);
+    Movie.find({threadUrl: movie.threadUrl}, function (err, movies) {
       if (err) {
         console.log('failed to find movie');
         console.log(JSON.stringify(movie));
         console.log(err);
       }
-      if(savedmovie){
+      if (movies.length ==1) {
         //update
+
+        console.log('update movie');
         movie.updated_at = now;
-        Movie.update({threadUrl: movie.threadUrl},movie, function (err) {
+        Movie.update({threadUrl: movie.threadUrl}, movie, function (err) {
           if (err) {
             console.log('failed to update movie');
             console.log(JSON.stringify(movie));
             console.log(err);
           }
           next();
-      }else{
+        });
+      } else {
         //save
-        movieObject = new Movie(movie);
+        console.log('save movie');
+        var movieObject = new Movie(movie);
         movieObject.updated_at = now;
-        movie.created_at = now;
-        movieObject.save(function(err) {
-        if (err) {
+        movieObject.created_at = now;
+        movieObject.save(function (err) {
+          if (err) {
             console.log('failed to save movie');
             console.log(JSON.stringify(movie));
             console.log(err);
-        }
-        next();
-      });
+          }
+          next();
+        });
       }
 
-    }
+    });
 
 
-  
-  }, function(next){
+  }, function (next) {
 
     console.log("next movie");
     next();
     callbackDone();
   }]);
-
-
 };
-
 
 
 function loadThreads(movies, forumId) {
 
   console.log('scrawl eacg thread html');
   console.log(movies);
-  async.eachSeries(movies,createMovies, function (err) {
+  async.eachSeries(movies, createMovies, function (err) {
     console.log('All done');
   });
 }
@@ -127,15 +127,15 @@ function loadThreads(movies, forumId) {
 var forums = [31];
 function loadForums() {
   console.log('going to load movies');
-  forums.forEach( function (forumId) {
+  forums.forEach(function (forumId) {
     var movies;
     async.series([
       function (next) {
         console.log('scrawl forum');
         scrawler.getHTML('http://www.usenetrevolution.info/vb/forumdisplay.php?f=' + forumId, function (html) {
           console.log('got forum html');
-          // fs.writeFile('forumHtml.html', html);
-          movies = parser.parseMovies(html,forumId);
+           fs.writeFile('forumHtml.html', html);
+          movies = parser.parseMovies(html, forumId);
           next();
         });
       }, function (callback) {
@@ -145,6 +145,8 @@ function loadForums() {
       }]);
   });
 }
+
+
 scrawler.init();
 scrawler.on('ready', function () {
   loadForums();

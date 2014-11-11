@@ -109,21 +109,21 @@ describe('forumParser', function () {
     });
   });
 
-
-  describe('parseDownloadLink', function(){
-    var thx;
-    before(function(){
-      thx = forumParser.parseDownloadInfos(thxHtml);
-    });
-
-    it('should return the download Link', function(){
-      thx.should.have.property('downloadLink','http://www.usenetrevolution.info/vb/attachment.php?attachmentid=274712&d=1414596607');
-    });
-
-    it('should return the download password', function(){
-      thx.should.have.property('password','UsenetRevolution');
-    });
-  });
+  //
+  //describe('parseDownloadLink', function(){
+  //  var thx;
+  //  before(function(){
+  //    thx = forumParser.parseDownloadInfos(thxHtml);
+  //  });
+  //
+  //  it('should return the download Link', function(){
+  //    thx.should.have.property('downloadLink','http://www.usenetrevolution.info/vb/attachment.php?attachmentid=274712&d=1414596607');
+  //  });
+  //
+  //  it('should return the download password', function(){
+  //    thx.should.have.property('password','UsenetRevolution');
+  //  });
+  //});
 
 
 });

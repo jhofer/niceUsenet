@@ -62,9 +62,17 @@ describe('Movie Model', function() {
 
     var movie = new Movie(json);
     movie.save(function  (err) {
-        should.not.exist(err)
+        should.not.exist(err);
+
+      Movie.find({threadUrl: json.threadUrl}, function (err, savedmovie) {
+        savedmovie.should.have.length(1);
+        console.log(JSON.stringify(savedmovie));
         done();
+      });
+
     });
+
+
 
 
 
