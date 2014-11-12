@@ -1,0 +1,177 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/bin/npm', 'install' ]
+2 info using npm@2.1.6
+3 info using node@v0.10.33
+4 verbose node symlink /usr/bin/node
+5 warn package.json niceusenet@0.0.0 No description
+6 warn package.json niceusenet@0.0.0 No repository field.
+7 warn package.json niceusenet@0.0.0 No README data
+8 verbose install where, deps [ '/project',
+8 verbose install   [ 'async',
+8 verbose install     'cheerio',
+8 verbose install     'connect-mongo',
+8 verbose install     'ejs',
+8 verbose install     'express',
+8 verbose install     'lodash',
+8 verbose install     'mongoose',
+8 verbose install     'mongoose-validators',
+8 verbose install     'passport',
+8 verbose install     'passport-local',
+8 verbose install     'phantom',
+8 verbose install     'phantomjs',
+8 verbose install     'request',
+8 verbose install     'sequence',
+8 verbose install     'tough-cookie',
+8 verbose install     'connect-livereload',
+8 verbose install     'grunt',
+8 verbose install     'grunt-autoprefixer',
+8 verbose install     'grunt-bower-install',
+8 verbose install     'grunt-concurrent',
+8 verbose install     'grunt-contrib-clean',
+8 verbose install     'grunt-contrib-coffee',
+8 verbose install     'grunt-contrib-compass',
+8 verbose install     'grunt-contrib-concat',
+8 verbose install     'grunt-contrib-copy',
+8 verbose install     'grunt-contrib-cssmin',
+8 verbose install     'grunt-contrib-htmlmin',
+8 verbose install     'grunt-contrib-imagemin',
+8 verbose install     'grunt-contrib-jshint',
+8 verbose install     'grunt-contrib-uglify',
+8 verbose install     'grunt-contrib-watch',
+8 verbose install     'grunt-env',
+8 verbose install     'grunt-express-server',
+8 verbose install     'grunt-google-cdn',
+8 verbose install     'grunt-karma',
+8 verbose install     'grunt-mocha-test',
+8 verbose install     'grunt-newer',
+8 verbose install     'grunt-ngmin',
+8 verbose install     'grunt-node-inspector',
+8 verbose install     'grunt-nodemon',
+8 verbose install     'grunt-open',
+8 verbose install     'grunt-rev',
+8 verbose install     'grunt-svgmin',
+8 verbose install     'grunt-usemin',
+8 verbose install     'jit-grunt',
+8 verbose install     'jshint-stylish',
+8 verbose install     'karma',
+8 verbose install     'karma-chrome-launcher',
+8 verbose install     'karma-coffee-preprocessor',
+8 verbose install     'karma-firefox-launcher',
+8 verbose install     'karma-html2js-preprocessor',
+8 verbose install     'karma-jasmine',
+8 verbose install     'karma-ng-html2js-preprocessor',
+8 verbose install     'karma-ng-scenario',
+8 verbose install     'karma-phantomjs-launcher',
+8 verbose install     'karma-requirejs',
+8 verbose install     'karma-script-launcher',
+8 verbose install     'load-grunt-tasks',
+8 verbose install     'open',
+8 verbose install     'requirejs',
+8 verbose install     'should',
+8 verbose install     'supertest',
+8 verbose install     'time-grunt' ] ]
+9 verbose install where, peers [ '/project', [] ]
+10 info preinstall niceusenet@0.0.0
+11 verbose already installed skipping async@^0.9.0 /project
+12 verbose already installed skipping cheerio@0.17.0 /project
+13 verbose already installed skipping connect-mongo@~0.4.0 /project
+14 verbose already installed skipping ejs@~0.8.4 /project
+15 verbose already installed skipping express@~3.4.3 /project
+16 verbose already installed skipping lodash@~2.4.1 /project
+17 verbose already installed skipping mongoose@~3.8.8 /project
+18 verbose already installed skipping mongoose-validators@0.1.0 /project
+19 verbose already installed skipping passport@~0.2.0 /project
+20 verbose already installed skipping passport-local@~0.1.6 /project
+21 verbose already installed skipping phantom@^0.7.0 /project
+22 silly cache add args [ 'phantomjs@git://github.com/mrampersad/phantomjs.git#master',
+22 silly cache add   null ]
+23 verbose cache add spec phantomjs@git://github.com/mrampersad/phantomjs.git#master
+24 verbose already installed skipping request@2.45.0 /project
+25 verbose already installed skipping sequence@^3.0.0 /project
+26 verbose already installed skipping tough-cookie@0.12.1 /project
+27 verbose already installed skipping connect-livereload@~0.3.0 /project
+28 verbose already installed skipping grunt@~0.4.1 /project
+29 verbose already installed skipping grunt-autoprefixer@~0.4.0 /project
+30 verbose already installed skipping grunt-bower-install@~0.7.0 /project
+31 verbose already installed skipping grunt-concurrent@~0.4.1 /project
+32 silly cache add parsed spec { raw: 'phantomjs@git://github.com/mrampersad/phantomjs.git#master',
+32 silly cache add   scope: null,
+32 silly cache add   name: 'phantomjs',
+32 silly cache add   rawSpec: 'git://github.com/mrampersad/phantomjs.git#master',
+32 silly cache add   spec: 'git://github.com/mrampersad/phantomjs.git#master',
+32 silly cache add   type: 'git' }
+33 verbose addRemoteGit u="git://github.com/mrampersad/phantomjs.git#master" silent=false
+34 silly addRemoteGit parsed { protocol: 'git:',
+34 silly addRemoteGit   slashes: true,
+34 silly addRemoteGit   auth: null,
+34 silly addRemoteGit   host: 'github.com',
+34 silly addRemoteGit   port: null,
+34 silly addRemoteGit   hostname: 'github.com',
+34 silly addRemoteGit   hash: '#master',
+34 silly addRemoteGit   search: '',
+34 silly addRemoteGit   query: {},
+34 silly addRemoteGit   pathname: '/mrampersad/phantomjs.git',
+34 silly addRemoteGit   path: '/mrampersad/phantomjs.git',
+34 silly addRemoteGit   href: 'git://github.com/mrampersad/phantomjs.git#master' }
+35 verbose addRemoteGit git://github.com/mrampersad/phantomjs.git not in flight; cloning
+36 verbose addRemoteGit [ 'git://github.com/mrampersad/phantomjs.git', 'master' ]
+37 verbose already installed skipping grunt-contrib-clean@~0.5.0 /project
+38 verbose already installed skipping grunt-contrib-coffee@~0.7.0 /project
+39 verbose already installed skipping grunt-contrib-compass@~0.6.0 /project
+40 verbose already installed skipping grunt-contrib-concat@~0.3.0 /project
+41 verbose already installed skipping grunt-contrib-copy@~0.4.1 /project
+42 verbose already installed skipping grunt-contrib-cssmin@~0.7.0 /project
+43 verbose already installed skipping grunt-contrib-htmlmin@~0.1.3 /project
+44 verbose already installed skipping grunt-contrib-imagemin@~0.5.0 /project
+45 verbose already installed skipping grunt-contrib-jshint@~0.7.1 /project
+46 verbose already installed skipping grunt-contrib-uglify@~0.2.0 /project
+47 verbose already installed skipping grunt-contrib-watch@~0.5.2 /project
+48 verbose already installed skipping grunt-env@~0.4.1 /project
+49 verbose already installed skipping grunt-express-server@~0.4.5 /project
+50 verbose already installed skipping grunt-google-cdn@~0.2.0 /project
+51 verbose already installed skipping grunt-karma@~0.6.2 /project
+52 verbose already installed skipping grunt-mocha-test@~0.8.1 /project
+53 verbose already installed skipping grunt-newer@~0.5.4 /project
+54 verbose already installed skipping grunt-ngmin@~0.0.2 /project
+55 verbose already installed skipping grunt-node-inspector@~0.1.3 /project
+56 verbose already installed skipping grunt-nodemon@~0.2.0 /project
+57 verbose already installed skipping grunt-open@~0.2.0 /project
+58 verbose already installed skipping grunt-rev@~0.1.0 /project
+59 verbose already installed skipping grunt-svgmin@~0.2.0 /project
+60 verbose already installed skipping grunt-usemin@~2.0.0 /project
+61 verbose already installed skipping jit-grunt@^0.9.0 /project
+62 verbose already installed skipping jshint-stylish@~0.1.3 /project
+63 verbose already installed skipping karma@~0.10.9 /project
+64 verbose already installed skipping karma-chrome-launcher@~0.1.2 /project
+65 verbose already installed skipping karma-coffee-preprocessor@~0.1.2 /project
+66 verbose already installed skipping karma-firefox-launcher@~0.1.3 /project
+67 verbose already installed skipping karma-html2js-preprocessor@~0.1.0 /project
+68 verbose already installed skipping karma-jasmine@~0.1.5 /project
+69 verbose already installed skipping karma-ng-html2js-preprocessor@~0.1.0 /project
+70 verbose already installed skipping karma-ng-scenario@~0.1.0 /project
+71 verbose already installed skipping karma-phantomjs-launcher@~0.1.1 /project
+72 verbose already installed skipping karma-requirejs@~0.2.1 /project
+73 verbose already installed skipping karma-script-launcher@~0.1.0 /project
+74 verbose already installed skipping load-grunt-tasks@~0.2.0 /project
+75 verbose already installed skipping open@~0.0.4 /project
+76 verbose already installed skipping requirejs@~2.1.10 /project
+77 verbose already installed skipping should@~2.1.0 /project
+78 verbose already installed skipping supertest@~0.8.2 /project
+79 verbose already installed skipping time-grunt@~0.2.1 /project
+80 verbose stack Error: EACCES, mkdir '/home/vagrant/.npm/_git-remotes/git-github-com-mrampersad-phantomjs-git-ce416f2f'
+81 verbose cwd /project
+82 error Linux 2.6.32-38-generic
+83 error argv "node" "/usr/bin/npm" "install"
+84 error node v0.10.33
+85 error npm  v2.1.6
+86 error path /home/vagrant/.npm/_git-remotes/git-github-com-mrampersad-phantomjs-git-ce416f2f
+87 error code EACCES
+88 error errno 3
+89 error Error: EACCES, mkdir '/home/vagrant/.npm/_git-remotes/git-github-com-mrampersad-phantomjs-git-ce416f2f'
+89 error  { [Error: EACCES, mkdir '/home/vagrant/.npm/_git-remotes/git-github-com-mrampersad-phantomjs-git-ce416f2f']
+89 error   errno: 3,
+89 error   code: 'EACCES',
+89 error   path: '/home/vagrant/.npm/_git-remotes/git-github-com-mrampersad-phantomjs-git-ce416f2f',
+89 error   parent: 'niceusenet' }
+90 error Please try running this command again as root/Administrator.
+91 verbose exit [ 3, true ]
