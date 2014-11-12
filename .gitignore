@@ -6,4 +6,5 @@ public
 app/bower_components
 heroku
 /views
+/vagrantBox/.vagrant
 dist
