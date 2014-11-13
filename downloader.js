@@ -84,9 +84,9 @@ var spookyConfig = {
 
 
 
-function getFile(savedMovie, meta, callback) {
+function getFile(savedMovie, callback) {
 
-console.log('filenName '+meta.fileName);
+console.log('filenName '+savedMovie.fileName);
 
 
   var spooky = new Spooky(
@@ -118,7 +118,7 @@ console.log('filenName '+meta.fileName);
         }
       });
       spooky.thenOpen(savedMovie.threadUrl);
-      spooky.then([meta, function () {
+      spooky.then([savedMovie.toObject(), function () {
         /* jshint ignore:start */
         var downloadPath = this.getElementAttribute('.unhiddencontentbox table a', 'href');
        // var fileName = this.fetchText('.unhiddencontentbox table a');
@@ -172,7 +172,9 @@ function downloadMovie(savedMovie, callbackDone){
           storePw(html);
           var downloadlink = parser.parseDownloadlink(html);
           scrawler.getFileMetaInfo(downloadlink, function(meta){
-            getFile(savedMovie,meta, next);
+            savedMovie.fileName = meta.fileName;
+            savedMovie.save();
+            getFile(savedMovie,next);
           });
 
         });
@@ -180,7 +182,9 @@ function downloadMovie(savedMovie, callbackDone){
         storePw(threadHtml);
         var downloadlink = parser.parseDownloadlink(threadHtml);
         scrawler.getFileMetaInfo(downloadlink, function(meta){
-          getFile(savedMovie, meta,next);
+          savedMovie.fileName = meta.fileName;
+          savedMovie.save();
+          getFile(savedMovie, next);
         });
 
       }
