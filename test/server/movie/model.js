@@ -9,7 +9,7 @@ var movie;
 describe('Movie Model', function() {
   before(function(done) {
     movie = new Movie({
-      title: 'awesome movie',
+      title: 'awesome movie.js',
       threadUrl: 'url',
       forumId: '31',
       thxLink: 'url'
@@ -32,7 +32,7 @@ describe('Movie Model', function() {
     });
   });
 
-  it('should fail when saving a duplicate movie', function(done) {
+  it('should fail when saving a duplicate movie.js', function(done) {
     movie.save();
     var movieDup = new Movie(movie);
     movieDup.save(function(err) {
@@ -51,7 +51,7 @@ describe('Movie Model', function() {
 
   it('should save a json object', function(done){
     var json = {
-      title: 'awesome movie',
+      title: 'awesome movie.js',
       threadUrl: 'url',
       forumId: '31',
       thxLink: 'url'

@@ -5,10 +5,23 @@ angular.module('niceUsenetApp')
 
 
 
+
     $scope.movies = Movie.query();
+
+
+    $scope.canDownload = function(movie){
+      return movie.status === 'download';
+    };
+
+
+
     $scope.download = function (movie) {
+      movie.downloaded = true;
+      //movie.status = 'requested';
       Movie.download({'id':movie._id}, function() {
-        movie.downloaded = true;
+        Movie.get({'id':movie._id}, function(newMovie) {
+          movie.status = newMovie.status;
+        });
 
       });
     };

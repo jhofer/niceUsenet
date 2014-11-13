@@ -7,6 +7,7 @@ var
   scrawler = require('./lib/services/usenetScrawler.js'),
   parser = require('./lib/services/forumParser.js'),
   _ = require('lodash'),
+
   async = require('async');
 
 
@@ -31,11 +32,13 @@ fs.readdirSync(modelsPath).forEach(function (file) {
   }
 });
 
-var Movie = mongoose.model('Movie');
+var Movie = mongoose.model('Movie'),
+  ms = require('./lib/services/movie.js');
 
 //clean movies in development
 if (process.env.NODE_ENV === 'development') {
-  Movie.find({}).remove();
+  console.log('delete movies');
+  Movie.find({}).remove().exec();
 }
 
 
@@ -43,18 +46,15 @@ var createMovies = function (movie, callbackDone) {
 
 
   async.series([function (next) {
-    console.log('get thread html');
     scrawler.getHTML(movie.threadUrl, function (html) {
-      console.log('get thread html done');
-      movie = _.merge(movie, parser.parseMovie(html));
+      movie =  _.merge(movie, parser.parseMovie(html));
       next();
     });
   }, function (next) {
     if (movie.imdbLink) {
-      console.log('go for the imdb');
+      console.log('load imdb: '+movie.imdbLink);
       scrawler.getHTML(movie.imdbLink, function (html) {
-        console.log(' imdb done');
-        movie = _.merge(movie, parser.parseImdb(html));
+        movie =  _.merge(movie, parser.parseImdb(html));
         next();
 
       });
@@ -65,49 +65,9 @@ var createMovies = function (movie, callbackDone) {
 
   }, function (next) {
 
-    var now = new Date();
-    console.log('save movie '+ movie.threadUrl);
-    Movie.find({threadUrl: movie.threadUrl}, function (err, movies) {
-      if (err) {
-        console.log('failed to find movie');
-        console.log(JSON.stringify(movie));
-        console.log(err);
-      }
-      if (movies.length ==1) {
-        //update
-
-        console.log('update movie');
-        movie.updated_at = now;
-        Movie.update({threadUrl: movie.threadUrl}, movie, function (err) {
-          if (err) {
-            console.log('failed to update movie');
-            console.log(JSON.stringify(movie));
-            console.log(err);
-          }
-          next();
-        });
-      } else {
-        //save
-        console.log('save movie');
-        var movieObject = new Movie(movie);
-        movieObject.updated_at = now;
-        movieObject.created_at = now;
-        movieObject.save(function (err) {
-          if (err) {
-            console.log('failed to save movie');
-            console.log(JSON.stringify(movie));
-            console.log(err);
-          }
-          next();
-        });
-      }
-
-    });
-
+    ms.createOrUpdate(movie,next);
 
   }, function (next) {
-
-    console.log("next movie");
     next();
     callbackDone();
   }]);
@@ -139,7 +99,7 @@ function loadForums() {
           next();
         });
       }, function (callback) {
-        console.log("now get all movie threads");
+        console.log("now get all movie.js threads");
         loadThreads(movies, forumId);
         callback();
       }]);

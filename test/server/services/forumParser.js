@@ -53,7 +53,7 @@ describe('forumParser', function () {
       movies = forumParser.parseMovies(moviesHtml);
     });
 
-    it('should return an array of movie objects', function () {
+    it('should return an array of movie.js objects', function () {
       movies.should.be.an.instanceOf(Array);
       movies.should.have.length(40);
     });

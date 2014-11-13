@@ -4,6 +4,7 @@ var express = require('express'),
 path = require('path'),
 fs = require('fs'),
 scrawler = require('./lib/services/usenetScrawler'),
+ // downloader = require('./downloader.js'),
 mongoose = require('mongoose');
 scrawler.init();
 
@@ -34,7 +35,7 @@ require('./lib/config/dummydata');
 // Passport Configuration
 var passport = require('./lib/config/passport');
 
-
+var Movie = mongoose.model('Movie');
 
 
 
@@ -55,6 +56,10 @@ app.listen(config.port, function () {
 // Expose app
 var exports = module.exports = app;
 
+//
+//scrawler.on('ready',function(){
+//  downloader.download();
+//});
 
 
 

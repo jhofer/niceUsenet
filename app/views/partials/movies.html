@@ -29,7 +29,7 @@
     </div>
     <div class="row">
      <div class="col-md-3">
-      <button class="btn btn-primary" ng-click="download(movie)" ng-disabled="movie.downloaded">Download</button>
+      <button class="btn btn-primary" ng-click="download(movie)" ng-disabled="!canDownload(movie)">{{movie.status}}</button>
       </div>
     </div>
   </div>
