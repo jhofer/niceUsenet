@@ -1,28 +1,29 @@
 
 <div ng-include="'partials/navbar'"></div>
 <div class="row">
-  <div class="col-md-4">
+  <div class="col-xs-4">
 
   </div>
-  <div class="col-md-8">
+  <div class="col-xs-8">
     <input  ng-model="search.$" />
   </div>
 
 </div>
 
 
-<div class="row"  ng-repeat="movies in movieMap | movieFilter:search ">
+<div class="row top-buffer panel panel-default"  ng-repeat="movies in movieMap | movieFilter:search ">
 
-  <div class="col-md-4">
+  <div class="col-xs-4">
     <img src="{{movies[0].image}}" width="100%" class="movieImage" >
   </div>
 
-  <div class="col-md-8">
+  <div class="col-xs-8">
       <moviestack movies="movies" search="search"></moviestack>
   </div>
-
-
 </div>
+
+
+
 
 <div class="footer">
   <p>with ♥ from wg.spasti 87</p>

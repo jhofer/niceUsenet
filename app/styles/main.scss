@@ -13,6 +13,7 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
 body {
     padding-top: 20px;
     padding-bottom: 20px;
+  background-color: lightgrey;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -97,12 +98,17 @@ body {
 .imdbRaiting{
   font-size: 18px;
   padding-top:22px;
-  padding-left: 19px;
+
   height: 65px;
   width: 65px;
+  text-align: center;
   background-image: url(../images/imdbStar.png);
 }
 
 .movieImage{
   padding:5px;
+}
+.top-buffer {
+  padding:20px;
+  margin-top:20px;
 }
