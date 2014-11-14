@@ -30,7 +30,7 @@ module.exports = function (grunt) {
     },
     express: {
       options: {
-        port: process.env.PORT || 9000
+        port: process.env.PORT || 3000
       },
       dev: {
         options: {
@@ -360,7 +360,7 @@ module.exports = function (grunt) {
           dest: '<%= yeoman.dist %>',
           src: [
             'package.json',
-            'server.js',
+            '**.js',
             'lib/**/*'
           ]
         }]

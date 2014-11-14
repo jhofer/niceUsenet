@@ -36,10 +36,10 @@ var Movie = mongoose.model('Movie'),
   ms = require('./lib/services/movie.js');
 
 //clean movies in development
-if (process.env.NODE_ENV === 'development') {
-  console.log('delete movies');
-  Movie.find({}).remove().exec();
-}
+//if (process.env.NODE_ENV === 'development') {
+//  console.log('delete movies');
+//  Movie.find({}).remove().exec();
+//}
 
 
 var createMovies = function (movie, callbackDone) {
@@ -104,9 +104,11 @@ function loadForum(forumUrl, callbackDone) {
       callbackDone();
     }]);
 }
-var forums = ['http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
-              'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39'];
+
 function loadForums() {
+  var forums = ['http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+    'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39'];
+
   console.log('going to load movies');
   async.eachSeries(forums, loadForum, function (err) {
     if(err)throw err;

@@ -7,6 +7,7 @@
     "connect-mongo": "~0.4.0",
     "ejs": "~0.8.4",
     "express": "~3.4.3",
+    "forever-monitor": "^1.5.2",
     "lodash": "~2.4.1",
     "mongoose": "~3.8.8",
     "mongoose-validators": "0.1.0",

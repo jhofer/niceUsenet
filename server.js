@@ -29,14 +29,27 @@ fs.readdirSync(modelsPath).forEach(function (file) {
 }
 });
 
-// Populate empty DB with sample data
-require('./lib/config/dummydata');
 
 // Passport Configuration
 var passport = require('./lib/config/passport');
 
 var Movie = mongoose.model('Movie');
+var User = mongoose.model('User');
 
+
+// Clear old users, then add a default user
+User.find({}).remove(function() {
+  User.create({
+      provider: 'local',
+      name: 'serverlat',
+      email: 'serverlat.server@gmail.com',
+      password: 'Over9000',
+      admin: true
+    }, function() {
+      console.log('finished created admin');
+    }
+  );
+});
 
 
 var app = express();

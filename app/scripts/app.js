@@ -18,10 +18,10 @@ angular.module('niceUsenetApp', [
         templateUrl: 'partials/login',
         controller: 'LoginCtrl'
       })
-      .when('/signup', {
-        templateUrl: 'partials/signup',
-        controller: 'SignupCtrl'
-      })
+      //.when('/signup', {
+      //  templateUrl: 'partials/signup',
+      //  controller: 'SignupCtrl'
+      //})
       .when('/settings', {
         templateUrl: 'partials/settings',
         controller: 'SettingsCtrl',
@@ -30,7 +30,7 @@ angular.module('niceUsenetApp', [
        .when('/movies', {
         templateUrl: 'partials/movies',
         controller: 'MoviesCtrl',
-        authenticate: false
+        authenticate: true
       })
       .otherwise({
         redirectTo: '/'
