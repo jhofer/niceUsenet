@@ -88,6 +88,9 @@ function getFile(savedMovie, callback) {
 
 console.log('filenName '+savedMovie.fileName);
 
+  function destroySpooky(){
+
+  }
 
   var spooky = new Spooky(
     spookyConfig, function (err) {
@@ -100,7 +103,6 @@ console.log('filenName '+savedMovie.fileName);
       spooky.on('run.complete', function(){
         console.log("NZB downloaded");
         spooky.removeAllListeners();
-        spooky.destory();
         callback();
       });
 
@@ -129,7 +131,9 @@ console.log('filenName '+savedMovie.fileName);
 
       }]);
 
-      spooky.run();
+      spooky.run(function(){
+        this.exit();
+      });
 
 
     });

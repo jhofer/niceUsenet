@@ -74,37 +74,48 @@ var createMovies = function (movie, callbackDone) {
 };
 
 
-function loadThreads(movies, forumId) {
+function loadThreads(movies) {
 
-  console.log('scrawl eacg thread html');
+  console.log('scrawl each thread html');
   console.log(movies);
   async.eachSeries(movies, createMovies, function (err) {
+    if(err)throw err;
     console.log('All done');
   });
 }
 
 
-var forums = [31];
+function loadForum(forumUrl, callbackDone) {
+  console.log('load forum: '+forumUrl);
+  var movies;
+  async.series([
+    function (next) {
+      console.log('scrawl forum');
+      scrawler.getHTML(forumUrl, function (html) {
+        console.log('got forum html');
+
+        movies = parser.parseMovies(html, forumUrl);
+        next();
+      });
+    }, function (next) {
+      console.log("now get all movie threads");
+      loadThreads(movies);
+      next();
+      callbackDone();
+    }]);
+}
+var forums = ['http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+              'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39'];
 function loadForums() {
   console.log('going to load movies');
-  forums.forEach(function (forumId) {
-    var movies;
-    async.series([
-      function (next) {
-        console.log('scrawl forum');
-        scrawler.getHTML('http://www.usenetrevolution.info/vb/forumdisplay.php?f=' + forumId, function (html) {
-          console.log('got forum html');
-           fs.writeFile('forumHtml.html', html);
-          movies = parser.parseMovies(html, forumId);
-          next();
-        });
-      }, function (callback) {
-        console.log("now get all movie.js threads");
-        loadThreads(movies, forumId);
-        callback();
-      }]);
+  async.eachSeries(forums, loadForum, function (err) {
+    if(err)throw err;
+    console.log('Forums Scrawled ');
   });
 }
+
+
+
 
 
 scrawler.init();

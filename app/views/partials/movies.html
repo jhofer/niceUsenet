@@ -1,42 +1,29 @@
+
 <div ng-include="'partials/navbar'"></div>
 <div class="row">
-  <div class="col-md-3">
-    Filter:
+  <div class="col-md-4">
+
   </div>
-  <div class="col-md-9">
+  <div class="col-md-8">
     <input  ng-model="search.$" />
   </div>
 
 </div>
 
 
-<div class="row" ng-repeat="movie in movies | filter:search |orderBy: 'created_at' : reverse">
+<div class="row"  ng-repeat="movies in movieMap | movieFilter:search ">
 
-  <div class="col-md-3">
-  <img src="{{movie.image}}" width="100%">
+  <div class="col-md-4">
+    <img src="{{movies[0].image}}" width="100%" class="movieImage" >
   </div>
 
-  <div class="col-md-8" >
-    <div class="row">
-     <div class="col-md-12">
-     <h4><a href="{{movie.threadUrl}}">{{movie.title}}</a></h4>
-     </div>
-   </div>
-    <div class="row">
-      <div class="col-md-2">imdb:<a href= "{{movie.imdbLink}}">{{movie.imdbLink}}</a></div>
-      <div class="col-md-2">genres:{{movie.genres}}</div>
-      <div class="col-md-2">raiting:{{movie.rating}}</div>
-    </div>
-    <div class="row">
-     <div class="col-md-3">
-      <button class="btn btn-primary" ng-click="download(movie)" ng-disabled="!canDownload(movie)">{{movie.status}}</button>
-      </div>
-    </div>
+  <div class="col-md-8">
+      <moviestack movies="movies" search="search"></moviestack>
   </div>
 
 
 </div>
 
 <div class="footer">
-  <p>♥ from the Yeoman team</p>
+  <p>with ♥ from wg.spasti 87</p>
 </div>

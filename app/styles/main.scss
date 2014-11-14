@@ -93,3 +93,16 @@ body {
 .red{
    color: #ff0000;
 }
+
+.imdbRaiting{
+  font-size: 18px;
+  padding-top:22px;
+  padding-left: 19px;
+  height: 65px;
+  width: 65px;
+  background-image: url(../images/imdbStar.png);
+}
+
+.movieImage{
+  padding:5px;
+}

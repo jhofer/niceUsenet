@@ -11,7 +11,9 @@ module.exports = function (grunt) {
 
   // Load grunt tasks automatically
   require('jit-grunt')(grunt,{
-    express: 'grunt-express-server'
+    express: 'grunt-express-server',
+    useminPrepare: 'grunt-usemin',
+    cdnify: 'grunt-google-cdn'
   });
 
   // Time how long tasks take. Can help when optimizing build times
@@ -64,10 +66,10 @@ module.exports = function (grunt) {
       //  files: ['test/client/spec/{,*/}*.js'],
       //  tasks: ['newer:jshint:test', 'karma']
       //},
-      //compass: {
-      //  files: ['<%= yeoman.app %>/styles/{,*/}*.{scss,sass}'],
-      //  tasks: ['compass:server', 'autoprefixer']
-      //},
+      compass: {
+        files: ['<%= yeoman.app %>/styles/{,*/}*.{scss,sass}'],
+        tasks: ['compass:server', 'autoprefixer']
+      },
       //gruntfile: {
       //  files: ['Gruntfile.js']
       //},

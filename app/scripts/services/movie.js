@@ -7,7 +7,7 @@ angular.module('niceUsenetApp')
     }, { //parameters default
       download: {
         method: 'PUT'
-      }
-
+      },
+      query:  {method:'GET', isArray:true}
 	  });
   });

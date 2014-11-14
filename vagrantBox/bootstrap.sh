@@ -12,6 +12,12 @@ echo =====================================
 sudo apt-get  --yes --force-yes install curl
 
 echo =====================================
+echo install git
+echo =====================================
+sudo apt-get --yes --force-yes  install git-core
+
+
+echo =====================================
 echo install node and npm
 echo =====================================
 curl -sL https://deb.nodesource.com/setup | sudo bash -

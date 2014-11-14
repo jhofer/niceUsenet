@@ -1,29 +1,46 @@
 'use strict';
 
 angular.module('niceUsenetApp')
-  .controller('MoviesCtrl', function ($scope, $http, Movie) {
+  .controller('MoviesCtrl', function ($scope, Movie) {
 
 
 
+    $scope.movieMap = {};
+    var movies = Movie.query();
 
-    $scope.movies = Movie.query();
+    movies.$promise.then(function(data){
 
+      angular.forEach(data, function (movie) {
+        var strings = movie.title.split(' ');
+        var key = strings[0]+' '+strings[1];
 
-    $scope.canDownload = function(movie){
-      return movie.status === 'download';
-    };
-
-
-
-    $scope.download = function (movie) {
-      movie.downloaded = true;
-      //movie.status = 'requested';
-      Movie.download({'id':movie._id}, function() {
-        Movie.get({'id':movie._id}, function(newMovie) {
-          movie.status = newMovie.status;
-        });
+        if($scope.movieMap[key]){
+          $scope.movieMap[key].push(movie);
+        }else{
+          $scope.movieMap[key] = [];
+          $scope.movieMap[key].push(movie);
+        }
 
       });
-    };
+
+
+    });
 
   });
+
+angular.module('niceUsenetApp').filter('movieFilter', function($filter) {
+
+  return function(movieMap, searchText) {
+    var result = [];
+    for (var property in movieMap) {
+      if (movieMap.hasOwnProperty(property)) {
+        var movies = movieMap[property];
+        var filtered = $filter('filter')(movies, searchText);
+        if(filtered.length >0){
+          result.push(movies);
+        }
+      }
+    }
+    return result;
+  };
+});

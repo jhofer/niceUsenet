@@ -9,7 +9,7 @@ angular.module('niceUsenetApp')
       'title': 'Settings',
       'link': '/settings'
     }, {
-      'title': 'HD-Movies',
+      'title': 'Movies',
       'link': '/movies'
     }];
 
