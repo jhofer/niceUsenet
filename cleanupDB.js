@@ -12,7 +12,7 @@ fs.readdirSync(modelsPath).forEach(function (file) {
 });
 
 
-return Moive.find(function (err, movies) {
+return Movie.find(function (err, movies) {
   movies.forEach(function(movie){
       movie.status = 'download';
       movie.save();
