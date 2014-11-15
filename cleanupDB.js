@@ -1,5 +1,8 @@
-mongoose = require('mongoose');
+'use strict';
 
+var mongoose = require('mongoose'),
+path = require('path'),
+  fs = require('fs');
 // Bootstrap models
 var modelsPath = path.join(__dirname, 'lib/models');
 fs.readdirSync(modelsPath).forEach(function (file) {
