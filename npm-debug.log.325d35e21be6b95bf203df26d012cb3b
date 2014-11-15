@@ -1,0 +1,155 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/bin/npm', 'install', 'phantomjs' ]
+2 info using npm@2.1.8
+3 info using node@v0.10.33
+4 verbose node symlink /usr/bin/node
+5 warn package.json niceusenet@0.0.0 No description
+6 warn package.json niceusenet@0.0.0 No repository field.
+7 warn package.json niceusenet@0.0.0 No README data
+8 silly cache add args [ 'phantomjs@1.9.12', null ]
+9 verbose cache add spec phantomjs@1.9.12
+10 silly cache add parsed spec { raw: 'phantomjs@1.9.12',
+10 silly cache add   scope: null,
+10 silly cache add   name: 'phantomjs',
+10 silly cache add   rawSpec: '1.9.12',
+10 silly cache add   spec: '1.9.12',
+10 silly cache add   type: 'version' }
+11 verbose addNamed phantomjs@1.9.12
+12 silly addNamed semver.valid 1.9.12
+13 silly addNamed semver.validRange 1.9.12
+14 silly mapToRegistry name phantomjs
+15 silly mapToRegistry using default registry
+16 silly mapToRegistry registry https://registry.npmjs.org/
+17 silly mapToRegistry uri https://registry.npmjs.org/phantomjs
+18 verbose addNameVersion registry:https://registry.npmjs.org/phantomjs not in flight; fetching
+19 verbose request uri https://registry.npmjs.org/phantomjs
+20 verbose request no auth needed
+21 info attempt registry request try #1 at 13:56:41
+22 verbose request id 741cd3e5716664c5
+23 verbose etag "BZSG2ID344HEOMYOGQFIET8J0"
+24 http request GET https://registry.npmjs.org/phantomjs
+25 http 304 https://registry.npmjs.org/phantomjs
+26 silly get cb [ 304,
+26 silly get   { date: 'Sat, 15 Nov 2014 13:56:46 GMT',
+26 silly get     server: 'Apache',
+26 silly get     via: '1.1 varnish',
+26 silly get     'last-modified': 'Sat, 15 Nov 2014 13:56:46 GMT',
+26 silly get     'cache-control': 'max-age=60',
+26 silly get     etag: '"BZSG2ID344HEOMYOGQFIET8J0"',
+26 silly get     age: '3',
+26 silly get     'x-served-by': 'cache-fra1245-FRA',
+26 silly get     'x-cache': 'HIT',
+26 silly get     'x-cache-hits': '1',
+26 silly get     'x-timer': 'S1416059806.580555,VS0,VE0',
+26 silly get     vary: 'Accept',
+26 silly get     'content-length': '0',
+26 silly get     'keep-alive': 'timeout=10, max=50',
+26 silly get     connection: 'Keep-Alive' } ]
+27 verbose etag https://registry.npmjs.org/phantomjs from cache
+28 silly cache afterAdd phantomjs@1.9.12
+29 verbose afterAdd /home/vagrant/.npm/phantomjs/1.9.12/package/package.json not in flight; writing
+30 verbose afterAdd /home/vagrant/.npm/phantomjs/1.9.12/package/package.json written
+31 silly install resolved [ { name: 'phantomjs',
+31 silly install resolved     version: '1.9.12',
+31 silly install resolved     keywords: [ 'phantomjs', 'headless', 'webkit' ],
+31 silly install resolved     description: 'Headless WebKit with JS API',
+31 silly install resolved     homepage: 'https://github.com/Obvious/phantomjs',
+31 silly install resolved     repository: { type: 'git', url: 'git://github.com/Obvious/phantomjs.git' },
+31 silly install resolved     licenses: [ [Object] ],
+31 silly install resolved     author:
+31 silly install resolved      { name: 'Dan Pupius',
+31 silly install resolved        email: 'dan@obvious.com',
+31 silly install resolved        url: 'http://pupius.co.uk' },
+31 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
+31 silly install resolved     main: 'lib/phantomjs',
+31 silly install resolved     bin: { phantomjs: './bin/phantomjs' },
+31 silly install resolved     scripts:
+31 silly install resolved      { install: 'node install.js',
+31 silly install resolved        test: 'nodeunit --reporter=minimal test/tests.js' },
+31 silly install resolved     dependencies:
+31 silly install resolved      { 'adm-zip': '0.4.4',
+31 silly install resolved        kew: '0.4.0',
+31 silly install resolved        ncp: '~1.0.1',
+31 silly install resolved        npmconf: '2.0.9',
+31 silly install resolved        mkdirp: '0.5.0',
+31 silly install resolved        progress: '1.1.8',
+31 silly install resolved        request: '2.42.0',
+31 silly install resolved        'request-progress': '0.3.1',
+31 silly install resolved        rimraf: '~2.2.8',
+31 silly install resolved        which: '~1.0.5' },
+31 silly install resolved     devDependencies: { nodeunit: '0.9.0' },
+31 silly install resolved     gitHead: 'bf1ec7ae211b8162779be59e945b92613ffe8d4e',
+31 silly install resolved     bugs: { url: 'https://github.com/Obvious/phantomjs/issues' },
+31 silly install resolved     _id: 'phantomjs@1.9.12',
+31 silly install resolved     _shasum: '812b137654585413ecb82bf3db9dcd39d8f85f91',
+31 silly install resolved     _from: 'phantomjs@1.9.12',
+31 silly install resolved     _npmVersion: '1.4.24',
+31 silly install resolved     _npmUser: { name: 'nicks', email: 'nicholas.j.santos@gmail.com' },
+31 silly install resolved     dist:
+31 silly install resolved      { shasum: '812b137654585413ecb82bf3db9dcd39d8f85f91',
+31 silly install resolved        tarball: 'http://registry.npmjs.org/phantomjs/-/phantomjs-1.9.12.tgz' },
+31 silly install resolved     directories: {},
+31 silly install resolved     _resolved: 'https://registry.npmjs.org/phantomjs/-/phantomjs-1.9.12.tgz',
+31 silly install resolved     readme: 'ERROR: No README data found!' } ]
+32 info install phantomjs@1.9.12 into /project
+33 info installOne phantomjs@1.9.12
+34 verbose installOne of phantomjs to /project not in flight; installing
+35 verbose lock using /home/vagrant/.npm/_locks/phantomjs-94d5faa3fda480e2.lock for /project/node_modules/phantomjs
+36 silly install write writing phantomjs 1.9.12 to /project/node_modules/phantomjs
+37 silly cache addNamed cb phantomjs@1.9.12
+38 verbose unbuild node_modules/phantomjs
+39 info preuninstall phantomjs@1.9.12
+40 info uninstall phantomjs@1.9.12
+41 verbose unbuild rmStuff phantomjs@1.9.12 from /project/node_modules
+42 verbose /project/node_modules/.bin,[object Object] binRoot
+43 verbose gentlyRm verifying that /project/node_modules/phantomjs is managed by npm
+44 silly cacheAndTest /project/node_modules/phantomjs is not inside /home/vagrant/node_modules
+45 silly isManaged /project/node_modules/phantomjs is not inside /home/vagrant/node_modules
+46 silly cacheAndTest /project/node_modules/phantomjs is not inside /project/node_modules/.bin
+47 silly cacheAndTest /project/node_modules/phantomjs is inside /project
+48 silly gentlyRm /project/node_modules/phantomjs is managed by npm
+49 silly gentlyRm /project/node_modules/.bin/phantomjs is not under /project/node_modules/phantomjs
+50 silly gentlyRm checking to see if /project/node_modules/.bin/phantomjs is a link
+51 silly gentlyRm /project/node_modules/.bin/phantomjs is a link
+52 silly gentlyRm /project/node_modules/phantomjs/bin/phantomjs inside /project/node_modules/phantomjs
+53 verbose gentlyRm vacuuming /project/node_modules/.bin/phantomjs
+54 silly gentlyRm removing /project/node_modules/.bin/phantomjs
+55 verbose unlock done using /home/vagrant/.npm/_locks/phantomjs-94d5faa3fda480e2.lock for /project/node_modules/phantomjs
+56 verbose stack Error: EACCES, unlink '/project/node_modules/.bin/phantomjs'
+57 verbose cwd /project
+58 error Linux 3.13.0-39-generic
+59 error argv "node" "/usr/bin/npm" "install" "phantomjs"
+60 error node v0.10.33
+61 error npm  v2.1.8
+62 error path /project/node_modules/.bin/phantomjs
+63 error code EACCES
+64 error errno 3
+65 error Error: EACCES, unlink '/project/node_modules/.bin/phantomjs'
+65 error  { [Error: EACCES, unlink '/project/node_modules/.bin/phantomjs']
+65 error   errno: 3,
+65 error   code: 'EACCES',
+65 error   path: '/project/node_modules/.bin/phantomjs' }
+66 error Please try running this command again as root/Administrator.
+67 verbose exit [ 3, true ]
+68 verbose unbuild node_modules/phantomjs
+69 info preuninstall phantomjs@1.9.12
+70 info uninstall phantomjs@1.9.12
+71 verbose unbuild rmStuff phantomjs@1.9.12 from /project/node_modules
+72 verbose /project/node_modules/.bin,[object Object] binRoot
+73 verbose gentlyRm verifying that /project/node_modules/phantomjs is managed by npm
+74 silly isManaged /project/node_modules/phantomjs is not inside /home/vagrant/node_modules
+75 silly isManaged /project/node_modules/phantomjs is not inside /home/vagrant/node_modules
+76 silly isManaged /project/node_modules/phantomjs is not inside /project/node_modules/.bin
+77 silly isManaged /project/node_modules/phantomjs is inside /project
+78 silly gentlyRm /project/node_modules/phantomjs is managed by npm
+79 silly gentlyRm /project/node_modules/.bin/phantomjs is not under /project/node_modules/phantomjs
+80 silly gentlyRm checking to see if /project/node_modules/.bin/phantomjs is a link
+81 silly gentlyRm /project/node_modules/.bin/phantomjs is a link
+82 silly gentlyRm /project/node_modules/phantomjs/bin/phantomjs inside /project/node_modules/phantomjs
+83 verbose gentlyRm vacuuming /project/node_modules/.bin/phantomjs
+84 silly gentlyRm removing /project/node_modules/.bin/phantomjs
+85 error error rolling back Error: EACCES, unlink '/project/node_modules/.bin/phantomjs'
+85 error error rolling back  { [Error: EACCES, unlink '/project/node_modules/.bin/phantomjs']
+85 error error rolling back   errno: 3,
+85 error error rolling back   code: 'EACCES',
+85 error error rolling back   path: '/project/node_modules/.bin/phantomjs' }

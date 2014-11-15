@@ -3,7 +3,7 @@ echo =====================================
 echo update ubuntu stuff
 echo =====================================
 sudo apt-get update
-sudo apt-get upgrade
+sudo apt-get upgrade --yes --force-yes
 
 
 echo =====================================
@@ -29,8 +29,8 @@ echo =====================================
 echo install python 2.6
 echo =====================================
 sudo apt-get install python-software-properties
-sudo add-apt-repository ppa:fkrull/deadsnakes
-sudo apt-get  update
+sudo add-apt-repository ppa:fkrull/deadsnakes --yes
+sudo apt-get update
 sudo apt-get  --yes --force-yes install python2.6
 
 echo =====================================
@@ -84,6 +84,7 @@ echo install project dependencies
 echo =====================================
 cd /project && sudo npm install
 cd /project && bower install  --yes --force-yes
+cd /project && sudo npm install phantom
 
 
 
