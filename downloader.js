@@ -100,6 +100,11 @@ console.log('filenName '+savedMovie.fileName);
         throw e;
       }
 
+      spooky.on('path', function(path){
+        console.log('LOAD MOVIE FROM:'+path);
+
+      });
+
       spooky.on('run.complete', function(){
         console.log("NZB downloaded");
         spooky.removeAllListeners();
@@ -124,7 +129,7 @@ console.log('filenName '+savedMovie.fileName);
         /* jshint ignore:start */
         var downloadPath = this.getElementAttribute('.unhiddencontentbox table a', 'href');
        // var fileName = this.fetchText('.unhiddencontentbox table a');
-       // this.emit('fileName', fileName);
+        this.emit('path', downloadPath);
         this.download(downloadPath, '/nzb/' + fileName);
 
         /* jshint ignore:end */
@@ -171,27 +176,22 @@ function downloadMovie(savedMovie, callbackDone){
     },
     function(next){
       if (parsedInfos.thxLink) {
-        console.log('push thanks' + parsedInfos.thxLink);
         scrawler.getHTML(savedMovie.thxLink, function (html) {
-          storePw(html);
-          var downloadlink = parser.parseDownloadlink(html);
-          scrawler.getFileMetaInfo(downloadlink, function(meta){
-            savedMovie.fileName = meta.fileName;
-            savedMovie.save();
-            getFile(savedMovie,next);
-          });
-
+          next();
         });
-      } else {
-        storePw(threadHtml);
-        var downloadlink = parser.parseDownloadlink(threadHtml);
+      }
+    },
+    function(next){
+      scrawler.getHTML(savedMovie.threadUrl, function (html) {
+        storePw(html);
+        var downloadlink = parser.parseDownloadlink(html);
         scrawler.getFileMetaInfo(downloadlink, function(meta){
           savedMovie.fileName = meta.fileName;
           savedMovie.save();
-          getFile(savedMovie, next);
+          getFile(savedMovie,next);
         });
+      });
 
-      }
     },
     function(next){
       savedMovie.status = 'done';
