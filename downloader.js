@@ -179,6 +179,8 @@ function downloadMovie(savedMovie, callbackDone){
         scrawler.getHTML(savedMovie.thxLink, function (html) {
           next();
         });
+      }else{
+        next();
       }
     },
     function(next){
