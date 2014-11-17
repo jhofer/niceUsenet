@@ -18,6 +18,14 @@ sudo apt-get --yes --force-yes  install git-core
 
 
 echo =====================================
+echo install python 2.6
+echo =====================================
+
+sudo add-apt-repository ppa:fkrull/deadsnakes --yes
+sudo apt-get update
+sudo apt-get  --yes --force-yes install sudo apt-get install python-software-properties python2.6 g++ make
+
+echo =====================================
 echo install node and npm
 echo =====================================
 curl -sL https://deb.nodesource.com/setup | sudo bash -
@@ -25,13 +33,8 @@ sudo apt-get  --yes --force-yes install nodejs
 sudo npm  --yes --force-yes install -g npm@latest
 sudo apt-get  --yes --force-yes install build-essential #such as those that require building from source
 
-echo =====================================
-echo install python 2.6
-echo =====================================
-sudo apt-get install python-software-properties
-sudo add-apt-repository ppa:fkrull/deadsnakes --yes
-sudo apt-get update
-sudo apt-get  --yes --force-yes install python2.6
+
+
 
 echo =====================================
 echo install phantom for virtual browser phantomjs
