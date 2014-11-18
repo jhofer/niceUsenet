@@ -1,0 +1,1436 @@
+js-bson: Failed to load c++ bson extension, using pure JS version
+js-bson: Failed to load c++ bson extension, using pure JS version
+js-bson: Failed to load c++ bson extension, using pure JS version
+Failed to load c++ bson extension, using pure JS version
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:904:11)
+    at Server._listen2 (net.js:1042:14)
+    at listen (net.js:1064:10)
+    at Server.listen (net.js:1138:5)
+    at Function.app.listen (/home/vagrant/node_modules/express/lib/application.js:533:24)
+    at Object.<anonymous> (/project/server.js:65:5)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+creat phantom
+open usenet
+creat phantom
+open usenet
+js-bson: Failed to load c++ bson extension, using pure JS version
+Failed to load c++ bson extension, using pure JS version
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:904:11)
+    at Server._listen2 (net.js:1042:14)
+    at listen (net.js:1064:10)
+    at Server.listen (net.js:1138:5)
+    at Function.app.listen (/home/vagrant/node_modules/express/lib/application.js:533:24)
+    at Object.<anonymous> (/project/server.js:65:5)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+js-bson: Failed to load c++ bson extension, using pure JS version
+Failed to load c++ bson extension, using pure JS version
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:904:11)
+    at Server._listen2 (net.js:1042:14)
+    at listen (net.js:1064:10)
+    at Server.listen (net.js:1138:5)
+    at Function.app.listen (/home/vagrant/node_modules/express/lib/application.js:533:24)
+    at Object.<anonymous> (/project/server.js:65:5)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+js-bson: Failed to load c++ bson extension, using pure JS version
+Failed to load c++ bson extension, using pure JS version
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:904:11)
+    at Server._listen2 (net.js:1042:14)
+    at listen (net.js:1064:10)
+    at Server.listen (net.js:1138:5)
+    at Function.app.listen (/home/vagrant/node_modules/express/lib/application.js:533:24)
+    at Object.<anonymous> (/project/server.js:65:5)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+js-bson: Failed to load c++ bson extension, using pure JS version
+Failed to load c++ bson extension, using pure JS version
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:904:11)
+    at Server._listen2 (net.js:1042:14)
+    at listen (net.js:1064:10)
+    at Server.listen (net.js:1138:5)
+    at Function.app.listen (/home/vagrant/node_modules/express/lib/application.js:533:24)
+    at Object.<anonymous> (/project/server.js:65:5)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+login
+login
+js-bson: Failed to load c++ bson extension, using pure JS version
+Failed to load c++ bson extension, using pure JS version
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:904:11)
+    at Server._listen2 (net.js:1042:14)
+    at listen (net.js:1064:10)
+    at Server.listen (net.js:1138:5)
+    at Function.app.listen (/home/vagrant/node_modules/express/lib/application.js:533:24)
+    at Object.<anonymous> (/project/server.js:65:5)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+js-bson: Failed to load c++ bson extension, using pure JS version
+login done
+going to load movies
+load forum: http://www.usenetrevolution.info/vb/forumdisplay.php?f=31
+scrawl forum
+Failed to load c++ bson extension, using pure JS version
+login done
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:904:11)
+    at Server._listen2 (net.js:1042:14)
+    at listen (net.js:1064:10)
+    at Server.listen (net.js:1138:5)
+    at Function.app.listen (/home/vagrant/node_modules/express/lib/application.js:533:24)
+    at Object.<anonymous> (/project/server.js:65:5)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+got forum html
+now get all movie threads
+scrawl each thread html
+[ { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+    image: 'http://i.imgur.com/kWERuUq.jpg',
+    title: 'Rio 2 2014 German AC3D DL 720p BluRay x264-FiSTER',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?198879-Rio-2-2014-German-AC3D-DL-720p-BluRay-x264-FiSTER' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+    image: 'http://www.usenetrevolution.info/picupload/uploads/2014/11/i109664b0sa2i.jpg',
+    title: 'Guardians of the Galaxy German DL AC3 Dubbed 720p BluRay x264 PsO',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?249338-Guardians-of-the-Galaxy-German-DL-AC3-Dubbed-720p-BluRay-x264-PsO' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+    image: 'http://www.usenetrevolution.info/picupload/uploads/2014/11/i109664b0sa2i.jpg',
+    title: 'Guardians of the Galaxy 2014 German AC3D DL 1080p BluRay x264 LameHD',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?249334-Guardians-of-the-Galaxy-2014-German-AC3D-DL-1080p-BluRay-x264-LameHD' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+    image: 'http://www.usenetrevolution.info/picupload/uploads/2014/11/i106911bhr0v3.png',
+    title: 'Dracula Untold 2014 German AC3LD 720p WEB DL x264 PROPER NSane',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?248843-Dracula-Untold-2014-German-AC3LD-720p-WEB-DL-x264-PROPER-NSane' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+    image: 'http://www.usenetrevolution.info/picupload/uploads/2014/11/i108500b9ysm6.jpg',
+    title: 'Interstellar 2014 German HDTS MIC DUBBED 720p x264 iND',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?248028-Interstellar-2014-German-HDTS-MIC-DUBBED-720p-x264-iND' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+    image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i103888blsssv.jpg',
+    title: 'Planet der Affen Revolution German AC3 Dubbed 720p BluRay x264 VCF',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?247859-Planet-der-Affen-Revolution-German-AC3-Dubbed-720p-BluRay-x264-VCF' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+    image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i103888blsssv.jpg',
+    title: 'Planet der Affen Revolution German DL AC3 Dubbed 1080p BluRay x264 VCF',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?247836-Planet-der-Affen-Revolution-German-DL-AC3-Dubbed-1080p-BluRay-x264-VCF' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+    image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i103888blsssv.jpg',
+    title: 'Planet der Affen Revolution 2014 German AC3LD DL 1080p BluRay x264 PS',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?247707-Planet-der-Affen-Revolution-2014-German-AC3LD-DL-1080p-BluRay-x264-PS' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+    image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i103888blsssv.jpg',
+    title: 'Planet der Affen Revolution 2014 German AC3LD DL 720p BluRay x264 PS',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?247706-Planet-der-Affen-Revolution-2014-German-AC3LD-DL-720p-BluRay-x264-PS' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+    image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i103888blsssv.jpg',
+    title: 'Planet der Affen Revolution 2014 German AC3D 720p BluRay x264 SLiM',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?247705-Planet-der-Affen-Revolution-2014-German-AC3D-720p-BluRay-x264-SLiM' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+    image: 'http://www.usenetrevolution.info/picupload/uploads/2014/11/i107764bhbwud.jpg',
+    title: 'Mea Culpa Im Auge des Verbrechens 2014 German AC3D DL 720p BluRay x264 PS',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?247239-Mea-Culpa-Im-Auge-des-Verbrechens-2014-German-AC3D-DL-720p-BluRay-x264-PS' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+    image: 'http://www.usenetrevolution.info/picupload/uploads/2014/11/i106911bhr0v3.png',
+    title: 'Dracula Untold German AC3 Dubbed 720p WebHD h264 Pleaders',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?246370-Dracula-Untold-German-AC3-Dubbed-720p-WebHD-h264-Pleaders' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+    image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i96866bkl29y.jpg',
+    title: 'Lucy German DL AC3 Dubbed 1080p WebHD h264 PsO',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?245701-Lucy-German-DL-AC3-Dubbed-1080p-WebHD-h264-PsO' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+    image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i96866bkl29y.jpg',
+    title: 'Lucy German AC3 Dubbed 720p WebHD h264 iNTERNAL Pleaders',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?245698-Lucy-German-AC3-Dubbed-720p-WebHD-h264-iNTERNAL-Pleaders' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+    image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i104347b43oud.jpg',
+    title: 'Hercules 2014 Extended Cut German AC3LD 720p WEB DL h264 READ NFO FiSTER',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?243398-Hercules-2014-Extended-Cut-German-AC3LD-720p-WEB-DL-h264-READ-NFO-FiSTER' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+    image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i100036bfdpvb.jpg',
+    title: 'Tammy Voll abgefahren German DL AC3 Dubbed 1080p WebHD h264 PsO',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?238474-Tammy-Voll-abgefahren-German-DL-AC3-Dubbed-1080p-WebHD-h264-PsO' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+    image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i100036bfdpvb.jpg',
+    title: 'Tammy Voll abgefahren German DL AC3 Dubbed 720p WebHD h264 PsO',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?238475-Tammy-Voll-abgefahren-German-DL-AC3-Dubbed-720p-WebHD-h264-PsO' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+    image: 'http://www.usenetrevolution.info/picupload/uploads/2014/11/i105035bhhx1r.jpg',
+    title: 'Tammy Voll abgefahren German AC3D DL 1080p WEB DL h264 LameHD',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?244180-Tammy-Voll-abgefahren-German-AC3D-DL-1080p-WEB-DL-h264-LameHD' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+    image: 'http://www.usenetrevolution.info/picupload/uploads/2014/11/i105035bhhx1r.jpg',
+    title: 'Tammy Voll abgefahren 2014 Theatrical Cut German AC3LD DL 720p BluRay x264 PS',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?244178-Tammy-Voll-abgefahren-2014-Theatrical-Cut-German-AC3LD-DL-720p-BluRay-x264-PS' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+    image: 'http://www.usenetrevolution.info/picupload/uploads/2014/11/i104768b4n5bp.jpg',
+    title: 'Sex on the Beach 2 Down Under German AC3 Dubbed 720p WebHD h264 Pleaders',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?243908-Sex-on-the-Beach-2-Down-Under-German-AC3-Dubbed-720p-WebHD-h264-Pleaders' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+    image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i100365b6sqya.jpg',
+    title: 'Planes 2 Immer im Einsatz German AC3D DL 720p BluRay x264 PS',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?238878-Planes-2-Immer-im-Einsatz-German-AC3D-DL-720p-BluRay-x264-PS' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+    image: 'http://www.usenetrevolution.info/picupload/uploads/2014/09/i86244bqnkh8.jpg',
+    title: 'Drachenzaehmen leicht gemacht 2 German DL AC3 Dubbed 1080p WebHD h264-PsO',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?223329-Drachenzaehmen-leicht-gemacht-2-German-DL-AC3-Dubbed-1080p-WebHD-h264-PsO' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+    image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i104347b43oud.jpg',
+    title: 'Hercules 2014 Theatrical Cut German AC3LD DL 720p WEB DL h264 PS',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?243403-Hercules-2014-Theatrical-Cut-German-AC3LD-DL-720p-WEB-DL-h264-PS' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+    image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i104347b43oud.jpg',
+    title: 'Hercules 2014 Extended Cut German AC3LD DL 1080p WEB DL h264 READ NFO FiSTER',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?243402-Hercules-2014-Extended-Cut-German-AC3LD-DL-1080p-WEB-DL-h264-READ-NFO-FiSTER' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+    image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i104036bnabmy.jpg',
+    title: 'Storm Hunters 2014 German AC3D DL 720p BluRay x264 LameHD',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?243049-Storm-Hunters-2014-German-AC3D-DL-720p-BluRay-x264-LameHD' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+    image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i104036bnabmy.jpg',
+    title: 'Storm Hunters 2014 German AC3D DL 1080p BluRay x264 LameHD',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?243047-Storm-Hunters-2014-German-AC3D-DL-1080p-BluRay-x264-LameHD' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+    image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i103888blsssv.jpg',
+    title: 'Planet der Affen Revolution 2014 German AC3LD DL 720p WEB DL h264 NSane',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?242849-Planet-der-Affen-Revolution-2014-German-AC3LD-DL-720p-WEB-DL-h264-NSane' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+    image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i103888blsssv.jpg',
+    title: 'Planet der Affen Revolution 2014 German AC3LD DL 1080p WEB DL h264 NSane',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?242848-Planet-der-Affen-Revolution-2014-German-AC3LD-DL-1080p-WEB-DL-h264-NSane' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+    image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i101990bg1m73.jpg',
+    title: 'Hercules EXTENDED DL German AC3 Dubbed 1080p x264 VCF',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?242820-Hercules-EXTENDED-DL-German-AC3-Dubbed-1080p-x264-VCF' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+    image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i101990bg1m73.jpg',
+    title: 'Hercules EXTENDED DL German AC3 Dubbed 720p x264 VCF',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?242818-Hercules-EXTENDED-DL-German-AC3-Dubbed-720p-x264-VCF' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+    image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i103206bszi3a.jpg',
+    title: 'Guardians of the Galaxy TS LD GERMAN 720p x264 PsO',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?242076-Guardians-of-the-Galaxy-TS-LD-GERMAN-720p-x264-PsO' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+    image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i101258b20y4i.jpg',
+    title: 'Teenage Mutant Ninja Turtles German AC3 Dubbed 720p WebHD h264 Pleaders',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?241650-Teenage-Mutant-Ninja-Turtles-German-AC3-Dubbed-720p-WebHD-h264-Pleaders' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+    image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i101990bg1m73.jpg',
+    title: 'Hercules 2014 EXTENDED CUT German AC3D DL 720p WEB DL h264 LameHD',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?240678-Hercules-2014-EXTENDED-CUT-German-AC3D-DL-720p-WEB-DL-h264-LameHD' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+    image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i101904btuc9s.jpg',
+    title: 'Hercules 2014 German Extended AC3LD WEBHD 1080p x264 IND',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?240573-Hercules-2014-German-Extended-AC3LD-WEBHD-1080p-x264-IND' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+    image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i101698bvnwil.jpg',
+    title: 'Annabelle 2014 German AC3MD WEBHD 720p x264 IND',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?240284-Annabelle-2014-German-AC3MD-WEBHD-720p-x264-IND' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+    image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i101617bxiwmp.jpg',
+    title: 'The Purge Anarchy German DL AC3 Dubbed 1080p BluRay x264 Pleaders',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?240203-The-Purge-Anarchy-German-DL-AC3-Dubbed-1080p-BluRay-x264-Pleaders' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+    image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i101596bbt0kw.jpg',
+    title: 'Sin City 2 A Dame to Kill For 2014 German DTSD DL 1080p BluRay x264 LameHD',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?240192-Sin-City-2-A-Dame-to-Kill-For-2014-German-DTSD-DL-1080p-BluRay-x264-LameHD' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+    image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i101596bbt0kw.jpg',
+    title: 'Sin City 2 A Dame to Kill For 2014 German DTSD DL 1080p BluRay AVC REMUX LameHD',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?240184-Sin-City-2-A-Dame-to-Kill-For-2014-German-DTSD-DL-1080p-BluRay-AVC-REMUX-LameHD' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+    image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i101377b73lva.jpg',
+    title: 'Denk wie ein Mann 2 2014 German AC3MD DL 1080p BluRay AVC REMUX PS',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?239992-Denk-wie-ein-Mann-2-2014-German-AC3MD-DL-1080p-BluRay-AVC-REMUX-PS' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+    image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i99992bd391y.jpg',
+    title: 'Denk wie ein Mann 2 2014 German AC3D DL 1080p BluRay x264 PS',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?238419-Denk-wie-ein-Mann-2-2014-German-AC3D-DL-1080p-BluRay-x264-PS' } ]
+load forum: http://www.usenetrevolution.info/vb/forumdisplay.php?f=39
+scrawl forum
+js-bson: Failed to load c++ bson extension, using pure JS version
+Failed to load c++ bson extension, using pure JS version
+got forum html
+now get all movie threads
+scrawl each thread html
+[ { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+    image: 'http://www.usenetrevolution.info/picupload/uploads/2014/11/i110511b37wbx.jpg',
+    title: 'Monsieur Claude und seine Toechter German 1080p BluRay x264 EXQUiSiTE',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?250041-Monsieur-Claude-und-seine-Toechter-German-1080p-BluRay-x264-EXQUiSiTE' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+    image: 'http://www.usenetrevolution.info/picupload/uploads/2014/11/i109634bv1mr1.jpg',
+    title: 'Planes 2 Immer im Einsatz German DL 1080p BluRay x264 EXQUiSiTE',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?249275-Planes-2-Immer-im-Einsatz-German-DL-1080p-BluRay-x264-EXQUiSiTE' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+    image: 'http://www.usenetrevolution.info/picupload/uploads/2014/11/i109093by6xos.jpg',
+    title: 'Mindscape 2013 German DL 1080p BluRay x264 FRACTAL',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?248616-Mindscape-2013-German-DL-1080p-BluRay-x264-FRACTAL' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+    image: 'http://www.usenetrevolution.info/picupload/uploads/2014/11/i109081bzk6tp.jpg',
+    title: '13 Eerie We Prey For You UNCUT GERMAN 2013 DL 1080p BluRay x264 GOREHOUNDS',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?248601-13-Eerie-We-Prey-For-You-UNCUT-GERMAN-2013-DL-1080p-BluRay-x264-GOREHOUNDS' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+    image: 'http://www.usenetrevolution.info/picupload/uploads/2014/11/i108781bxrl88.jpg',
+    title: 'Demon Inside 2013 German 1080p BluRay x264 THEORY',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?248303-Demon-Inside-2013-German-1080p-BluRay-x264-THEORY' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+    image: 'http://www.usenetrevolution.info/picupload/uploads/2014/11/i108780bvvyua.jpg',
+    title: 'Dead Snow Red vs Dead 2014 German 1080p BluRay x264 ROOR',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?248301-Dead-Snow-Red-vs-Dead-2014-German-1080p-BluRay-x264-ROOR' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+    image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i103888blsssv.jpg',
+    title: 'Planet der Affen Revolution German DL 1080p BluRay x264 EXQUiSiTE',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?248153-Planet-der-Affen-Revolution-German-DL-1080p-BluRay-x264-EXQUiSiTE' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+    image: 'http://www.usenetrevolution.info/picupload/uploads/2014/11/i108606bg66zb.jpg',
+    title: 'Das Boot uncut 309 Min Teil 1-6',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?248150-Das-Boot-uncut-309-Min-Teil-1-6' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+    image: 'http://www.usenetrevolution.info/picupload/uploads/2014/11/i108054blovld.png',
+    title: 'Darkness Descends 2014 German DL 1080p BluRay x264 ENCOUNTERS',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?247682-Darkness-Descends-2014-German-DL-1080p-BluRay-x264-ENCOUNTERS' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+    image: 'http://www.usenetrevolution.info/picupload/uploads/2014/11/i107841bku9uk.jpg',
+    title: 'Miss Sixty 2014 German 1080p BluRay x264 PROPER FRACTAL',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?247291-Miss-Sixty-2014-German-1080p-BluRay-x264-PROPER-FRACTAL' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+    image: 'http://www.usenetrevolution.info/picupload/uploads/2014/11/i107840br99rs.jpg',
+    title: 'The Prince Only God Forgives 2014 German DL 1080p BluRay x264 FRACTAL',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?247289-The-Prince-Only-God-Forgives-2014-German-DL-1080p-BluRay-x264-FRACTAL' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+    image: 'http://www.usenetrevolution.info/picupload/uploads/2014/11/i107716boe9z8.jpg',
+    title: 'Der Hobbit Smaugs Einoede EXTENDED German DL 1080p BluRay x264 EXQUiSiTE',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?247128-Der-Hobbit-Smaugs-Einoede-EXTENDED-German-DL-1080p-BluRay-x264-EXQUiSiTE' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+    image: 'http://www.usenetrevolution.info/picupload/uploads/2014/11/i107075bfikce.jpg',
+    title: 'Nymphomaniac Vol II Directors Cut German DL 1080p BluRay x264 EXQUiSiTE',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?246491-Nymphomaniac-Vol-II-Directors-Cut-German-DL-1080p-BluRay-x264-EXQUiSiTE' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+    image: 'http://www.usenetrevolution.info/picupload/uploads/2014/11/i106930bqtzbm.jpg',
+    title: 'Nymphomaniac Vol I Directors Cut German DL 1080p BluRay x264 EXQUiSiTE',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?246376-Nymphomaniac-Vol-I-Directors-Cut-German-DL-1080p-BluRay-x264-EXQUiSiTE' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+    image: 'http://www.usenetrevolution.info/picupload/uploads/2014/11/i106929baay00.jpg',
+    title: 'Kingpin Zwei Trottel auf der Bowlingbahn 1996 German AC3D DL EXTENDED 1080p BluRay x264 KLASSiGERHD',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?246374-Kingpin-Zwei-Trottel-auf-der-Bowlingbahn-1996-German-AC3D-DL-EXTENDED-1080p-BluRay-x264-KLASSiGERHD' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+    image: 'http://www.usenetrevolution.info/picupload/uploads/2014/11/i106928bj0d6x.jpg',
+    title: 'Jack und das Kuckucksuhrherz 2013 German DL 1080p BluRay x264 ENCOUNTERS',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?246372-Jack-und-das-Kuckucksuhrherz-2013-German-DL-1080p-BluRay-x264-ENCOUNTERS' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+    image: 'http://www.usenetrevolution.info/picupload/uploads/2014/11/i106196bjtws0.jpg',
+    title: 'Aeon Flux 2005 German DL 1080p BluRay x264 DETAiLS',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?245522-Aeon-Flux-2005-German-DL-1080p-BluRay-x264-DETAiLS' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+    image: 'http://www.usenetrevolution.info/picupload/uploads/2014/11/i105990bv9pgo.jpg',
+    title: 'Drive Hard 2014 German DL 1080p BluRay x264 FRACTAL',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?245314-Drive-Hard-2014-German-DL-1080p-BluRay-x264-FRACTAL' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+    image: 'http://www.usenetrevolution.info/picupload/uploads/2014/11/i105977bp7xrq.jpg',
+    title: 'Maedelsabend Nuechtern zu schuechtern German DL 1080p BluRay x264 EXQUiSiTE',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?245258-Maedelsabend-Nuechtern-zu-schuechtern-German-DL-1080p-BluRay-x264-EXQUiSiTE' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+    image: 'http://www.usenetrevolution.info/picupload/uploads/2014/11/i105976br4zas.jpg',
+    title: 'The Purge Anarchy German DL 1080p BluRay x264 EXQUiSiTE',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?245255-The-Purge-Anarchy-German-DL-1080p-BluRay-x264-EXQUiSiTE' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+    image: 'http://www.usenetrevolution.info/picupload/uploads/2014/11/i105600bq7u58.jpg',
+    title: 'Gegengerade German 1080p BluRay x264 RSG',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?244862-Gegengerade-German-1080p-BluRay-x264-RSG' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+    image: 'http://i.imgur.com/Ua0m3Ot.jpg',
+    title: 'Repentance Tag der Reue 2013 German AC3D DL 1080p WEB DL x264 LameHD',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?244832-Repentance-Tag-der-Reue-2013-German-AC3D-DL-1080p-WEB-DL-x264-LameHD' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+    image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i104708b7gyo5.jpg',
+    title: 'Boyhood German DL 1080p BluRay x264 EXQUiSiTE',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?243821-Boyhood-German-DL-1080p-BluRay-x264-EXQUiSiTE' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+    image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i104704bwwipe.jpg',
+    title: 'Drachenzaehmen leicht gemacht 2 German DL 1080p BluRay x264 EXQUiSiTE',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?243806-Drachenzaehmen-leicht-gemacht-2-German-DL-1080p-BluRay-x264-EXQUiSiTE' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+    image: 'http://i.imgur.com/YZKVi1i.jpg',
+    title: 'Tom Sawyer vs Zombies 2014 German DL 1080p BluRay x264 GMA',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?243773-Tom-Sawyer-vs-Zombies-2014-German-DL-1080p-BluRay-x264-GMA' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+    image: 'http://i.imgur.com/8ezgqmo.jpg',
+    title: 'Zwei ritten zusammen 1961 GERMAN AC3D DL 1080p BluRay x264 COOLHD',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?243769-Zwei-ritten-zusammen-1961-GERMAN-AC3D-DL-1080p-BluRay-x264-COOLHD' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+    image: 'http://i.imgur.com/OidfCn2.jpg',
+    title: 'Zulu 2013 German DL 1080p Bluray x264 LeetHD',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?243768-Zulu-2013-German-DL-1080p-Bluray-x264-LeetHD' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+    image: 'http://i.imgur.com/rge54vi.png',
+    title: 'Wooden Men 1976 German 1080p BluRay x264 iFPD',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?243767-Wooden-Men-1976-German-1080p-BluRay-x264-iFPD' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+    image: 'http://i.imgur.com/tjN1h0F.jpg',
+    title: 'Wild Child Erstklassig zickig 2008 German DL 1080p BluRay x264 DETAiLS',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?243766-Wild-Child-Erstklassig-zickig-2008-German-DL-1080p-BluRay-x264-DETAiLS' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+    image: 'http://i.imgur.com/jWMYzFc.jpg',
+    title: 'War Killer At the End of the Day 2010 German DL 1080p BluRay x264 RSG',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?243765-War-Killer-At-the-End-of-the-Day-2010-German-DL-1080p-BluRay-x264-RSG' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+    image: 'http://i.imgur.com/usXEeWB.jpg',
+    title: 'Von der boesen Art The Violent Kind 2010 German DL 1080p BluRay x264 DECENT',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?243764-Von-der-boesen-Art-The-Violent-Kind-2010-German-DL-1080p-BluRay-x264-DECENT' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+    image: 'http://i.imgur.com/SLo9SFy.jpg',
+    title: 'Touching Home 2008 German DL 1080p BluRay x264 EPHEMERiD',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?243763-Touching-Home-2008-German-DL-1080p-BluRay-x264-EPHEMERiD' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+    image: 'http://i.imgur.com/Hm9ND1i.jpg',
+    title: 'Torture Chamber 2013 German DL 1080p BluRay x264 ENCOUNTERS',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?243761-Torture-Chamber-2013-German-DL-1080p-BluRay-x264-ENCOUNTERS' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+    image: 'http://i.imgur.com/IbbPsEj.jpg',
+    title: 'Tormented 2009 German DL 1080p BluRay x264 DECENT',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?243760-Tormented-2009-German-DL-1080p-BluRay-x264-DECENT' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+    image: 'http://i.imgur.com/dBLSjC2.jpg',
+    title: 'Tokyo Powerman 1985 German 1080p BluRay x264 iFPD',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?243759-Tokyo-Powerman-1985-German-1080p-BluRay-x264-iFPD' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+    image: 'http://i.imgur.com/r6CLYcl.jpg',
+    title: 'Tokugawa Joy of Torture 2 UNCUT 1976 German DTS 1080p BluRay x264 LeetHD',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?243758-Tokugawa-Joy-of-Torture-2-UNCUT-1976-German-DTS-1080p-BluRay-x264-LeetHD' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+    image: 'http://i.imgur.com/91pCu5X.jpg',
+    title: 'Toete Amigo 1966 German 1080p BluRay x264 CONTRiBUTiON',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?243757-Toete-Amigo-1966-German-1080p-BluRay-x264-CONTRiBUTiON' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+    image: 'http://i.imgur.com/TIzBiUO.jpg',
+    title: 'The New Daughter 2009 German DTS DL 1080p BluRay REPACK x264 RSG',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?243755-The-New-Daughter-2009-German-DTS-DL-1080p-BluRay-REPACK-x264-RSG' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+    image: 'http://i.imgur.com/81bPc7j.jpg',
+    title: 'The Money Jeder bezahlt seinen Preis 2012 German DL 1080p BluRay x264 RSG',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?243754-The-Money-Jeder-bezahlt-seinen-Preis-2012-German-DL-1080p-BluRay-x264-RSG' },
+  { forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+    image: 'http://i.imgur.com/ucSRqSW.jpg',
+    title: 'The Mine Halloween in der Hoelle 2013 German DL 1080p BluRay x264 LeetHD',
+    threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?243753-The-Mine-Halloween-in-der-Hoelle-2013-German-DL-1080p-BluRay-x264-LeetHD' } ]
+Forums Scrawled 
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:904:11)
+    at Server._listen2 (net.js:1042:14)
+    at listen (net.js:1064:10)
+    at Server.listen (net.js:1138:5)
+    at Function.app.listen (/home/vagrant/node_modules/express/lib/application.js:533:24)
+    at Object.<anonymous> (/project/server.js:65:5)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+  image: 'http://i.imgur.com/kWERuUq.jpg',
+  title: 'Rio 2 2014 German AC3D DL 720p BluRay x264-FiSTER',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?198879-Rio-2-2014-German-AC3D-DL-720p-BluRay-x264-FiSTER' }
+js-bson: Failed to load c++ bson extension, using pure JS version
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+  image: 'http://www.usenetrevolution.info/picupload/uploads/2014/11/i110511b37wbx.jpg',
+  title: 'Monsieur Claude und seine Toechter German 1080p BluRay x264 EXQUiSiTE',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?250041-Monsieur-Claude-und-seine-Toechter-German-1080p-BluRay-x264-EXQUiSiTE' }
+Failed to load c++ bson extension, using pure JS version
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+  image: 'http://www.usenetrevolution.info/picupload/uploads/2014/11/i109664b0sa2i.jpg',
+  title: 'Guardians of the Galaxy German DL AC3 Dubbed 720p BluRay x264 PsO',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?249338-Guardians-of-the-Galaxy-German-DL-AC3-Dubbed-720p-BluRay-x264-PsO' }
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:904:11)
+    at Server._listen2 (net.js:1042:14)
+    at listen (net.js:1064:10)
+    at Server.listen (net.js:1138:5)
+    at Function.app.listen (/home/vagrant/node_modules/express/lib/application.js:533:24)
+    at Object.<anonymous> (/project/server.js:65:5)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+  image: 'http://www.usenetrevolution.info/picupload/uploads/2014/11/i109634bv1mr1.jpg',
+  title: 'Planes 2 Immer im Einsatz German DL 1080p BluRay x264 EXQUiSiTE',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?249275-Planes-2-Immer-im-Einsatz-German-DL-1080p-BluRay-x264-EXQUiSiTE' }
+js-bson: Failed to load c++ bson extension, using pure JS version
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+  image: 'http://www.usenetrevolution.info/picupload/uploads/2014/11/i109664b0sa2i.jpg',
+  title: 'Guardians of the Galaxy 2014 German AC3D DL 1080p BluRay x264 LameHD',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?249334-Guardians-of-the-Galaxy-2014-German-AC3D-DL-1080p-BluRay-x264-LameHD' }
+load imdb: http://www.imdb.com/title/tt1715336/
+Failed to load c++ bson extension, using pure JS version
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:904:11)
+    at Server._listen2 (net.js:1042:14)
+    at listen (net.js:1064:10)
+    at Server.listen (net.js:1138:5)
+    at Function.app.listen (/home/vagrant/node_modules/express/lib/application.js:533:24)
+    at Object.<anonymous> (/project/server.js:65:5)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+load imdb: http://www.imdb.com/title/tt0829150/
+js-bson: Failed to load c++ bson extension, using pure JS version
+Failed to load c++ bson extension, using pure JS version
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+  image: 'http://www.usenetrevolution.info/picupload/uploads/2014/11/i106911bhr0v3.png',
+  title: 'Dracula Untold 2014 German AC3LD 720p WEB DL x264 PROPER NSane',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?248843-Dracula-Untold-2014-German-AC3LD-720p-WEB-DL-x264-PROPER-NSane',
+  imdbLink: 'http://www.imdb.com/title/tt0829150/',
+  rating: 0,
+  genres: [] }
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:904:11)
+    at Server._listen2 (net.js:1042:14)
+    at listen (net.js:1064:10)
+    at Server.listen (net.js:1138:5)
+    at Function.app.listen (/home/vagrant/node_modules/express/lib/application.js:533:24)
+    at Object.<anonymous> (/project/server.js:65:5)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+  image: 'http://www.usenetrevolution.info/picupload/uploads/2014/11/i108500b9ysm6.jpg',
+  title: 'Interstellar 2014 German HDTS MIC DUBBED 720p x264 iND',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?248028-Interstellar-2014-German-HDTS-MIC-DUBBED-720p-x264-iND' }
+js-bson: Failed to load c++ bson extension, using pure JS version
+Failed to load c++ bson extension, using pure JS version
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:904:11)
+    at Server._listen2 (net.js:1042:14)
+    at listen (net.js:1064:10)
+    at Server.listen (net.js:1138:5)
+    at Function.app.listen (/home/vagrant/node_modules/express/lib/application.js:533:24)
+    at Object.<anonymous> (/project/server.js:65:5)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+load imdb: http://www.imdb.com/title/tt2103281/
+js-bson: Failed to load c++ bson extension, using pure JS version
+Failed to load c++ bson extension, using pure JS version
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:904:11)
+    at Server._listen2 (net.js:1042:14)
+    at listen (net.js:1064:10)
+    at Server.listen (net.js:1138:5)
+    at Function.app.listen (/home/vagrant/node_modules/express/lib/application.js:533:24)
+    at Object.<anonymous> (/project/server.js:65:5)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+  image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i103888blsssv.jpg',
+  title: 'Planet der Affen Revolution German AC3 Dubbed 720p BluRay x264 VCF',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?247859-Planet-der-Affen-Revolution-German-AC3-Dubbed-720p-BluRay-x264-VCF',
+  imdbLink: 'http://www.imdb.com/title/tt2103281/',
+  rating: 0,
+  genres: [] }
+js-bson: Failed to load c++ bson extension, using pure JS version
+load imdb: http://www.imdb.com/title/tt2103281/
+Failed to load c++ bson extension, using pure JS version
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+  image: 'http://www.usenetrevolution.info/picupload/uploads/2014/11/i109093by6xos.jpg',
+  title: 'Mindscape 2013 German DL 1080p BluRay x264 FRACTAL',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?248616-Mindscape-2013-German-DL-1080p-BluRay-x264-FRACTAL',
+  imdbLink: 'http://www.imdb.com/title/tt1715336/',
+  rating: 6.4,
+  genres: [ 'Drama', 'Thriller' ] }
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:904:11)
+    at Server._listen2 (net.js:1042:14)
+    at listen (net.js:1064:10)
+    at Server.listen (net.js:1138:5)
+    at Function.app.listen (/home/vagrant/node_modules/express/lib/application.js:533:24)
+    at Object.<anonymous> (/project/server.js:65:5)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+  image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i103888blsssv.jpg',
+  title: 'Planet der Affen Revolution German DL AC3 Dubbed 1080p BluRay x264 VCF',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?247836-Planet-der-Affen-Revolution-German-DL-AC3-Dubbed-1080p-BluRay-x264-VCF',
+  imdbLink: 'http://www.imdb.com/title/tt2103281/',
+  rating: 7.9,
+  genres: [ 'Action', 'Drama', 'Sci-Fi' ] }
+load imdb: http://www.imdb.com/title/tt2082152/
+js-bson: Failed to load c++ bson extension, using pure JS version
+Failed to load c++ bson extension, using pure JS version
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:904:11)
+    at Server._listen2 (net.js:1042:14)
+    at listen (net.js:1064:10)
+    at Server.listen (net.js:1138:5)
+    at Function.app.listen (/home/vagrant/node_modules/express/lib/application.js:533:24)
+    at Object.<anonymous> (/project/server.js:65:5)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+  image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i103888blsssv.jpg',
+  title: 'Planet der Affen Revolution 2014 German AC3LD DL 1080p BluRay x264 PS',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?247707-Planet-der-Affen-Revolution-2014-German-AC3LD-DL-1080p-BluRay-x264-PS' }
+js-bson: Failed to load c++ bson extension, using pure JS version
+Failed to load c++ bson extension, using pure JS version
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+  image: 'http://www.usenetrevolution.info/picupload/uploads/2014/11/i109081bzk6tp.jpg',
+  title: '13 Eerie We Prey For You UNCUT GERMAN 2013 DL 1080p BluRay x264 GOREHOUNDS',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?248601-13-Eerie-We-Prey-For-You-UNCUT-GERMAN-2013-DL-1080p-BluRay-x264-GOREHOUNDS',
+  thxLink: 'http://www.usenetrevolution.info/vb/post_thanks.php?do=post_thanks_add&p=308362&securitytoken=1416267058-56090e305195891b730185219e440c89126eaed1',
+  imdbLink: 'http://www.imdb.com/title/tt2082152/',
+  rating: 4.5,
+  genres: [ 'Horror', 'Sci-Fi' ] }
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+  image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i103888blsssv.jpg',
+  title: 'Planet der Affen Revolution 2014 German AC3LD DL 720p BluRay x264 PS',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?247706-Planet-der-Affen-Revolution-2014-German-AC3LD-DL-720p-BluRay-x264-PS' }
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:904:11)
+    at Server._listen2 (net.js:1042:14)
+    at listen (net.js:1064:10)
+    at Server.listen (net.js:1138:5)
+    at Function.app.listen (/home/vagrant/node_modules/express/lib/application.js:533:24)
+    at Object.<anonymous> (/project/server.js:65:5)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+load imdb: http://www.imdb.com/title/tt2401199/
+load imdb: http://www.imdb.com/title/tt2103281
+js-bson: Failed to load c++ bson extension, using pure JS version
+Failed to load c++ bson extension, using pure JS version
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:904:11)
+    at Server._listen2 (net.js:1042:14)
+    at listen (net.js:1064:10)
+    at Server.listen (net.js:1138:5)
+    at Function.app.listen (/home/vagrant/node_modules/express/lib/application.js:533:24)
+    at Object.<anonymous> (/project/server.js:65:5)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+  image: 'http://www.usenetrevolution.info/picupload/uploads/2014/11/i108781bxrl88.jpg',
+  title: 'Demon Inside 2013 German 1080p BluRay x264 THEORY',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?248303-Demon-Inside-2013-German-1080p-BluRay-x264-THEORY',
+  imdbLink: 'http://www.imdb.com/title/tt2401199/',
+  rating: 4.8,
+  genres: [ 'Horror', 'Thriller' ] }
+js-bson: Failed to load c++ bson extension, using pure JS version
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+  image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i103888blsssv.jpg',
+  title: 'Planet der Affen Revolution 2014 German AC3D 720p BluRay x264 SLiM',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?247705-Planet-der-Affen-Revolution-2014-German-AC3D-720p-BluRay-x264-SLiM',
+  imdbLink: 'http://www.imdb.com/title/tt2103281',
+  rating: 7.9,
+  genres: [ 'Action', 'Drama', 'Sci-Fi' ] }
+Failed to load c++ bson extension, using pure JS version
+load imdb: http://www.imdb.com/title/tt2832470/
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:904:11)
+    at Server._listen2 (net.js:1042:14)
+    at listen (net.js:1064:10)
+    at Server.listen (net.js:1138:5)
+    at Function.app.listen (/home/vagrant/node_modules/express/lib/application.js:533:24)
+    at Object.<anonymous> (/project/server.js:65:5)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+  image: 'http://www.usenetrevolution.info/picupload/uploads/2014/11/i107764bhbwud.jpg',
+  title: 'Mea Culpa Im Auge des Verbrechens 2014 German AC3D DL 720p BluRay x264 PS',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?247239-Mea-Culpa-Im-Auge-des-Verbrechens-2014-German-AC3D-DL-720p-BluRay-x264-PS' }
+js-bson: Failed to load c++ bson extension, using pure JS version
+Failed to load c++ bson extension, using pure JS version
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+  image: 'http://www.usenetrevolution.info/picupload/uploads/2014/11/i108780bvvyua.jpg',
+  title: 'Dead Snow Red vs Dead 2014 German 1080p BluRay x264 ROOR',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?248301-Dead-Snow-Red-vs-Dead-2014-German-1080p-BluRay-x264-ROOR',
+  thxLink: 'http://www.usenetrevolution.info/vb/post_thanks.php?do=post_thanks_add&p=307999&securitytoken=1416267068-d00308c8b63606159126d0cbb6075fb37ca4673a',
+  imdbLink: 'http://www.imdb.com/title/tt2832470/',
+  rating: 7.1,
+  genres: [ 'Action', 'Comedy', 'Horror' ] }
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:904:11)
+    at Server._listen2 (net.js:1042:14)
+    at listen (net.js:1064:10)
+    at Server.listen (net.js:1138:5)
+    at Function.app.listen (/home/vagrant/node_modules/express/lib/application.js:533:24)
+    at Object.<anonymous> (/project/server.js:65:5)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+  image: 'http://www.usenetrevolution.info/picupload/uploads/2014/11/i106911bhr0v3.png',
+  title: 'Dracula Untold German AC3 Dubbed 720p WebHD h264 Pleaders',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?246370-Dracula-Untold-German-AC3-Dubbed-720p-WebHD-h264-Pleaders' }
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+  image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i103888blsssv.jpg',
+  title: 'Planet der Affen Revolution German DL 1080p BluRay x264 EXQUiSiTE',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?248153-Planet-der-Affen-Revolution-German-DL-1080p-BluRay-x264-EXQUiSiTE' }
+js-bson: Failed to load c++ bson extension, using pure JS version
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+  image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i96866bkl29y.jpg',
+  title: 'Lucy German DL AC3 Dubbed 1080p WebHD h264 PsO',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?245701-Lucy-German-DL-AC3-Dubbed-1080p-WebHD-h264-PsO' }
+Failed to load c++ bson extension, using pure JS version
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+  image: 'http://www.usenetrevolution.info/picupload/uploads/2014/11/i108606bg66zb.jpg',
+  title: 'Das Boot uncut 309 Min Teil 1-6',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?248150-Das-Boot-uncut-309-Min-Teil-1-6',
+  thxLink: 'http://www.usenetrevolution.info/vb/post_thanks.php?do=post_thanks_add&p=307768&securitytoken=1416267074-1da54ec8c323815d10e14f2354ce42fe46bc4a91' }
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:904:11)
+    at Server._listen2 (net.js:1042:14)
+    at listen (net.js:1064:10)
+    at Server.listen (net.js:1138:5)
+    at Function.app.listen (/home/vagrant/node_modules/express/lib/application.js:533:24)
+    at Object.<anonymous> (/project/server.js:65:5)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+load imdb: http://www.imdb.com/title/tt2872732/
+js-bson: Failed to load c++ bson extension, using pure JS version
+Failed to load c++ bson extension, using pure JS version
+load imdb: http://www.imdb.com/title/tt2025667/
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:904:11)
+    at Server._listen2 (net.js:1042:14)
+    at listen (net.js:1064:10)
+    at Server.listen (net.js:1138:5)
+    at Function.app.listen (/home/vagrant/node_modules/express/lib/application.js:533:24)
+    at Object.<anonymous> (/project/server.js:65:5)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+js-bson: Failed to load c++ bson extension, using pure JS version
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+  image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i96866bkl29y.jpg',
+  title: 'Lucy German AC3 Dubbed 720p WebHD h264 iNTERNAL Pleaders',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?245698-Lucy-German-AC3-Dubbed-720p-WebHD-h264-iNTERNAL-Pleaders',
+  imdbLink: 'http://www.imdb.com/title/tt2872732/',
+  rating: 6.5,
+  genres: [ 'Action', 'Sci-Fi', 'Thriller' ] }
+Failed to load c++ bson extension, using pure JS version
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:904:11)
+    at Server._listen2 (net.js:1042:14)
+    at listen (net.js:1064:10)
+    at Server.listen (net.js:1138:5)
+    at Function.app.listen (/home/vagrant/node_modules/express/lib/application.js:533:24)
+    at Object.<anonymous> (/project/server.js:65:5)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+  image: 'http://www.usenetrevolution.info/picupload/uploads/2014/11/i108054blovld.png',
+  title: 'Darkness Descends 2014 German DL 1080p BluRay x264 ENCOUNTERS',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?247682-Darkness-Descends-2014-German-DL-1080p-BluRay-x264-ENCOUNTERS',
+  thxLink: 'http://www.usenetrevolution.info/vb/post_thanks.php?do=post_thanks_add&p=307192&securitytoken=1416267076-9b098a71524a9cc2721162308a0ed2891b423613',
+  imdbLink: 'http://www.imdb.com/title/tt2025667/',
+  rating: 3.6,
+  genres: [ 'Horror' ] }
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+  image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i104347b43oud.jpg',
+  title: 'Hercules 2014 Extended Cut German AC3LD 720p WEB DL h264 READ NFO FiSTER',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?243398-Hercules-2014-Extended-Cut-German-AC3LD-720p-WEB-DL-h264-READ-NFO-FiSTER' }
+js-bson: Failed to load c++ bson extension, using pure JS version
+load imdb: http://www.imdb.com/title/tt3478536/
+Failed to load c++ bson extension, using pure JS version
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:904:11)
+    at Server._listen2 (net.js:1042:14)
+    at listen (net.js:1064:10)
+    at Server.listen (net.js:1138:5)
+    at Function.app.listen (/home/vagrant/node_modules/express/lib/application.js:533:24)
+    at Object.<anonymous> (/project/server.js:65:5)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+  image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i100036bfdpvb.jpg',
+  title: 'Tammy Voll abgefahren German DL AC3 Dubbed 1080p WebHD h264 PsO',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?238474-Tammy-Voll-abgefahren-German-DL-AC3-Dubbed-1080p-WebHD-h264-PsO' }
+js-bson: Failed to load c++ bson extension, using pure JS version
+Failed to load c++ bson extension, using pure JS version
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+  image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i100036bfdpvb.jpg',
+  title: 'Tammy Voll abgefahren German DL AC3 Dubbed 720p WebHD h264 PsO',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?238475-Tammy-Voll-abgefahren-German-DL-AC3-Dubbed-720p-WebHD-h264-PsO' }
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:904:11)
+    at Server._listen2 (net.js:1042:14)
+    at listen (net.js:1064:10)
+    at Server.listen (net.js:1138:5)
+    at Function.app.listen (/home/vagrant/node_modules/express/lib/application.js:533:24)
+    at Object.<anonymous> (/project/server.js:65:5)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+  image: 'http://www.usenetrevolution.info/picupload/uploads/2014/11/i107841bku9uk.jpg',
+  title: 'Miss Sixty 2014 German 1080p BluRay x264 PROPER FRACTAL',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?247291-Miss-Sixty-2014-German-1080p-BluRay-x264-PROPER-FRACTAL',
+  thxLink: 'http://www.usenetrevolution.info/vb/post_thanks.php?do=post_thanks_add&p=306763&securitytoken=1416267081-a97d75ec8b8cd68d1e7b792fa16faf9caa3f57fd',
+  imdbLink: 'http://www.imdb.com/title/tt3478536/',
+  rating: 5.5,
+  genres: [ 'Comedy' ] }
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+  image: 'http://www.usenetrevolution.info/picupload/uploads/2014/11/i105035bhhx1r.jpg',
+  title: 'Tammy Voll abgefahren German AC3D DL 1080p WEB DL h264 LameHD',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?244180-Tammy-Voll-abgefahren-German-AC3D-DL-1080p-WEB-DL-h264-LameHD' }
+js-bson: Failed to load c++ bson extension, using pure JS version
+Failed to load c++ bson extension, using pure JS version
+load imdb: http://www.imdb.com/title/tt1085492/
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:904:11)
+    at Server._listen2 (net.js:1042:14)
+    at listen (net.js:1064:10)
+    at Server.listen (net.js:1138:5)
+    at Function.app.listen (/home/vagrant/node_modules/express/lib/application.js:533:24)
+    at Object.<anonymous> (/project/server.js:65:5)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+js-bson: Failed to load c++ bson extension, using pure JS version
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+  image: 'http://www.usenetrevolution.info/picupload/uploads/2014/11/i105035bhhx1r.jpg',
+  title: 'Tammy Voll abgefahren 2014 Theatrical Cut German AC3LD DL 720p BluRay x264 PS',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?244178-Tammy-Voll-abgefahren-2014-Theatrical-Cut-German-AC3LD-DL-720p-BluRay-x264-PS' }
+Failed to load c++ bson extension, using pure JS version
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+  image: 'http://www.usenetrevolution.info/picupload/uploads/2014/11/i107840br99rs.jpg',
+  title: 'The Prince Only God Forgives 2014 German DL 1080p BluRay x264 FRACTAL',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?247289-The-Prince-Only-God-Forgives-2014-German-DL-1080p-BluRay-x264-FRACTAL',
+  imdbLink: 'http://www.imdb.com/title/tt1085492/',
+  rating: 4.5,
+  genres: [ 'Action', 'Thriller' ] }
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:904:11)
+    at Server._listen2 (net.js:1042:14)
+    at listen (net.js:1064:10)
+    at Server.listen (net.js:1138:5)
+    at Function.app.listen (/home/vagrant/node_modules/express/lib/application.js:533:24)
+    at Object.<anonymous> (/project/server.js:65:5)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+js-bson: Failed to load c++ bson extension, using pure JS version
+Failed to load c++ bson extension, using pure JS version
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:904:11)
+    at Server._listen2 (net.js:1042:14)
+    at listen (net.js:1064:10)
+    at Server.listen (net.js:1138:5)
+    at Function.app.listen (/home/vagrant/node_modules/express/lib/application.js:533:24)
+    at Object.<anonymous> (/project/server.js:65:5)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+js-bson: Failed to load c++ bson extension, using pure JS version
+Failed to load c++ bson extension, using pure JS version
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:904:11)
+    at Server._listen2 (net.js:1042:14)
+    at listen (net.js:1064:10)
+    at Server.listen (net.js:1138:5)
+    at Function.app.listen (/home/vagrant/node_modules/express/lib/application.js:533:24)
+    at Object.<anonymous> (/project/server.js:65:5)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+js-bson: Failed to load c++ bson extension, using pure JS version
+Failed to load c++ bson extension, using pure JS version
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:904:11)
+    at Server._listen2 (net.js:1042:14)
+    at listen (net.js:1064:10)
+    at Server.listen (net.js:1138:5)
+    at Function.app.listen (/home/vagrant/node_modules/express/lib/application.js:533:24)
+    at Object.<anonymous> (/project/server.js:65:5)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+js-bson: Failed to load c++ bson extension, using pure JS version
+Failed to load c++ bson extension, using pure JS version
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+  image: 'http://www.usenetrevolution.info/picupload/uploads/2014/11/i107716boe9z8.jpg',
+  title: 'Der Hobbit Smaugs Einoede EXTENDED German DL 1080p BluRay x264 EXQUiSiTE',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?247128-Der-Hobbit-Smaugs-Einoede-EXTENDED-German-DL-1080p-BluRay-x264-EXQUiSiTE',
+  thxLink: 'http://www.usenetrevolution.info/vb/post_thanks.php?do=post_thanks_add&p=306591&securitytoken=1416267091-4d003da87f98061b97c0216fba1fb4899a578be1' }
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:904:11)
+    at Server._listen2 (net.js:1042:14)
+    at listen (net.js:1064:10)
+    at Server.listen (net.js:1138:5)
+    at Function.app.listen (/home/vagrant/node_modules/express/lib/application.js:533:24)
+    at Object.<anonymous> (/project/server.js:65:5)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+load imdb: http://www.imdb.com/title/tt3097204/
+js-bson: Failed to load c++ bson extension, using pure JS version
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+  image: 'http://www.usenetrevolution.info/picupload/uploads/2014/11/i107075bfikce.jpg',
+  title: 'Nymphomaniac Vol II Directors Cut German DL 1080p BluRay x264 EXQUiSiTE',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?246491-Nymphomaniac-Vol-II-Directors-Cut-German-DL-1080p-BluRay-x264-EXQUiSiTE' }
+Failed to load c++ bson extension, using pure JS version
+Express server listening on port 3000 in development mode
+db connection open
+finished created admin
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+  image: 'http://www.usenetrevolution.info/picupload/uploads/2014/11/i104768b4n5bp.jpg',
+  title: 'Sex on the Beach 2 Down Under German AC3 Dubbed 720p WebHD h264 Pleaders',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?243908-Sex-on-the-Beach-2-Down-Under-German-AC3-Dubbed-720p-WebHD-h264-Pleaders',
+  imdbLink: 'http://www.imdb.com/title/tt3097204/',
+  rating: 6.8,
+  genres: [ 'Comedy' ] }
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+  image: 'http://www.usenetrevolution.info/picupload/uploads/2014/11/i106930bqtzbm.jpg',
+  title: 'Nymphomaniac Vol I Directors Cut German DL 1080p BluRay x264 EXQUiSiTE',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?246376-Nymphomaniac-Vol-I-Directors-Cut-German-DL-1080p-BluRay-x264-EXQUiSiTE',
+  thxLink: 'http://www.usenetrevolution.info/vb/post_thanks.php?do=post_thanks_add&p=305738&securitytoken=1416267100-6d0c9968e4d629a3126ac3eced76357b33a66719' }
+creat phantom
+open usenet
+load imdb: http://www.imdb.com/title/tt0116778
+[90mGET /movies [36m304 [90m23ms[0m
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+  image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i100365b6sqya.jpg',
+  title: 'Planes 2 Immer im Einsatz German AC3D DL 720p BluRay x264 PS',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?238878-Planes-2-Immer-im-Einsatz-German-AC3D-DL-720p-BluRay-x264-PS' }
+[90mGET /partials/movies [36m304 [90m14ms[0m
+[90mGET /%7B%7Bmovies[0].image%7D%7D [36m304 [90m29ms[0m
+[90mGET /partials/navbar [36m304 [90m28ms[0m
+[90mGET /partials/movieStackTemplate.html [36m304 [90m31ms[0m
+[90mGET /api/movies [32m200 [90m164ms - 54.42kb[0m
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+  image: 'http://www.usenetrevolution.info/picupload/uploads/2014/09/i86244bqnkh8.jpg',
+  title: 'Drachenzaehmen leicht gemacht 2 German DL AC3 Dubbed 1080p WebHD h264-PsO',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?223329-Drachenzaehmen-leicht-gemacht-2-German-DL-AC3-Dubbed-1080p-WebHD-h264-PsO' }
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+  image: 'http://www.usenetrevolution.info/picupload/uploads/2014/11/i106929baay00.jpg',
+  title: 'Kingpin Zwei Trottel auf der Bowlingbahn 1996 German AC3D DL EXTENDED 1080p BluRay x264 KLASSiGERHD',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?246374-Kingpin-Zwei-Trottel-auf-der-Bowlingbahn-1996-German-AC3D-DL-EXTENDED-1080p-BluRay-x264-KLASSiGERHD',
+  thxLink: 'http://www.usenetrevolution.info/vb/post_thanks.php?do=post_thanks_add&p=305736&securitytoken=1416267101-2c8cef4e8b76755387f8ef6719fe6a41f2912b04',
+  imdbLink: 'http://www.imdb.com/title/tt0116778',
+  rating: 6.9,
+  genres: [ 'Comedy', 'Sport' ] }
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+  image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i104347b43oud.jpg',
+  title: 'Hercules 2014 Theatrical Cut German AC3LD DL 720p WEB DL h264 PS',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?243403-Hercules-2014-Theatrical-Cut-German-AC3LD-DL-720p-WEB-DL-h264-PS' }
+load imdb: http://www.imdb.com/title/tt1181840/
+request movie{"_id":"546a6c0159062ae275cc2985","forumUrl":"http://www.usenetrevolution.info/vb/forumdisplay.php?f=31","image":"http://i.imgur.com/kWERuUq.jpg","title":"Rio 2 2014 German AC3D DL 720p BluRay x264-FiSTER","threadUrl":"http://www.usenetrevolution.info/vb/showthread.php?198879-Rio-2-2014-German-AC3D-DL-720p-BluRay-x264-FiSTER","updated_at":"2014-11-17T21:43:29.469Z","created_at":"2014-11-17T21:43:29.469Z","__v":0,"fileName":"Rio.2.2014.German.AC3D.DL.720p.BluRay.x264-FiSTER{{Usenetrevolution}}.rar","genres":[],"status":"download"}
+[90mPUT /api/movies/546a6c0159062ae275cc2985 [32m200 [90m19ms - 2b[0m
+[90mGET /api/movies/546a6c0159062ae275cc2985 [32m200 [90m8ms - 581b[0m
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+  image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i104347b43oud.jpg',
+  title: 'Hercules 2014 Extended Cut German AC3LD DL 1080p WEB DL h264 READ NFO FiSTER',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?243402-Hercules-2014-Extended-Cut-German-AC3LD-DL-1080p-WEB-DL-h264-READ-NFO-FiSTER' }
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+  image: 'http://www.usenetrevolution.info/picupload/uploads/2014/11/i106928bj0d6x.jpg',
+  title: 'Jack und das Kuckucksuhrherz 2013 German DL 1080p BluRay x264 ENCOUNTERS',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?246372-Jack-und-das-Kuckucksuhrherz-2013-German-DL-1080p-BluRay-x264-ENCOUNTERS',
+  imdbLink: 'http://www.imdb.com/title/tt1181840/',
+  rating: 7,
+  genres: [ 'Animation', 'Adventure', 'Drama' ] }
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+  image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i104036bnabmy.jpg',
+  title: 'Storm Hunters 2014 German AC3D DL 720p BluRay x264 LameHD',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?243049-Storm-Hunters-2014-German-AC3D-DL-720p-BluRay-x264-LameHD' }
+load imdb: http://imdb.com/title/tt0402022/
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+  image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i104036bnabmy.jpg',
+  title: 'Storm Hunters 2014 German AC3D DL 1080p BluRay x264 LameHD',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?243047-Storm-Hunters-2014-German-AC3D-DL-1080p-BluRay-x264-LameHD' }
+login
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+  image: 'http://www.usenetrevolution.info/picupload/uploads/2014/11/i106196bjtws0.jpg',
+  title: 'Aeon Flux 2005 German DL 1080p BluRay x264 DETAiLS',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?245522-Aeon-Flux-2005-German-DL-1080p-BluRay-x264-DETAiLS',
+  thxLink: 'http://www.usenetrevolution.info/vb/post_thanks.php?do=post_thanks_add&p=304717&securitytoken=1416267108-34f4bd86297d94971a0b0dede7cc052e59a724ab',
+  imdbLink: 'http://imdb.com/title/tt0402022/',
+  rating: 5.5,
+  genres: [ 'Action', 'Sci-Fi' ] }
+load imdb: http://www.imdb.com/title/tt2103281/
+load imdb: http://www.imdb.com/title/tt2968804/
+login done
+[90mGET /movies [36m304 [90m14ms[0m
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+  image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i103888blsssv.jpg',
+  title: 'Planet der Affen Revolution 2014 German AC3LD DL 720p WEB DL h264 NSane',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?242849-Planet-der-Affen-Revolution-2014-German-AC3LD-DL-720p-WEB-DL-h264-NSane',
+  imdbLink: 'http://www.imdb.com/title/tt2103281/',
+  rating: 7.9,
+  genres: [ 'Action', 'Drama', 'Sci-Fi' ] }
+[90mGET /partials/login [36m304 [90m9ms[0m
+[90mGET /partials/movies [36m304 [90m13ms[0m
+[90mGET /partials/navbar.html [36m304 [90m6ms[0m
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+  image: 'http://www.usenetrevolution.info/picupload/uploads/2014/11/i105990bv9pgo.jpg',
+  title: 'Drive Hard 2014 German DL 1080p BluRay x264 FRACTAL',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?245314-Drive-Hard-2014-German-DL-1080p-BluRay-x264-FRACTAL',
+  thxLink: 'http://www.usenetrevolution.info/vb/post_thanks.php?do=post_thanks_add&p=304466&securitytoken=1416267112-c0169f6fc04d54356f93658dc50111cfcbbd928e',
+  imdbLink: 'http://www.imdb.com/title/tt2968804/',
+  rating: 4.4,
+  genres: [ 'Action', 'Comedy', 'Crime' ] }
+load imdb: http://www.imdb.com/title/tt2103281/
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+  image: 'http://www.usenetrevolution.info/picupload/uploads/2014/11/i105977bp7xrq.jpg',
+  title: 'Maedelsabend Nuechtern zu schuechtern German DL 1080p BluRay x264 EXQUiSiTE',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?245258-Maedelsabend-Nuechtern-zu-schuechtern-German-DL-1080p-BluRay-x264-EXQUiSiTE',
+  thxLink: 'http://www.usenetrevolution.info/vb/post_thanks.php?do=post_thanks_add&p=304389&securitytoken=1416267117-adf2794199ebdb20e9223665170b72abbdb0fa25' }
+movie.js password:Usenetrevolution
+      DOWNLOAD         Rio.2.2014.German.AC3D.DL.720p.BluRay.x264-FiSTER{{Usenetrevolution}}.rar
+onResourceReceived
+filenName Rio.2.2014.German.AC3D.DL.720p.BluRay.x264-FiSTER{{Usenetrevolution}}.rar
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+  image: 'http://www.usenetrevolution.info/picupload/uploads/2014/11/i105976br4zas.jpg',
+  title: 'The Purge Anarchy German DL 1080p BluRay x264 EXQUiSiTE',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?245255-The-Purge-Anarchy-German-DL-1080p-BluRay-x264-EXQUiSiTE',
+  thxLink: 'http://www.usenetrevolution.info/vb/post_thanks.php?do=post_thanks_add&p=304386&securitytoken=1416267118-1580b95807f12cb9bd0261a6aa0b75ba8bd0907a' }
+load imdb: http://www.imdb.com/title/tt1688644/
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+  image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i103888blsssv.jpg',
+  title: 'Planet der Affen Revolution 2014 German AC3LD DL 1080p WEB DL h264 NSane',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?242848-Planet-der-Affen-Revolution-2014-German-AC3LD-DL-1080p-WEB-DL-h264-NSane',
+  imdbLink: 'http://www.imdb.com/title/tt2103281/',
+  rating: 7.9,
+  genres: [ 'Action', 'Drama', 'Sci-Fi' ] }
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+  image: 'http://www.usenetrevolution.info/picupload/uploads/2014/11/i105600bq7u58.jpg',
+  title: 'Gegengerade German 1080p BluRay x264 RSG',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?244862-Gegengerade-German-1080p-BluRay-x264-RSG',
+  thxLink: 'http://www.usenetrevolution.info/vb/post_thanks.php?do=post_thanks_add&p=303959&securitytoken=1416267120-866d047fc3d3ae80a6a638e349da5fecd704b80f',
+  imdbLink: 'http://www.imdb.com/title/tt1688644/',
+  rating: 3.9,
+  genres: [ 'Action', 'Drama', 'Sport' ] }
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+  image: 'http://i.imgur.com/Ua0m3Ot.jpg',
+  title: 'Repentance Tag der Reue 2013 German AC3D DL 1080p WEB DL x264 LameHD',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?244832-Repentance-Tag-der-Reue-2013-German-AC3D-DL-1080p-WEB-DL-x264-LameHD',
+  thxLink: 'http://www.usenetrevolution.info/vb/post_thanks.php?do=post_thanks_add&p=303920&securitytoken=1416267124-4a8eb43c4ab6ee5d397ffd23930417b2ffbd19a6' }
+[90mPOST /api/session [32m200 [90m91ms - 66b[0m
+[90mGET /partials/main [36m304 [90m10ms[0m
+[90mGET /partials/navbar [36m304 [90m15ms[0m
+[90mGET /api/awesomeThings [36m304 [90m20ms[0m
+load imdb: http://www.imdb.com/title/tt1267297/
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+  image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i104708b7gyo5.jpg',
+  title: 'Boyhood German DL 1080p BluRay x264 EXQUiSiTE',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?243821-Boyhood-German-DL-1080p-BluRay-x264-EXQUiSiTE' }
+[90mGET /%7B%7Bmovies[0].image%7D%7D [36m304 [90m13ms[0m
+[90mGET /partials/movieStackTemplate.html [36m304 [90m15ms[0m
+[90mGET /api/movies [32m200 [90m55ms - 54.42kb[0m
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+  image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i104704bwwipe.jpg',
+  title: 'Drachenzaehmen leicht gemacht 2 German DL 1080p BluRay x264 EXQUiSiTE',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?243806-Drachenzaehmen-leicht-gemacht-2-German-DL-1080p-BluRay-x264-EXQUiSiTE' }
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+  image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i101990bg1m73.jpg',
+  title: 'Hercules EXTENDED DL German AC3 Dubbed 1080p x264 VCF',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?242820-Hercules-EXTENDED-DL-German-AC3-Dubbed-1080p-x264-VCF',
+  imdbLink: 'http://www.imdb.com/title/tt1267297/',
+  rating: 6.2,
+  genres: [ 'Action', 'Adventure' ] }
+load imdb: http://www.imdb.com/title/tt1267297/
+load imdb: http://www.imdb.de/title/tt3449302/
+[90mGET /movies [36m304 [90m13ms[0m
+[90mGET /partials/movies [36m304 [90m19ms[0m
+[90mGET /%7B%7Bmovies[0].image%7D%7D [36m304 [90m36ms[0m
+[90mGET /partials/movieStackTemplate.html [36m304 [90m44ms[0m
+[90mGET /partials/navbar [36m304 [90m39ms[0m
+[90mGET /api/movies [36m304 [90m97ms[0m
+LOAD MOVIE FROM:null
+NZB downloaded
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+  image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i101990bg1m73.jpg',
+  title: 'Hercules EXTENDED DL German AC3 Dubbed 720p x264 VCF',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?242818-Hercules-EXTENDED-DL-German-AC3-Dubbed-720p-x264-VCF',
+  imdbLink: 'http://www.imdb.com/title/tt1267297/',
+  rating: 6.2,
+  genres: [ 'Action', 'Adventure' ] }
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+  image: 'http://i.imgur.com/YZKVi1i.jpg',
+  title: 'Tom Sawyer vs Zombies 2014 German DL 1080p BluRay x264 GMA',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?243773-Tom-Sawyer-vs-Zombies-2014-German-DL-1080p-BluRay-x264-GMA',
+  thxLink: 'http://www.usenetrevolution.info/vb/post_thanks.php?do=post_thanks_add&p=302730&securitytoken=1416267128-cf499df107a54a73a17741111958343fff90af65',
+  imdbLink: 'http://www.imdb.de/title/tt3449302/',
+  rating: 3.3,
+  genres: [ 'Action', 'Horror', 'Thriller' ] }
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+  image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i103206bszi3a.jpg',
+  title: 'Guardians of the Galaxy TS LD GERMAN 720p x264 PsO',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?242076-Guardians-of-the-Galaxy-TS-LD-GERMAN-720p-x264-PsO' }
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+  image: 'http://i.imgur.com/8ezgqmo.jpg',
+  title: 'Zwei ritten zusammen 1961 GERMAN AC3D DL 1080p BluRay x264 COOLHD',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?243769-Zwei-ritten-zusammen-1961-GERMAN-AC3D-DL-1080p-BluRay-x264-COOLHD',
+  thxLink: 'http://www.usenetrevolution.info/vb/post_thanks.php?do=post_thanks_add&p=302724&securitytoken=1416267133-aaa0783d2c15ebda3935732ee789ab21ef8fa4dc' }
+load imdb: http://www.imdb.com/title/tt1291150/
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+  image: 'http://i.imgur.com/OidfCn2.jpg',
+  title: 'Zulu 2013 German DL 1080p Bluray x264 LeetHD',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?243768-Zulu-2013-German-DL-1080p-Bluray-x264-LeetHD',
+  thxLink: 'http://www.usenetrevolution.info/vb/post_thanks.php?do=post_thanks_add&p=302723&securitytoken=1416267134-3fa3c0112bf670d845ca359de942c5b0beb393ea' }
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+  image: 'http://i.imgur.com/rge54vi.png',
+  title: 'Wooden Men 1976 German 1080p BluRay x264 iFPD',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?243767-Wooden-Men-1976-German-1080p-BluRay-x264-iFPD' }
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+  image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i101258b20y4i.jpg',
+  title: 'Teenage Mutant Ninja Turtles German AC3 Dubbed 720p WebHD h264 Pleaders',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?241650-Teenage-Mutant-Ninja-Turtles-German-AC3-Dubbed-720p-WebHD-h264-Pleaders',
+  imdbLink: 'http://www.imdb.com/title/tt1291150/',
+  rating: 6.2,
+  genres: [ 'Action', 'Adventure', 'Comedy' ] }
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+  image: 'http://i.imgur.com/tjN1h0F.jpg',
+  title: 'Wild Child Erstklassig zickig 2008 German DL 1080p BluRay x264 DETAiLS',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?243766-Wild-Child-Erstklassig-zickig-2008-German-DL-1080p-BluRay-x264-DETAiLS' }
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+  image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i101990bg1m73.jpg',
+  title: 'Hercules 2014 EXTENDED CUT German AC3D DL 720p WEB DL h264 LameHD',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?240678-Hercules-2014-EXTENDED-CUT-German-AC3D-DL-720p-WEB-DL-h264-LameHD' }
+load imdb: http://www.imdb.com/title/tt1543459/
+[90mGET /movies [36m304 [90m9ms[0m
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+  image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i101904btuc9s.jpg',
+  title: 'Hercules 2014 German Extended AC3LD WEBHD 1080p x264 IND',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?240573-Hercules-2014-German-Extended-AC3LD-WEBHD-1080p-x264-IND' }
+[90mGET /partials/movies [36m304 [90m49ms[0m
+[90mGET /%7B%7Bmovies[0].image%7D%7D [36m304 [90m14ms[0m
+[90mGET /partials/movieStackTemplate.html [36m304 [90m26ms[0m
+[90mGET /partials/navbar [36m304 [90m26ms[0m
+[90mGET /api/movies [32m200 [90m55ms - 54.42kb[0m
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+  image: 'http://i.imgur.com/jWMYzFc.jpg',
+  title: 'War Killer At the End of the Day 2010 German DL 1080p BluRay x264 RSG',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?243765-War-Killer-At-the-End-of-the-Day-2010-German-DL-1080p-BluRay-x264-RSG',
+  thxLink: 'http://www.usenetrevolution.info/vb/post_thanks.php?do=post_thanks_add&p=302720&securitytoken=1416267138-1647bafc9fff0f8e4ae0fc9767c1c006afd4dbde',
+  imdbLink: 'http://www.imdb.com/title/tt1543459/',
+  rating: 4.6,
+  genres: [ 'Action', 'Horror', 'Thriller' ] }
+load imdb: http://www.imdb.com/title/tt3322940/
+load imdb: http://www.imdb.com/title/tt1472195/
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+  image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i101698bvnwil.jpg',
+  title: 'Annabelle 2014 German AC3MD WEBHD 720p x264 IND',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?240284-Annabelle-2014-German-AC3MD-WEBHD-720p-x264-IND',
+  imdbLink: 'http://www.imdb.com/title/tt3322940/',
+  rating: 5.7,
+  genres: [ 'Horror' ] }
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+  image: 'http://i.imgur.com/usXEeWB.jpg',
+  title: 'Von der boesen Art The Violent Kind 2010 German DL 1080p BluRay x264 DECENT',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?243764-Von-der-boesen-Art-The-Violent-Kind-2010-German-DL-1080p-BluRay-x264-DECENT',
+  thxLink: 'http://www.usenetrevolution.info/vb/post_thanks.php?do=post_thanks_add&p=302719&securitytoken=1416267142-35cd6ab98f32c58629e42b744a47b3cccc1e71dd',
+  imdbLink: 'http://www.imdb.com/title/tt1472195/',
+  rating: 4.7,
+  genres: [ 'Horror' ] }
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+  image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i101617bxiwmp.jpg',
+  title: 'The Purge Anarchy German DL AC3 Dubbed 1080p BluRay x264 Pleaders',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?240203-The-Purge-Anarchy-German-DL-AC3-Dubbed-1080p-BluRay-x264-Pleaders' }
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+  image: 'http://i.imgur.com/SLo9SFy.jpg',
+  title: 'Touching Home 2008 German DL 1080p BluRay x264 EPHEMERiD',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?243763-Touching-Home-2008-German-DL-1080p-BluRay-x264-EPHEMERiD' }
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+  image: 'http://i.imgur.com/Hm9ND1i.jpg',
+  title: 'Torture Chamber 2013 German DL 1080p BluRay x264 ENCOUNTERS',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?243761-Torture-Chamber-2013-German-DL-1080p-BluRay-x264-ENCOUNTERS',
+  thxLink: 'http://www.usenetrevolution.info/vb/post_thanks.php?do=post_thanks_add&p=302716&securitytoken=1416267147-d37f5dfb58b5431ecbcef9ed430b978b251df508' }
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+  image: 'http://i.imgur.com/IbbPsEj.jpg',
+  title: 'Tormented 2009 German DL 1080p BluRay x264 DECENT',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?243760-Tormented-2009-German-DL-1080p-BluRay-x264-DECENT',
+  thxLink: 'http://www.usenetrevolution.info/vb/post_thanks.php?do=post_thanks_add&p=302715&securitytoken=1416267148-c324041832a8681605a6e152ef547c4f6d64f091' }
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+  image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i101596bbt0kw.jpg',
+  title: 'Sin City 2 A Dame to Kill For 2014 German DTSD DL 1080p BluRay x264 LameHD',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?240192-Sin-City-2-A-Dame-to-Kill-For-2014-German-DTSD-DL-1080p-BluRay-x264-LameHD' }
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+  image: 'http://i.imgur.com/dBLSjC2.jpg',
+  title: 'Tokyo Powerman 1985 German 1080p BluRay x264 iFPD',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?243759-Tokyo-Powerman-1985-German-1080p-BluRay-x264-iFPD',
+  thxLink: 'http://www.usenetrevolution.info/vb/post_thanks.php?do=post_thanks_add&p=302713&securitytoken=1416267149-13178092aa5c3191809cece82a894c5cb64ecb74' }
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+  image: 'http://i.imgur.com/r6CLYcl.jpg',
+  title: 'Tokugawa Joy of Torture 2 UNCUT 1976 German DTS 1080p BluRay x264 LeetHD',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?243758-Tokugawa-Joy-of-Torture-2-UNCUT-1976-German-DTS-1080p-BluRay-x264-LeetHD',
+  thxLink: 'http://www.usenetrevolution.info/vb/post_thanks.php?do=post_thanks_add&p=302712&securitytoken=1416267150-da06837e4ccc95d0bc8e19ddf91bbfb2343d1e2e' }
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+  image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i101596bbt0kw.jpg',
+  title: 'Sin City 2 A Dame to Kill For 2014 German DTSD DL 1080p BluRay AVC REMUX LameHD',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?240184-Sin-City-2-A-Dame-to-Kill-For-2014-German-DTSD-DL-1080p-BluRay-AVC-REMUX-LameHD' }
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+  image: 'http://i.imgur.com/91pCu5X.jpg',
+  title: 'Toete Amigo 1966 German 1080p BluRay x264 CONTRiBUTiON',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?243757-Toete-Amigo-1966-German-1080p-BluRay-x264-CONTRiBUTiON',
+  thxLink: 'http://www.usenetrevolution.info/vb/post_thanks.php?do=post_thanks_add&p=302711&securitytoken=1416267151-d65242a496d044b8e5d19f771eff980b5c5cd200' }
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+  image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i101377b73lva.jpg',
+  title: 'Denk wie ein Mann 2 2014 German AC3MD DL 1080p BluRay AVC REMUX PS',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?239992-Denk-wie-ein-Mann-2-2014-German-AC3MD-DL-1080p-BluRay-AVC-REMUX-PS' }
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+  image: 'http://i.imgur.com/TIzBiUO.jpg',
+  title: 'The New Daughter 2009 German DTS DL 1080p BluRay REPACK x264 RSG',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?243755-The-New-Daughter-2009-German-DTS-DL-1080p-BluRay-REPACK-x264-RSG' }
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
+  image: 'http://www.usenetrevolution.info/picupload/uploads/2014/10/i99992bd391y.jpg',
+  title: 'Denk wie ein Mann 2 2014 German AC3D DL 1080p BluRay x264 PS',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?238419-Denk-wie-ein-Mann-2-2014-German-AC3D-DL-1080p-BluRay-x264-PS',
+  thxLink: 'http://www.usenetrevolution.info/vb/post_thanks.php?do=post_thanks_add&p=296542&securitytoken=1416267153-859b8104f168fbba0eea298812a62b59b64b35af' }
+All done
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+  image: 'http://i.imgur.com/81bPc7j.jpg',
+  title: 'The Money Jeder bezahlt seinen Preis 2012 German DL 1080p BluRay x264 RSG',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?243754-The-Money-Jeder-bezahlt-seinen-Preis-2012-German-DL-1080p-BluRay-x264-RSG',
+  thxLink: 'http://www.usenetrevolution.info/vb/post_thanks.php?do=post_thanks_add&p=302708&securitytoken=1416267153-859b8104f168fbba0eea298812a62b59b64b35af' }
+createOrUpdate
+{ forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39',
+  image: 'http://i.imgur.com/ucSRqSW.jpg',
+  title: 'The Mine Halloween in der Hoelle 2013 German DL 1080p BluRay x264 LeetHD',
+  threadUrl: 'http://www.usenetrevolution.info/vb/showthread.php?243753-The-Mine-Halloween-in-der-Hoelle-2013-German-DL-1080p-BluRay-x264-LeetHD',
+  thxLink: 'http://www.usenetrevolution.info/vb/post_thanks.php?do=post_thanks_add&p=302707&securitytoken=1416267154-5d41344b066b988b8899a4016a6c34b2174038f2' }
+All done

@@ -117,18 +117,24 @@ console.log('filenName '+savedMovie.fileName);
       spooky.start(
         'http://www.usenetrevolution.info/vb/cmps_index.php?tabid=73?tabid=29');
       spooky.then(function () {
-        if (this.exists('input[id="vb_login_username"]')) {
-          this.fill('form', {
+	    this.capture('login.png');
+       
+          this.fill('form#navbar_loginform', {
             'vb_login_username': 'serverlat',
             'vb_login_password': 'Over9000'
           }, true);
-        }
+       
       });
+	    spooky.thenOpen('http://www.usenetrevolution.info/vb/cmps_index.php?tabid=73?tabid=29');
+		spooky.then(function(){
+		   this.capture('afterLogin.png');
+		});
       spooky.thenOpen(savedMovie.threadUrl);
       spooky.then([savedMovie.toObject(), function () {
         /* jshint ignore:start */
         var downloadPath = this.getElementAttribute('a[href*=attachment]', 'href');
        // var fileName = this.fetchText('.unhiddencontentbox table a');
+	    this.capture('screenshot.png');
         this.emit('path', downloadPath);
         this.download(downloadPath, '/nzb/' + fileName);
 
