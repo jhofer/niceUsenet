@@ -127,7 +127,7 @@ console.log('filenName '+savedMovie.fileName);
       spooky.thenOpen(savedMovie.threadUrl);
       spooky.then([savedMovie.toObject(), function () {
         /* jshint ignore:start */
-        var downloadPath = this.getElementAttribute('.unhiddencontentbox table a', 'href');
+        var downloadPath = this.getElementAttribute('a[href*=attachment]', 'href');
        // var fileName = this.fetchText('.unhiddencontentbox table a');
         this.emit('path', downloadPath);
         this.download(downloadPath, '/nzb/' + fileName);
