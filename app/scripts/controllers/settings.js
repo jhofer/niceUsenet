@@ -1,8 +1,9 @@
 'use strict';
 
 angular.module('niceUsenetApp')
-  .controller('SettingsCtrl', function ($scope, User, Auth) {
+  .controller('SettingsCtrl', function ($scope, User, Auth, Forum) {
     $scope.errors = {};
+
 
     $scope.changePassword = function(form) {
       $scope.submitted = true;
@@ -18,4 +19,8 @@ angular.module('niceUsenetApp')
         });
       }
 		};
+
+    $scope.forums = Forum.query();
+
+
   });

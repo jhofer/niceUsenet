@@ -39,8 +39,8 @@ describe('Controller: MoviesCtrl', function () {
   }));
 
   it('should attach a list of Movies to the scope', function () {
-    expect(Object.keys(scope.movieMap).length).toBe(0);
+    expect(Object.keys(scope.movieContainer).length).toBe(0);
     $httpBackend.flush();
-    expect(Object.keys(scope.movieMap).length).toBe(2);
+    expect(Object.keys(scope.movieContainer).length).toBe(2);
   });
 });

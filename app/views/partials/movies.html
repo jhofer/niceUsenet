@@ -7,7 +7,7 @@
 </div>
 
 
-<div class="row top-buffer panel panel-default" ng-repeat="movies in movieMap | movieFilter:search ">
+<div class="row top-buffer panel panel-default" ng-repeat="movies in movieContainer | movieFilter:search ">
 
   <div class="col-xs-4">
     <img src="{{movies[0].image}}" width="100%" class="movieImage"/>
