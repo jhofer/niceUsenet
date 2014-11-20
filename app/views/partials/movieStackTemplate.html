@@ -1,7 +1,7 @@
 <div class="row">
   <div class="col-md-12">
     <ul class="pagination pagination-sm">
-      <li ng-repeat="movie in movies |orderBy: 'created_at' : reverse ">
+      <li ng-repeat="movie in movies  ">
         <a popover="{{getFormatedDate(movie.created_at)}}" popover-trigger="mouseenter" ng-click="selectMovie(movie)">{{$index}}</a>
       </li>
     </ul>

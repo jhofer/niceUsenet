@@ -3,6 +3,12 @@
 angular.module('niceUsenetApp')
   .controller('MoviesCtrl', function ($scope, Movie) {
 
+    function sortByDate(movieA, movieB) {
+      var a = movieA.created_at;
+      var b = movieB.created_at;
+      return new Date(b) - new Date(a);
+    }
+
 
     $scope.movieContainer = [];
     var movies = Movie.query();
@@ -26,11 +32,7 @@ angular.module('niceUsenetApp')
       for (var property in movieMap) {
         if (movieMap.hasOwnProperty(property)) {
           var movies = movieMap[property];
-          movies.sort(function (movieA, movieB) {
-            var a = movieA.created_at;
-            var b = movieB.created_at;
-            return new Date(b) - new Date(a);
-          });
+          movies.sort(sortByDate);
           $scope.movieContainer.push(movies);
         }
       }
@@ -45,6 +47,9 @@ angular.module('niceUsenetApp')
     });
 
   });
+
+
+
 
 angular.module('niceUsenetApp').filter('movieFilter', function ($filter) {
 
