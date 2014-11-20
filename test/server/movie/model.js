@@ -11,7 +11,7 @@ describe('Movie Model', function() {
     movie = new Movie({
       title: 'awesome movie.js',
       threadUrl: 'url',
-      forumId: '31',
+      forumUrl: '31',
       thxLink: 'url'
     });
 
@@ -53,7 +53,7 @@ describe('Movie Model', function() {
     var json = {
       title: 'awesome movie.js',
       threadUrl: 'url',
-      forumId: '31',
+      forumUrl: '31',
       thxLink: 'url'
 
 
