@@ -73,6 +73,7 @@ function storePw(threadHtml){
 var spookyConfig = {
   child: {
     transport: 'http'
+    //'cookies-file': 'cookies.json'
   },
   casper: {
     logLevel: 'info',
@@ -116,19 +117,31 @@ console.log('filenName '+savedMovie.fileName);
 
       spooky.start(
         'http://www.usenetrevolution.info/vb/cmps_index.php?tabid=73?tabid=29');
-      spooky.then(function () {
-	    this.capture('login.png');
-       
-          this.fill('form#navbar_loginform', {
-            'vb_login_username': 'serverlat',
-            'vb_login_password': 'Over9000'
-          }, true);
-       
+      spooky.thenEvaluate(function () {
+
+        var arr = document.getElementsByName("vb_login_username");
+        var i;
+
+        for (i = 0; i < arr.length; i++) {
+          arr[i].value = "serverlat";
+
+
+        }
+        arr = document.getElementsByName("vb_login_password");
+
+
+        for (i = 0; i < arr.length; i++) {
+          arr[i].value = "Over9000";
+
+        }
+
+        arr = document.getElementById("navbar_loginform");
+
+        arr.submit();
+
+
+
       });
-	    spooky.thenOpen('http://www.usenetrevolution.info/vb/cmps_index.php?tabid=73?tabid=29');
-		spooky.then(function(){
-		   this.capture('afterLogin.png');
-		});
       spooky.thenOpen(savedMovie.threadUrl);
       spooky.then([savedMovie.toObject(), function () {
         /* jshint ignore:start */
