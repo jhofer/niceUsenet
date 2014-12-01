@@ -3,10 +3,10 @@
 var express = require('express'),
 path = require('path'),
 fs = require('fs'),
-scrawler = require('./lib/services/usenetScrawler'),
+//scrawler = require('./lib/services/usenetScrawler'),
  // downloader = require('./downloader.js'),
 mongoose = require('mongoose');
-scrawler.init();
+//scrawler.init('server');
 
 /**
  * Main application file

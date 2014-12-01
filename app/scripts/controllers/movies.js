@@ -4,8 +4,8 @@ angular.module('niceUsenetApp')
   .controller('MoviesCtrl', function ($scope, Movie) {
 
     function sortByDate(movieA, movieB) {
-      var a = movieA.created_at;
-      var b = movieB.created_at;
+      var a = movieA.createdAt;
+      var b = movieB.createdAt;
       return new Date(b) - new Date(a);
     }
 
@@ -38,8 +38,8 @@ angular.module('niceUsenetApp')
       }
 
       $scope.movieContainer.sort(function (movieA, movieB) {
-        var a = movieA[0].created_at;
-        var b = movieB[0].created_at;
+        var a = movieA[0].createdAt;
+        var b = movieB[0].createdAt;
         return new Date(b) - new Date(a);
       });
 

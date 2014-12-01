@@ -35,12 +35,6 @@ fs.readdirSync(modelsPath).forEach(function (file) {
 var Movie = mongoose.model('Movie'),
   ms = require('./lib/services/movie.js');
 
-//clean movies in development
-//if (process.env.NODE_ENV === 'development') {
-//  console.log('delete movies');
-//  Movie.find({}).remove().exec();
-//}
-
 
 var createMovies = function (movie, callbackDone) {
 
@@ -75,9 +69,7 @@ var createMovies = function (movie, callbackDone) {
 
 
 function loadThreads(movies) {
-
   console.log('scrawl each thread html');
-  console.log(movies);
   async.eachSeries(movies, createMovies, function (err) {
     if(err)throw err;
     console.log('All done');
@@ -90,15 +82,11 @@ function loadForum(forumUrl, callbackDone) {
   var movies;
   async.series([
     function (next) {
-      console.log('scrawl forum');
       scrawler.getHTML(forumUrl, function (html) {
-        console.log('got forum html');
-
         movies = parser.parseMovies(html, forumUrl);
         next();
       });
     }, function (next) {
-      console.log("now get all movie threads");
       loadThreads(movies);
       next();
       callbackDone();
@@ -112,7 +100,6 @@ function loadForums() {
   console.log('going to load movies');
   async.eachSeries(forums, loadForum, function (err) {
     if(err)throw err;
-    console.log('Forums Scrawled ');
   });
 }
 
@@ -120,11 +107,11 @@ function loadForums() {
 
 
 
-scrawler.init();
+scrawler.init('crawler');
 scrawler.on('ready', function () {
   loadForums();
 
-  var minutes = 20, the_interval = minutes * 60 * 1000;
+  var minutes = 2, the_interval = minutes * 60 * 1000;
   setInterval(function () {
     loadForums();
   }, the_interval);

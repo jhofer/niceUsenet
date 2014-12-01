@@ -8,8 +8,7 @@ angular.module('niceUsenetApp').directive('moviestack', function (Movie) {
   return {
     restrict: 'E',
     scope: {
-      movies: '=movies',
-
+      movies: '=movies'
     },
     templateUrl: './partials/movieStackTemplate.html',
 

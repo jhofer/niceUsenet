@@ -9,6 +9,12 @@ module.exports = function(config) {
     // testing framework to use (jasmine/mocha/qunit/...)
     frameworks: ['jasmine'],
 
+
+
+    preprocessors: {
+      'app/**/*.html': ['ng-html2js']
+    },
+
     // list of files / patterns to load in the browser
     files: [
       'app/bower_components/angular/angular.js',
@@ -22,8 +28,25 @@ module.exports = function(config) {
       'app/scripts/*.js',
       'app/scripts/**/*.js',
       'test/client/mock/**/*.js',
-      'test/client/spec/**/*.js'
+      'test/client/spec/**/*.js',
+      'app/**/*.html'
+
     ],
+
+
+    //ngHtml2JsPreprocessor: {
+    //  // strip this from the file path
+    //  stripPrefix: 'public/',
+    //  stripSufix: '.ext',
+    //  // prepend this to the
+    //  prependPrefix: 'served/',
+    //
+    //
+    //
+    //  // setting this option will create only a single module that contains templates
+    //  // from all the files, so you can load them all with module('foo')
+    // // moduleName: 'foo'
+    //},
 
     // list of files / patterns to exclude
     exclude: [],
@@ -37,7 +60,7 @@ module.exports = function(config) {
 
 
     // enable / disable watching file and executing tests whenever any file changes
-    autoWatch: false,
+    autoWatch: true,
 
 
     // Start these browsers, currently available:

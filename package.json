@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "dependencies": {
     "async": "^0.9.0",
+    "casper": "^0.1.1",
     "cheerio": "0.17.0",
     "connect-mongo": "~0.4.0",
     "ejs": "~0.8.4",
@@ -18,7 +19,7 @@
     "sequence": "^3.0.0",
     "socket.io": "^1.2.0",
     "spooky": "^0.2.5",
-    "tough-cookie": "0.12.1"
+    "tough-cookie": "^0.12.1"
   },
   "devDependencies": {
     "connect-livereload": "~0.3.0",
@@ -58,7 +59,7 @@
     "karma-firefox-launcher": "~0.1.3",
     "karma-html2js-preprocessor": "~0.1.0",
     "karma-jasmine": "~0.1.5",
-    "karma-ng-html2js-preprocessor": "~0.1.0",
+    "karma-ng-html2js-preprocessor": "^0.1.2",
     "karma-ng-scenario": "~0.1.0",
     "karma-phantomjs-launcher": "~0.1.1",
     "karma-requirejs": "~0.2.1",

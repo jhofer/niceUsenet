@@ -23,13 +23,23 @@ fs.readdirSync(modelsPath).forEach(function (file) {
     require(modelsPath + '/' + file);
   }
 });
+
+var DbPatch = mongoose.model('DbPatch');
+
 var Movie = mongoose.model('Movie');
-console.log('bla');
+
 return Movie.find(function (err, movies) {
-  console.log('bla');
+
   movies.forEach(function(movie){
-      console.log('movie updated');
+      if(movie.status !== 'done'){
       movie.status = 'download';
       movie.save();
+      }
+
     });
+  console.log('clean done');
 });
+
+
+
+

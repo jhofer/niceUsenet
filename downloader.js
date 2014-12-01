@@ -7,7 +7,8 @@ var
   scrawler = require('./lib/services/usenetScrawler.js'),
   parser = require('./lib/services/forumParser.js'),
   _ = require('lodash'),
-  Spooky = require('spooky'),
+
+
   async = require('async');
 
 
@@ -36,23 +37,22 @@ var Movie = mongoose.model('Movie'),
   ms = require('./lib/services/movie.js');
 
 
-
 var passwordPath = '/nzb/Passwords.txt';
 
-function storePw(threadHtml){
+function storePw(threadHtml) {
 
   var pw = parser.parsePassword(threadHtml);
 
-  if(pw) {
-    if(!fs.existsSync(passwordPath)){
-      fs.writeFile(passwordPath, '',function (err) {
-        if(err) {
-          console.log('failed to create file'+passwordPath);
+  if (pw) {
+    if (!fs.existsSync(passwordPath)) {
+      fs.writeFile(passwordPath, '', function (err) {
+        if (err) {
+          console.log('failed to create file' + passwordPath);
           throw err;
         }
       });
     }
-    var currentPws = fs.readFileSync(passwordPath,'utf8');
+    var currentPws = fs.readFileSync(passwordPath, 'utf8');
 
     if (currentPws.indexOf(pw) === -1) {
       fs.appendFile('/nzb/Passwords.txt', pw + '\r\n', function (err) {
@@ -62,162 +62,90 @@ function storePw(threadHtml){
           console.log(err);
         }
       });
-    }else{
-      console.log('Password '+ pw+' already exists');
+    } else {
+      console.log('Password ' + pw + ' already exists');
     }
   }
 }
 
 
 
-var spookyConfig = {
-  child: {
-    transport: 'http'
-    //'cookies-file': 'cookies.json'
-  },
-  casper: {
-    logLevel: 'info',
-    verbose: true,
-    'web-security': 'no'
-  }
-};
+function getFile(meta, callback) {
 
-
-
-
-function getFile(savedMovie, callback) {
-
-console.log('filenName '+savedMovie.fileName);
-
-  function destroySpooky(){
-
-  }
-
-  var spooky = new Spooky(
-    spookyConfig, function (err) {
-      if (err) {
-        var e = new Error('Failed to initialize SpookyJS');
-        e.details = err;
-        throw e;
-      }
-
-      spooky.on('path', function(path){
-        console.log('LOAD MOVIE FROM:'+path);
-
-      });
-
-      spooky.on('run.complete', function(){
-        console.log("NZB downloaded");
-        spooky.removeAllListeners();
-        callback();
-      });
-
-
-
-
-      spooky.start(
-        'http://www.usenetrevolution.info/vb/cmps_index.php?tabid=73?tabid=29');
-      spooky.thenEvaluate(function () {
-
-        var arr = document.getElementsByName("vb_login_username");
-        var i;
-
-        for (i = 0; i < arr.length; i++) {
-          arr[i].value = "serverlat";
-
-
-        }
-        arr = document.getElementsByName("vb_login_password");
-
-
-        for (i = 0; i < arr.length; i++) {
-          arr[i].value = "Over9000";
-
-        }
-
-        arr = document.getElementById("navbar_loginform");
-
-        arr.submit();
-
-
-
-      });
-      spooky.thenOpen(savedMovie.threadUrl);
-      spooky.then([savedMovie.toObject(), function () {
-        /* jshint ignore:start */
-        var downloadPath = this.getElementAttribute('a[href*=attachment]', 'href');
-       // var fileName = this.fetchText('.unhiddencontentbox table a');
-	    this.capture('screenshot.png');
-        this.emit('path', downloadPath);
-        this.download(downloadPath, '/nzb/' + fileName);
-
-        /* jshint ignore:end */
-
-      }]);
-
-      spooky.run(function(){
-        this.exit();
-      });
-
-
+  console.log('download with casper');
+  console.log(meta);
+  var exec = require('child_process').exec;
+  var command = 'casperjs casperDownloader.js "'+meta.downLoadLink+'" "'+meta.fileName+'"';
+  console.log('execute command: '+command);
+  exec(command,
+    function (error, stdout, stderr) {
+     if(error)throw error;
+      callback();
     });
-
 }
 
 
-function downloadMovie(savedMovie, callbackDone){
+function downloadMovie(savedMovie, callbackDone) {
   var threadHtml;
   var parsedInfos;
   async.series([
-    function(next) {
-
+    function (next) {
+      console.log('save status');
       savedMovie.status = 'get NZB';
-      savedMovie.save(function(err){
-        if(err)throw err;
+      savedMovie.save(function (err) {
+        if (err)throw err;
         next();
       });
-
     },
-    function(next){
+    function (next) {
+      console.log('get html');
       scrawler.getHTML(savedMovie.threadUrl, function (html) {
-          threadHtml = html;
-          next()
+        threadHtml = html;
+        next()
       });
-
     },
-    function(next){
+    function (next) {
+      console.log('parse html');
       parsedInfos = parser.parseMovie(threadHtml);
-      savedMovie= _.assign(savedMovie,parsedInfos );
-      savedMovie.save(function(err){
-        if(err)throw err;
+      savedMovie = _.assign(savedMovie, parsedInfos);
+      savedMovie.save(function (err) {
+        if (err)throw err;
         next();
       });
     },
-    function(next){
+    function (next) {
+      console.log('push thx');
       if (parsedInfos.thxLink) {
         scrawler.getHTML(savedMovie.thxLink, function (html) {
           next();
         });
-      }else{
+      } else {
         next();
       }
     },
-    function(next){
+    function (next) {
+      console.log('get new html');
       scrawler.getHTML(savedMovie.threadUrl, function (html) {
+        console.log('store pw html');
         storePw(html);
+        fs.writeFile('content.html',html);
         var downloadlink = parser.parseDownloadlink(html);
-        scrawler.getFileMetaInfo(downloadlink, function(meta){
+        console.log('get meta data');
+        scrawler.getFileMetaInfo(downloadlink, function (meta) {
+          meta.downLoadLink = downloadlink;
+          console.log('meta infos');
+          console.log(meta);
           savedMovie.fileName = meta.fileName;
           savedMovie.save();
-          getFile(savedMovie,next);
+          getFile(meta, next);
         });
       });
 
     },
-    function(next){
+    function (next) {
       savedMovie.status = 'done';
-      savedMovie.save(function(err){
-        if(err)throw err;
+      savedMovie.save(function (err) {
+        if (err)throw err;
         next();
         callbackDone();
       });
@@ -226,19 +154,18 @@ function downloadMovie(savedMovie, callbackDone){
 }
 
 
-
-function check(){
-  setTimeout(function() {
+function check() {
+  setTimeout(function () {
     var movies;
-    async.series([function(next){
-      Movie.find({status: 'requested'}, function(err, result){
+    async.series([function (next) {
+      Movie.find({status: 'requested'}, function (err, result) {
         movies = result;
         next();
       });
 
-    }, function (next){
+    }, function (next) {
       async.eachSeries(movies, downloadMovie, function (err) {
-        if(err){
+        if (err) {
           console.log(err);
         }
         next();
@@ -249,6 +176,7 @@ function check(){
   }, 5000);
 }
 
-scrawler.init(function(){
+scrawler.init('downloader', function () {
+
   check();
 });
