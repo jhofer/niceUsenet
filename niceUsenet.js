@@ -37,7 +37,7 @@ server.start();
 var scrawler = new (forever.Monitor)('scrawler.js', {
   'silent': false
 });
-//scrawler.start();
+scrawler.start();
 
 
 var downloader = new (forever.Monitor)('downloader.js', {
