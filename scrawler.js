@@ -107,8 +107,7 @@ function loadForums() {
 
 
 
-scrawler.init('crawler');
-scrawler.on('ready', function () {
+scrawler.init('crawler', function(){
   loadForums();
 
   var minutes = 2, the_interval = minutes * 60 * 1000;
@@ -117,6 +116,7 @@ scrawler.on('ready', function () {
   }, the_interval);
 
 });
+
 
 
 
