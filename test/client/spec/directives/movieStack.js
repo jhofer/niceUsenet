@@ -6,7 +6,7 @@ describe('Directive: moviestack', function () {
   beforeEach(module('niceUsenetApp'));
 
 
-  beforeEach(module('app/views/partials/movieStackTemplate.html'));
+  beforeEach(module('partials/movieStackTemplate.html'));
 
   var
     rootScope,
@@ -36,6 +36,7 @@ describe('Directive: moviestack', function () {
       }
     ];
 
+
     element = compile('<moviestack movies="movies" ></moviestack>')(rootScope);
     // fire all the watches
     rootScope.$digest();
@@ -47,15 +48,17 @@ describe('Directive: moviestack', function () {
     // Compile a piece of HTML containing the directive
 
     // Check that the compiled element contains the templated content
-    console.log(element.html());
-    expect(element.html()).toContain('awesome movie 2014');
+    expect(element.html()).toContain('awesome movie');
+    expect(element.html()).toContain('2014-11-17');
+    expect(element.html()).toContain('2014-11-20');
+
   });
 
 
   it('should have 2 movies', function () {
     expect(element.scope().movies.length).toBe(2);
-    expect(element.scope().movies[0].title).toBe('awesome movie 2014');
-    expect(element.scope().movies[1].title).toBe('awesome movie');
+    expect(element.scope().movies[0].title).toBe('awesome movie');
+    expect(element.scope().movies[1].title).toBe('awesome movie 2014');
 
   });
 

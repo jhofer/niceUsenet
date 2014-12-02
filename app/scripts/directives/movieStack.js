@@ -10,7 +10,7 @@ angular.module('niceUsenetApp').directive('moviestack', function (Movie) {
     scope: {
       movies: '=movies'
     },
-    templateUrl: './partials/movieStackTemplate.html',
+    templateUrl: 'partials/movieStackTemplate.html',
 
     link: function (scope) {
 

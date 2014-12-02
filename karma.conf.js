@@ -12,7 +12,11 @@ module.exports = function(config) {
 
 
     preprocessors: {
-      'app/**/*.html': ['ng-html2js']
+      'app/**/*.html': 'ng-html2js'
+    },
+
+    ngHtml2JsPreprocessor: {
+      stripPrefix: 'app/views/'
     },
 
     // list of files / patterns to load in the browser
@@ -29,7 +33,7 @@ module.exports = function(config) {
       'app/scripts/**/*.js',
       'test/client/mock/**/*.js',
       'test/client/spec/**/*.js',
-      'app/**/*.html'
+      'app/views/**/*.html'
 
     ],
 
