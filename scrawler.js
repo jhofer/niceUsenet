@@ -22,7 +22,7 @@ process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 var config = require('./lib/config/config');
 
 // Connect to database
-var db = mongoose.connect(config.mongo.uri, config.mongo.options);
+mongoose.connect(config.mongo.uri, config.mongo.options);
 
 // Bootstrap models
 var modelsPath = path.join(__dirname, 'lib/models');
@@ -32,8 +32,8 @@ fs.readdirSync(modelsPath).forEach(function (file) {
   }
 });
 
-var Movie = mongoose.model('Movie'),
-  ms = require('./lib/services/movie.js');
+
+var  ms = require('./lib/services/movie.js');
 
 
 var createMovies = function (movie, callbackDone) {
@@ -46,11 +46,9 @@ var createMovies = function (movie, callbackDone) {
     });
   }, function (next) {
     if (movie.imdbLink) {
-      console.log('load imdb: '+movie.imdbLink);
       scrawler.getHTML(movie.imdbLink, function (html) {
         movie =  _.merge(movie, parser.parseImdb(html));
         next();
-
       });
 
     } else {
@@ -71,7 +69,9 @@ var createMovies = function (movie, callbackDone) {
 function loadThreads(movies) {
   console.log('scrawl each thread html');
   async.eachSeries(movies, createMovies, function (err) {
-    if(err)throw err;
+    if(err){
+      throw err;
+    }
     console.log('All done');
   });
 }
@@ -99,7 +99,9 @@ function loadForums() {
 
   console.log('going to load movies');
   async.eachSeries(forums, loadForum, function (err) {
-    if(err)throw err;
+    if(err){
+      throw err;
+    }
   });
 }
 
@@ -110,10 +112,10 @@ function loadForums() {
 scrawler.init('crawler', function(){
   loadForums();
 
-  var minutes = 2, the_interval = minutes * 60 * 1000;
+  var minutes = 2, theInterval = minutes * 60 * 1000;
   setInterval(function () {
     loadForums();
-  }, the_interval);
+  }, theInterval);
 
 });
 

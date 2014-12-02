@@ -128,7 +128,6 @@ function downloadMovie(savedMovie, callbackDone) {
       scrawler.getHTML(savedMovie.threadUrl, function (html) {
         console.log('store pw html');
         storePw(html);
-        fs.writeFile('content.html',html);
         var downloadlink = parser.parseDownloadlink(html);
         console.log('get meta data');
         scrawler.getFileMetaInfo(downloadlink, function (meta) {

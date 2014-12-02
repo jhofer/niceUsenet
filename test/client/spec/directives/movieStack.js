@@ -14,13 +14,12 @@ describe('Directive: moviestack', function () {
     compile;
 
   // Initialize the controller and a mock scope
-  beforeEach(inject(function ($rootScope,$compile) {
+  beforeEach(inject(function ($rootScope, $compile) {
 
+    compile = $compile;
 
-   compile =$compile;
-
-   rootScope = $rootScope;
-   rootScope.movies= [
+    rootScope = $rootScope;
+    rootScope.movies = [
       {
         title: 'awesome movie',
         threadUrl: 'url',
@@ -35,7 +34,7 @@ describe('Directive: moviestack', function () {
         createdAt: '2014-11-20T21:47:05.461Z',
         status: 'download'
       }
-      ];
+    ];
 
     element = compile('<moviestack movies="movies" ></moviestack>')(rootScope);
     // fire all the watches
@@ -44,12 +43,12 @@ describe('Directive: moviestack', function () {
 
   }));
 
-  it('Replaces the element with the appropriate content', function() {
+  it('Replaces the element with the appropriate content', function () {
     // Compile a piece of HTML containing the directive
 
     // Check that the compiled element contains the templated content
     console.log(element.html());
-    expect(element.html()).toContain("awesome movie 2014");
+    expect(element.html()).toContain('awesome movie 2014');
   });
 
 

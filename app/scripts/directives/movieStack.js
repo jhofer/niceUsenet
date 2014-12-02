@@ -17,7 +17,6 @@ angular.module('niceUsenetApp').directive('moviestack', function (Movie) {
 
       scope.selectedMovie = scope.movies[0];
       scope.canDownload = function (movie) {
-
         return movie.status === 'download';
       };
 

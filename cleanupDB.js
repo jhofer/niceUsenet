@@ -28,7 +28,7 @@ var DbPatch = mongoose.model('DbPatch');
 
 var Movie = mongoose.model('Movie');
 
-return Movie.find(function (err, movies) {
+Movie.find(function (err, movies) {
 
   movies.forEach(function(movie){
       if(movie.status !== 'done'){

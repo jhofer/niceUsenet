@@ -3,10 +3,8 @@
 var express = require('express'),
 path = require('path'),
 fs = require('fs'),
-//scrawler = require('./lib/services/usenetScrawler'),
- // downloader = require('./downloader.js'),
 mongoose = require('mongoose');
-//scrawler.init('server');
+
 
 /**
  * Main application file
@@ -69,10 +67,7 @@ app.listen(config.port, function () {
 // Expose app
 var exports = module.exports = app;
 
-//
-//scrawler.on('ready',function(){
-//  downloader.download();
-//});
+
 
 
 

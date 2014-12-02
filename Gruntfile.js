@@ -34,13 +34,13 @@ module.exports = function (grunt) {
       },
       dev: {
         options: {
-          script: 'server.js',
+          script: 'niceUsenet.js',
           debug: true
         }
       },
       prod: {
         options: {
-          script: 'dist/server.js',
+          script: 'dist/niceUsenet.js',
           node_env: 'production'
         }
       }
@@ -87,7 +87,7 @@ module.exports = function (grunt) {
       },
       express: {
         files: [
-          'server.js',
+          './*.js',
           'lib/**/*.{js,json}'
         ],
         tasks: ['newer:jshint:server', 'express:dev', 'wait'],
@@ -174,7 +174,7 @@ module.exports = function (grunt) {
     // Use nodemon to run server in debug mode with an initial breakpoint
     nodemon: {
       debug: {
-        script: 'server.js',
+        script: 'niceUsenet.js',
         options: {
           nodeArgs: ['--debug-brk'],
           env: {
