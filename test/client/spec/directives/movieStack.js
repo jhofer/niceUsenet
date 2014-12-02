@@ -36,7 +36,7 @@ describe('Directive: moviestack', function () {
       }
     ];
 
-
+    // Compile a piece of HTML containing the directive
     element = compile('<moviestack movies="movies" ></moviestack>')(rootScope);
     // fire all the watches
     rootScope.$digest();
@@ -45,8 +45,6 @@ describe('Directive: moviestack', function () {
   }));
 
   it('Replaces the element with the appropriate content', function () {
-    // Compile a piece of HTML containing the directive
-
     // Check that the compiled element contains the templated content
     expect(element.html()).toContain('awesome movie');
     expect(element.html()).toContain('2014-11-17');

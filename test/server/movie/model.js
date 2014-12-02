@@ -71,11 +71,6 @@ describe('Movie Model', function() {
       });
 
     });
-
-
-
-
-
   });
 
 
