@@ -4,6 +4,7 @@ var
   path = require('path'),
   fs = require('fs'),
   mongoose = require('mongoose'),
+
   scrawler = require('./lib/services/usenetScrawler.js'),
   parser = require('./lib/services/forumParser.js'),
   _ = require('lodash'),
@@ -32,8 +33,8 @@ fs.readdirSync(modelsPath).forEach(function (file) {
   }
 });
 
-
-var  ms = require('./lib/services/movie.js');
+var Forum = mongoose.model('Forum'),
+    ms = require('./lib/services/movie.js');
 
 
 var createMovies = function (movie, callbackDone) {
@@ -77,13 +78,13 @@ function loadThreads(movies) {
 }
 
 
-function loadForum(forumUrl, callbackDone) {
-  console.log('load forum: '+forumUrl);
+function loadForum(forum, callbackDone) {
+  console.log('load forum:  '+forum.title);
   var movies;
   async.series([
     function (next) {
-      scrawler.getHTML(forumUrl, function (html) {
-        movies = parser.parseMovies(html, forumUrl);
+      scrawler.getHTML(forum.forumUrl, function (html) {
+        movies = parser.parseMovies(html, forum.forumUrl);
         next();
       });
     }, function (next) {
@@ -94,15 +95,17 @@ function loadForum(forumUrl, callbackDone) {
 }
 
 function loadForums() {
-  var forums = ['http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
-    'http://www.usenetrevolution.info/vb/forumdisplay.php?f=39'];
+  Forum.find({}, function(err, forums){
+    console.log('going to load movies');
+    async.eachSeries(forums, loadForum, function (err) {
+      if(err){
+        throw err;
+      }
+    });
 
-  console.log('going to load movies');
-  async.eachSeries(forums, loadForum, function (err) {
-    if(err){
-      throw err;
-    }
   });
+
+
 }
 
 
@@ -112,7 +115,7 @@ function loadForums() {
 scrawler.init('crawler', function(){
   loadForums();
 
-  var minutes = 2, theInterval = minutes * 60 * 1000;
+  var minutes = 20, theInterval = minutes * 60 * 1000;
   setInterval(function () {
     loadForums();
   }, theInterval);

@@ -6,21 +6,24 @@
   </div>
   <div class="col-sm-12">
     <form class="form" name="form" ng-submit="changePassword(form)" novalidate>
-    	
+
       <div class="form-group">
         <label>Current Password</label>
 
         <input type="password" name="password" class="form-control" ng-model="user.oldPassword"
-               mongoose-error/>    
+               mongoose-error/>
         <p class="help-block" ng-show="form.password.$error.mongoose">
             {{ errors.other }}
         </p>
       </div>
 
+
+
+
       <div class="form-group">
         <label>New Password</label>
 
-        <input type="password" name="newPassword" class="form-control" ng-model="user.newPassword" 
+        <input type="text" name="newPassword" class="form-control" ng-model="user.newPassword"
                ng-minlength="3"
                required/>
         <p class="help-block"
@@ -31,7 +34,65 @@
 
       <p class="help-block"> {{ message }} </p>
 
-      <button class="btn btn-lg btn-primary" type="submit">Save changes</button>
+      <button class="btn btn-lg btn-primary" type="submit">Save Password changes</button>
+    </form>
+
+  </div>
+</div>
+<br>
+
+
+<div class="row">
+  <div class="col-sm-12">
+    <form class="form" name="form" ng-submit="createOrUpdateForum(form)" novalidate>
+
+      <div class="form-group">
+        <label>Forum Title</label>
+
+        <input type="text" name="title" class="form-control" ng-model="forum.title"
+               mongoose-error ng-minlength="3"
+               required/>
+        <p class="help-block" ng-show="form.title.$error.mongoose">
+          {{ errors.other }}
+        </p>
+      </div>
+
+      <div class="form-group">
+        <label>Forum-Url</label>
+
+        <input type="text" name="forumUrl" class="form-control" ng-model="forum.forumUrl" ng-readonly="urlReadOnly()"
+               ng-minlength="3"
+               required/>
+        <p class="help-block"
+           ng-show="(form.newPassword.$error.minlength || form.newPassword.$error.required) && (form.newPassword.$dirty || submitted)">
+          Password must be at least 3 characters.
+        </p>
+      </div>
+
+      <p class="help-block"> {{ message }} </p>
+
+      <button class="btn btn-lg btn-primary" type="submit">Save Forum changes</button>
     </form>
   </div>
 </div>
+<br/>
+<br/>
+
+<div class="row">
+  <div class="col-sm-12">
+
+    <ul class="list-group">
+      <a  class="list-group-item" ng-click="editForum(forum)" ng-repeat="forum in forums">
+        <h4>{{forum.title}} <small> {{forum.forumUrl}}</small>
+          <button type="button" class="close" data-dismiss="alert" ng-click="deleteForum(forum)"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+
+
+        </h4>
+      </a>
+    </ul>
+
+  </div>
+</div>
+
+
+
