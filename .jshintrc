@@ -1,4 +1,5 @@
 {
+  "-W116": true,
   "node": true,
   "browser": true,
   "esnext": true,

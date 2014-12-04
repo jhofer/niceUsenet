@@ -37,6 +37,21 @@ var Movie = mongoose.model('Movie'),
   ms = require('./lib/services/movie.js');
 
 
+
+Movie.find(function (err, movies) {
+
+  movies.forEach(function(movie){
+    if(movie.status !== 'done'){
+      movie.status = 'download';
+      movie.save();
+    }
+
+  });
+  console.log('clean done');
+});
+
+
+
 var passwordPath = '/nzb/Passwords.txt';
 
 function storePw(threadHtml) {
@@ -101,7 +116,7 @@ function downloadMovie(savedMovie, callbackDone) {
       console.log('get html');
       scrawler.getHTML(savedMovie.threadUrl, function (html) {
         threadHtml = html;
-        next()
+        next();
       });
     },
     function (next) {
@@ -144,7 +159,8 @@ function downloadMovie(savedMovie, callbackDone) {
     function (next) {
       savedMovie.status = 'done';
       savedMovie.save(function (err) {
-        if (err)throw err;
+
+        if (err) throw err;
         next();
         callbackDone();
       });
