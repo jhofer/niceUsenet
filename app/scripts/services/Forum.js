@@ -3,11 +3,10 @@
 angular.module('niceUsenetApp')
   .factory('Forum', function ($resource) {
     return $resource('/api/forums/:id', {
-      id: '@id'
+      id: '@_id'
     }, {
-      createOrUpdate: {
+      update: {
         method: 'PUT'
-      },
-      query:  {method:'GET', isArray:true}
+      }
 	  });
   });

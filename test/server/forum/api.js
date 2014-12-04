@@ -12,24 +12,26 @@ describe('Rest API /api/forums', function() {
   before(function(done) {
     // Clear users before testing
     Forum.remove().exec();
-
+    console.log('cleare forums done');
 
     var forum1 = new Forum({
       forumUrl:'http://www.usenetrevolution.info/vb/forumdisplay.php?f=31',
       title: 'fake Forum1'
     });
     forum1.save();
-
+    console.log('forum1 saved');
 
     var forum2 = new Forum({
       forumUrl:'http://www.usenetrevolution.info/vb/forumdisplay.php?f=32',
       title: 'fake Forum2'
     });
     forum2.save();
-
+    console.log('forum2 saved');
 
     // Clear old users, then add a default user
     User.find({}).remove(function() {
+      console.log('user created');
+
       User.create({
           provider: 'local',
           name: 'serverlat',
@@ -37,11 +39,11 @@ describe('Rest API /api/forums', function() {
           password: 'Over9000',
           admin: true
         }, function() {
+          console.log('user created');
           done();
         }
       );
     });
-
 
 
 
@@ -78,6 +80,8 @@ describe('Rest API /api/forums', function() {
   });
 
 
+
+
   it('should respond with inital forums GET', function(done) {
     agent
       .get('/api/forums')
@@ -90,16 +94,17 @@ describe('Rest API /api/forums', function() {
       });
   });
 
-
-  it('should SAVE new forum PUT', function(done){
+var newForum;
+  it('should SAVE new forum POST', function(done){
 
     agent
-      .put('/api/forums')
+      .post('/api/forums')
       .send({  forumUrl:'http://www.usenetrevolution.info/vb/forumdisplay.php?f=33',
                 title: 'fake Forum3' })
       .expect(200)
-      .end(function(err) {
+      .end(function(err, res) {
         if (err) {return done(err);}
+        newForum = res.body;
         done();
       });
 
@@ -124,17 +129,18 @@ describe('Rest API /api/forums', function() {
   it('should UPDATE new forum with PUT', function(done){
 
     agent
-      .put('/api/forums')
+      .put('/api/forums/'+newForum._id)
       .send(updateForum)
       .expect(200)
-      .end(function(err) {
+      .end(function(err, res) {
         if (err) {return done(err);}
+        res.body.should.have.property('_id',newForum._id);
         done();
       });
 
   });
 
-  var todeleteId
+  var todeleteId;
   it('should return the updated forum GET', function(done) {
     agent
       .get('/api/forums')

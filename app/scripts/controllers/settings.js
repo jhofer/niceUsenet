@@ -20,68 +20,71 @@ angular.module('niceUsenetApp')
       }
     };
 
+
+
     $scope.forums = Forum.query();
-
-
-
-
-    function findForumByUrl(url) {
-      var forum = null;
-      $scope.forums.forEach(function (f) {
-        if (f.forumUrl === url) {
-          forum = f;
-        }
+    $scope.newForum = function () {
+      $scope.isCreate=true;
+      $scope.forum = new Forum({
+        forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=???????'
       });
-      return forum;
-    }
+    };
+
+    $scope.isCreate = false;
 
     $scope.editForum = function (forum) {
+      $scope.isCreate = false;
+      $scope.forum = new Forum();
       $scope.forum.title = forum.title;
       $scope.forum.forumUrl = forum.forumUrl;
+      $scope.forum._id = forum._id;
     };
 
-    $scope.createOrUpdateForum = function (form) {
-      if (form.$valid) {
-        Forum.createOrUpdate({}, $scope.forum, function (result) {
-          var oldForum = $filter('filter')($scope.forums, {_id: result._id})[0];
-
-          if (oldForum) {
+    $scope.createOrUpdateForum = function () {
+      console.log('bla');
+      if ($scope.forum) {
+        if ($scope.forum._id) {
+          console.log( $scope.forum);
+          $scope.forum.$update(function (updatedForum) {
+            console.log('updated');
+            console.log(updatedForum);
+            var oldForum = $filter('filter')($scope.forums, {_id: $scope.forum._id})[0];
             var index = $scope.forums.indexOf(oldForum);
-            console.log(index);
-            console.log(result);
-            $scope.forums[index] = result;
-          } else {
-            $scope.forums.push(result);
-          }
-        });
-        $scope.newForum();
+            $scope.forums[index] = updatedForum;
+            $scope.forum = undefined;
+
+          });
+        } else {
+          $scope.forum.$save(function (savedForum) {
+            $scope.forums.push(savedForum);
+            $scope.forum = undefined;
+            $scope.isCreate = false;
+          });
+        }
+
       }
 
+
+
     };
 
 
-    $scope.newForum = function () {
-      $scope.forum = {
-        forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=???????'
-      };
-    };
-
-    $scope.newForum();
-
-    $scope.urlReadOnly = function () {
-      return findForumByUrl($scope.forum.forumUrl) !== null;
+    $scope.isActive = function (forum) {
+      return $scope.forum !== undefined && forum._id == $scope.forum._id;
     };
 
 
     $scope.deleteForum = function (forum) {
-      Forum.remove({id: forum._id}, function () {
-
+      forum.$delete(function () {
         var index = $scope.forums.indexOf(forum);
         $scope.forums.splice(index, 1);
-
-
+        $scope.forum = undefined;
       });
+
     };
+
+
+
 
 
   });

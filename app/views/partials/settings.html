@@ -44,35 +44,7 @@
 
 <div class="row">
   <div class="col-sm-12">
-    <form class="form" name="form" ng-submit="createOrUpdateForum(form)" novalidate>
 
-      <div class="form-group">
-        <label>Forum Title</label>
-
-        <input type="text" name="title" class="form-control" ng-model="forum.title"
-               mongoose-error ng-minlength="3"
-               required/>
-        <p class="help-block" ng-show="form.title.$error.mongoose">
-          {{ errors.other }}
-        </p>
-      </div>
-
-      <div class="form-group">
-        <label>Forum-Url</label>
-
-        <input type="text" name="forumUrl" class="form-control" ng-model="forum.forumUrl" ng-readonly="urlReadOnly()"
-               ng-minlength="3"
-               required/>
-        <p class="help-block"
-           ng-show="(form.newPassword.$error.minlength || form.newPassword.$error.required) && (form.newPassword.$dirty || submitted)">
-          Password must be at least 3 characters.
-        </p>
-      </div>
-
-      <p class="help-block"> {{ message }} </p>
-
-      <button class="btn btn-lg btn-primary" type="submit">Save Forum changes</button>
-    </form>
   </div>
 </div>
 <br/>
@@ -82,12 +54,47 @@
   <div class="col-sm-12">
 
     <ul class="list-group">
-      <a  class="list-group-item" ng-click="editForum(forum)" ng-repeat="forum in forums">
-        <h4>{{forum.title}} <small> {{forum.forumUrl}}</small>
-          <button type="button" class="close" data-dismiss="alert" ng-click="deleteForum(forum)"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+      <a  class="list-group-item" ng-click="editForum(forumItem)" ng-repeat="forumItem in forums">
+        <h4 ng-hide="isActive(forumItem)">{{forumItem.title}} <small> {{forumItem.forumUrl}}</small>
+          <button type="button" class="close" data-dismiss="alert" ng-click="deleteForum(forumItem)"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        </h4>
+        <form class="form" ng-show="isActive(forumItem)" novalidate>
+          <div class="form-group">
+            <label>Forum Title</label>
+            <input type="text" name="title" class="form-control" ng-model="forum.title"
+                   mongoose-error ng-minlength="3"
+                   required/>
+          </div>
+          <div class="form-group">
+            <label>Forum-Url</label>
+            <input type="text" name="forumUrl" class="form-control" ng-model="forum.forumUrl"
+                   ng-minlength="3"
+                   required/>
+          </div>
+          <button class="btn btn-primary" ng-click="createOrUpdateForum()">Save</button>
+        </form>
 
+
+      </a>
+      <a  class="list-group-item active" ng-click="newForum()">
+        <h4 ng-hide="isCreate">Create New Forum
 
         </h4>
+        <form class="form" ng-show="isCreate" novalidate>
+          <div class="form-group">
+            <label>Forum Title</label>
+            <input type="text" name="title" class="form-control" ng-model="forum.title"
+                   mongoose-error ng-minlength="3"
+                   required/>
+          </div>
+          <div class="form-group">
+            <label>Forum-Url</label>
+            <input type="text" name="forumUrl" class="form-control" ng-model="forum.forumUrl"
+                   ng-minlength="3"
+                   required/>
+          </div>
+          <button class="btn btn-default" ng-click="createOrUpdateForum()">Create</button>
+        </form>
       </a>
     </ul>
 
