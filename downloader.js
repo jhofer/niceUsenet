@@ -7,14 +7,11 @@ var
   scrawler = require('./lib/services/usenetScrawler.js'),
   parser = require('./lib/services/forumParser.js'),
   _ = require('lodash'),
+  async = require('async'),
+  logger = require('./lib/util/logger.js').create('/project/logfile.log'),
+  passwordPath = '/nzb/Passwords.txt';
 
 
-  async = require('async');
-
-
-/**
- * Main application file
- */
 
 // Set default node environment to development
 process.env.NODE_ENV = process.env.NODE_ENV || 'development';
@@ -23,7 +20,7 @@ process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 var config = require('./lib/config/config');
 
 // Connect to database
-var db = mongoose.connect(config.mongo.uri, config.mongo.options);
+mongoose.connect(config.mongo.uri, config.mongo.options);
 
 // Bootstrap models
 var modelsPath = path.join(__dirname, 'lib/models');
@@ -33,11 +30,16 @@ fs.readdirSync(modelsPath).forEach(function (file) {
   }
 });
 
-var Movie = mongoose.model('Movie'),
-  ms = require('./lib/services/movie.js');
 
 
 
+
+function getSimpleDate(){
+  var now = new Date();
+  return  now.getYear()+''+now.getMonth()+''+now.getDate()+''+now.getHours()+''+now.getMinutes()+''+now.getSeconds();
+}
+
+var Movie = mongoose.model('Movie');
 Movie.find(function (err, movies) {
 
   movies.forEach(function(movie){
@@ -47,12 +49,12 @@ Movie.find(function (err, movies) {
     }
 
   });
-  console.log('clean done');
+  logger.log('clean done');
 });
 
 
 
-var passwordPath = '/nzb/Passwords.txt';
+
 
 function storePw(threadHtml) {
 
@@ -62,7 +64,7 @@ function storePw(threadHtml) {
     if (!fs.existsSync(passwordPath)) {
       fs.writeFile(passwordPath, '', function (err) {
         if (err) {
-          console.log('failed to create file' + passwordPath);
+          logger.log('failed to create file' + passwordPath);
           throw err;
         }
       });
@@ -73,12 +75,12 @@ function storePw(threadHtml) {
       fs.appendFile('/nzb/Passwords.txt', pw + '\r\n', function (err) {
         if (err) {
 
-          console.log('failed to store downloadpw' + pw);
-          console.log(err);
+          logger.log('failed to store downloadpw' + pw);
+          logger.log(err);
         }
       });
     } else {
-      console.log('Password ' + pw + ' already exists');
+      logger.log('Password ' + pw + ' already exists');
     }
   }
 }
@@ -87,15 +89,15 @@ function storePw(threadHtml) {
 
 function getFile(meta, callback) {
 
-  console.log('download with casper');
-  console.log(meta);
+  logger.log('download with casper');
+  logger.log(meta);
   var exec = require('child_process').exec;
   var command = 'casperjs casperDownloader.js "'+meta.downLoadLink+'" "'+meta.fileName+'"';
-  console.log('execute command: '+command);
+  logger.log('execute command: '+command);
   exec(command,
     function (error, stdout, stderr) {
      if(error)throw error;
-      callback();
+     callback();
     });
 }
 
@@ -105,7 +107,7 @@ function downloadMovie(savedMovie, callbackDone) {
   var parsedInfos;
   async.series([
     function (next) {
-      console.log('save status');
+      logger.log('save status');
       savedMovie.status = 'get NZB';
       savedMovie.save(function (err) {
         if (err)throw err;
@@ -113,14 +115,14 @@ function downloadMovie(savedMovie, callbackDone) {
       });
     },
     function (next) {
-      console.log('get html');
+      logger.log('get html');
       scrawler.getHTML(savedMovie.threadUrl, function (html) {
         threadHtml = html;
         next();
       });
     },
     function (next) {
-      console.log('parse html');
+      logger.log('parse html');
       parsedInfos = parser.parseMovie(threadHtml);
       savedMovie = _.assign(savedMovie, parsedInfos);
       savedMovie.save(function (err) {
@@ -129,37 +131,53 @@ function downloadMovie(savedMovie, callbackDone) {
       });
     },
     function (next) {
-      console.log('push thx');
+
       if (parsedInfos.thxLink) {
+        logger.log('push thx');
         scrawler.getHTML(savedMovie.thxLink, function (html) {
           next();
         });
       } else {
+        logger.log('thx allready pushed');
         next();
       }
     },
     function (next) {
-      console.log('get new html');
+      logger.log('get new html');
       scrawler.getHTML(savedMovie.threadUrl, function (html) {
-        console.log('store pw html');
+        logger.log('store pw html');
         storePw(html);
         var downloadlink = parser.parseDownloadlink(html);
-        console.log('get meta data');
-        scrawler.getFileMetaInfo(downloadlink, function (meta) {
-          meta.downLoadLink = downloadlink;
-          console.log('meta infos');
-          console.log(meta);
-          savedMovie.fileName = meta.fileName;
-          savedMovie.save();
+
+        if(downloadlink){
+          logger.log('get filename');
+        scrawler.getFileName(downloadlink, function (fileName) {
+          var meta = {
+            downLoadLink : downloadlink,
+            fileName : fileName
+          };
+
+          logger.log(meta);
+          savedMovie.fileName = fileName;
+          savedMovie.status = 'done';
           getFile(meta, next);
         });
+        }else{
+          savedMovie.status = 'failed';
+          var fileName = 'unparsable'+getSimpleDate()+'.html';
+          logger.err('cant parse download url. check: '+fileName);
+
+          fs.writeFile(fileName, html, function (err) {
+            if (err) throw err;
+          });
+
+          next();
+        }
       });
 
     },
     function (next) {
-      savedMovie.status = 'done';
       savedMovie.save(function (err) {
-
         if (err) throw err;
         next();
         callbackDone();
@@ -167,6 +185,8 @@ function downloadMovie(savedMovie, callbackDone) {
     }
   ]);
 }
+
+
 
 
 function check() {
@@ -181,7 +201,7 @@ function check() {
     }, function (next) {
       async.eachSeries(movies, downloadMovie, function (err) {
         if (err) {
-          console.log(err);
+          logger.err(err);
         }
         next();
         check();

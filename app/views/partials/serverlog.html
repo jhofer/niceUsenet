@@ -1,0 +1,22 @@
+<div ng-include="'partials/navbar.html'"></div>
+
+<div class="row">
+  <div class="col-sm-12">
+    <h1>Server log</h1>
+  </div>
+</div>
+<br>
+
+
+<div class="row">
+  <div class="col-sm-12">
+    <div ng-bind-html="serverlog" ></div>
+    <p ng-show="isLoading">Loading...</p>
+    <a ng-hide="isLoading" ng-click="load()">Reload</a>
+  </div>
+</div>
+
+
+
+
+

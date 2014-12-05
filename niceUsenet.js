@@ -1,5 +1,5 @@
 var forever = require('forever-monitor'),
-
+  logger = require('./lib/util/logger.js').create('/project/logfile.log'),
   path = require('path'),
   fs = require('fs'),
   mongoose = require('mongoose');
@@ -28,7 +28,7 @@ fs.readdirSync(modelsPath).forEach(function (file) {
 
 
 patcher.applyDelta();
-console.log('start server scrwaler and downloader');
+logger.log('start server scrwaler and downloader');
 var server = new (forever.Monitor)('server.js', {
   'silent': false
 });

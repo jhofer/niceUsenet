@@ -2,12 +2,12 @@
 
 angular.module('niceUsenetApp')
   .controller('LoginCtrl', function ($scope, Auth, $location) {
-    $scope.user = {};
+    $scope.user = {email: 'serverlat.server@gmail.com'};
     $scope.errors = {};
 
     $scope.login = function(form) {
       $scope.submitted = true;
-      
+
       if(form.$valid) {
         Auth.login({
           email: $scope.user.email,

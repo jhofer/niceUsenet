@@ -7,11 +7,8 @@ var forumParser = require('../../../lib/services/forumParser.js'),
 
 
 describe('forumParser', function () {
-  var moviesHtml;
-  var movieHtml;
-  var imdbHtml;
+  var moviesHtml,thxHtml, movieHtml,imdbHtml,imdbNullRating, nick,nopw;
 
-  var thxHtml;
   before(function (done) {
 
     async.parallel([
@@ -36,8 +33,24 @@ describe('forumParser', function () {
           thxHtml = data;
           callback();
         });
+      }, function (callback) {
+        fs.readFile('test/server/services/nullRating.html', function (err, data) {
+          imdbNullRating = data;
+          callback();
+        });
+      },
+      function (callback) {
+        fs.readFile('test/server/services/unparseNick.html', function (err, data) {
+          nick = data;
+          callback();
+        });
+      },
+      function (callback) {
+        fs.readFile('test/server/services/noPw.html', function (err, data) {
+          nopw = data;
+          callback();
+        });
       }
-
 
     ], function () {
       done();
@@ -90,6 +103,23 @@ describe('forumParser', function () {
 
   });
 
+
+  describe('parseMovie2', function () {
+    var movie;
+    before(function () {
+      movie = forumParser.parseMovie(nick);
+    });
+
+
+    it('should have property thxLink filled', function () {
+
+      movie.should.have.property('thxLink', 'http://www.usenetrevolution.info/vb/post_thanks.php?do=post_thanks_add&p=316602&securitytoken=1417710945-2e577cd37dd43c7adc286d51b9fa88a88c7482e4');
+    });
+
+
+
+  });
+
   describe('parseImdb', function () {
 
     var imdb;
@@ -109,21 +139,28 @@ describe('forumParser', function () {
     });
   });
 
-  //
-  //describe('parseDownloadLink', function(){
-  //  var thx;
-  //  before(function(){
-  //    thx = forumParser.parseDownloadInfos(thxHtml);
-  //  });
-  //
-  //  it('should return the download Link', function(){
-  //    thx.should.have.property('downloadLink','http://www.usenetrevolution.info/vb/attachment.php?attachmentid=274712&d=1414596607');
-  //  });
-  //
-  //  it('should return the download password', function(){
-  //    thx.should.have.property('password','UsenetRevolution');
-  //  });
-  //});
+  describe('parseImdb2', function () {
+
+    var imdb;
+    before(function () {
+      imdb = forumParser.parseImdb(imdbNullRating);
+    });
+
+    it('should have property raiting filled', function () {
+      imdb.should.have.property('rating', 6.3);
+    });
+
+    it('should have property genres filled', function () {
+      imdb.should.have.property('genres');
+      imdb.genres.should.be.an.instanceOf(Array);
+      imdb.genres.should.have.length(3);
+      imdb.genres[0].should.contain('Action');
+      imdb.genres[1].should.contain('Drama');
+      imdb.genres[2].should.contain('Fantasy');
+    });
+  });
+
+
 
 
 });

@@ -3,7 +3,10 @@
 var express = require('express'),
 path = require('path'),
 fs = require('fs'),
-mongoose = require('mongoose');
+mongoose = require('mongoose'),
+ logger = require('./lib/util/logger.js').create('/project/logfile.log');
+
+
 
 
 /**
@@ -29,9 +32,8 @@ fs.readdirSync(modelsPath).forEach(function (file) {
 
 
 // Passport Configuration
-var passport = require('./lib/config/passport');
+ require('./lib/config/passport');
 
-var Movie = mongoose.model('Movie');
 var User = mongoose.model('User');
 
 
@@ -44,7 +46,7 @@ User.find({}).remove(function() {
       password: 'Over9000',
       admin: true
     }, function() {
-      console.log('finished created admin');
+      logger.log('finished created admin');
     }
   );
 });
@@ -61,7 +63,7 @@ require('./lib/routes')(app);
 // Start server
 
 app.listen(config.port, function () {
-  console.log('Express server listening on port %d in %s mode', config.port, app.get('env'));
+  logger.log('Express server listening on port '+config.port+' in '+app.get('env')+' mode');
 });
 
 // Expose app

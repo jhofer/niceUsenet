@@ -6,7 +6,6 @@ angular.module('niceUsenetApp', [
   'ngSanitize',
   'ngRoute',
   'ui.bootstrap'
-
 ])
   .config(function ($routeProvider, $locationProvider, $httpProvider) {
     $routeProvider
@@ -30,6 +29,11 @@ angular.module('niceUsenetApp', [
        .when('/movies', {
         templateUrl: 'partials/movies',
         controller: 'MoviesCtrl',
+        authenticate: true
+      })
+      .when('/serverlog', {
+        templateUrl: 'partials/serverlog',
+        controller: 'ServerlogCtrl',
         authenticate: true
       })
       .otherwise({

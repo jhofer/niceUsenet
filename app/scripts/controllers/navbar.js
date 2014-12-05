@@ -8,7 +8,11 @@ angular.module('niceUsenetApp')
     }, {
       'title': 'Settings',
       'link': '/settings'
-    }, {
+    },{
+      'title': 'Server Log',
+      'link': '/serverlog'
+    },
+      {
       'title': 'Movies',
       'link': '/movies'
     }];

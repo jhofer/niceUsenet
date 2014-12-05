@@ -8,7 +8,7 @@ var
   scrawler = require('./lib/services/usenetScrawler.js'),
   parser = require('./lib/services/forumParser.js'),
   _ = require('lodash'),
-
+  logger = require('./lib/util/logger.js').create('/project/logfile.log'),
   async = require('async');
 
 
@@ -68,18 +68,18 @@ var createMovies = function (movie, callbackDone) {
 
 
 function loadThreads(movies) {
-  console.log('scrawl each thread html');
+  logger.info('scrawl each thread html');
   async.eachSeries(movies, createMovies, function (err) {
     if(err){
       throw err;
     }
-    console.log('All done');
+    logger.success('All done');
   });
 }
 
 
 function loadForum(forum, callbackDone) {
-  console.log('load forum:  '+forum.title);
+  logger.info('load forum:  '+forum.title);
   var movies;
   async.series([
     function (next) {
@@ -96,7 +96,7 @@ function loadForum(forum, callbackDone) {
 
 function loadForums() {
   Forum.find({}, function(err, forums){
-    console.log('going to load movies');
+    logger.info('going to load movies');
     async.eachSeries(forums, loadForum, function (err) {
       if(err){
         throw err;

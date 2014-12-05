@@ -54,11 +54,14 @@
   <div class="col-sm-12">
 
     <ul class="list-group">
-      <a  class="list-group-item" ng-click="editForum(forumItem)" ng-repeat="forumItem in forums">
-        <h4 ng-hide="isActive(forumItem)">{{forumItem.title}} <small> {{forumItem.forumUrl}}</small>
+     <div  ng-repeat="forumItem in forums">
+       <a  class="list-group-item" ng-click="editForum(forumItem)" ng-hide="isActive(forumItem)">
+        <h4 >{{forumItem.title}} <small> {{forumItem.forumUrl}}</small>
           <button type="button" class="close" data-dismiss="alert" ng-click="deleteForum(forumItem)"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
         </h4>
-        <form class="form" ng-show="isActive(forumItem)" novalidate>
+       </a>
+       <a  class="list-group-item" ng-show="isActive(forumItem)" >
+        <form class="form" novalidate>
           <div class="form-group">
             <label>Forum Title</label>
             <input type="text" name="title" class="form-control" ng-model="forum.title"
@@ -72,21 +75,26 @@
                    required/>
           </div>
           <button class="btn btn-primary" ng-click="createOrUpdateForum()">Save</button>
+          <button class="btn btn-primary" ng-click="cancel()">Cancel</button>
         </form>
+       </a>
 
 
+     </div>
+      <a  class="list-group-item active" ng-click="newForum()" ng-hide="isCreate">
+        <h4 >Create New Forum </h4>
       </a>
-      <a  class="list-group-item active" >
-        <h4 ng-hide="isCreate" ng-click="newForum()">Create New Forum
-
-        </h4>
-        <form class="form" ng-show="isCreate" novalidate>
+      <a  class="list-group-item active"  ng-show="isCreate" >
+        <form class="form" novalidate>
           <div class="form-group">
             <label>Forum Title</label>
             <input type="text" name="title" class="form-control" ng-model="forum.title"
                    mongoose-error ng-minlength="3"
                    required/>
           </div>
+
+
+
           <div class="form-group">
             <label>Forum-Url</label>
             <input type="text" name="forumUrl" class="form-control" ng-model="forum.forumUrl"
@@ -94,8 +102,9 @@
                    required/>
           </div>
           <button class="btn btn-default" ng-click="createOrUpdateForum()">Create</button>
+          <button class="btn btn-default" ng-click="cancel()">Cancel</button>
         </form>
-      </a>
+     </a>
     </ul>
 
   </div>
