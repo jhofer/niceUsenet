@@ -5,5 +5,5 @@ last_pid=$!
 kill -KILL $last_pid
 if ps -p $last_pid -o comm= | grep -qs '^niceUsenet$'; then
         kill -$signal $last_pid 2> /dev/null
-        sleep(1000)
+        sleep 10s
 fi
