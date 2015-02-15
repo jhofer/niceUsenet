@@ -4,7 +4,7 @@ angular.module('niceUsenetApp')
   .controller('SettingsCtrl', function ($scope, User, Auth, Forum, $filter) {
     $scope.errors = {};
 
-
+    //change password
     $scope.changePassword = function (form) {
       $scope.submitted = true;
 
@@ -20,10 +20,10 @@ angular.module('niceUsenetApp')
       }
     };
 
-
+    //forums
+    $scope.isCreate = false;
     $scope.forums = Forum.query();
     $scope.newForum = function () {
-
       $scope.isCreate = true;
       $scope.forum = new Forum({
         forumUrl: 'http://www.usenetrevolution.info/vb/forumdisplay.php?f=???????'
@@ -31,16 +31,14 @@ angular.module('niceUsenetApp')
 
     };
 
-    $scope.isCreate = false;
+
 
     $scope.editForum = function (forum) {
-
       $scope.isCreate = false;
       $scope.forum = new Forum();
       $scope.forum.title = forum.title;
       $scope.forum.forumUrl = forum.forumUrl;
       $scope.forum._id = forum._id;
-
     };
 
     $scope.cancel = function () {
@@ -87,6 +85,15 @@ angular.module('niceUsenetApp')
         $scope.cancel();
       });
 
+    };
+
+
+    //tags
+    $scope.jsTagOptions = {
+      texts: {
+        inputPlaceHolder: 'Type new Filters here'
+      },
+      defaultTags: ['Default Tag #1', 'Default Tag #2']
     };
 
 

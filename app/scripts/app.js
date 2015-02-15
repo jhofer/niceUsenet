@@ -5,6 +5,7 @@ angular.module('niceUsenetApp', [
   'ngResource',
   'ngSanitize',
   'ngRoute',
+  'jsTag',
   'ui.bootstrap'
 ])
   .config(function ($routeProvider, $locationProvider, $httpProvider) {
